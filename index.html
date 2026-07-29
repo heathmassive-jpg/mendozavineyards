@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<!-- Home page for byronlutz.com. Static, no build step. Works without JavaScript;
+     js/filters.js only enhances sorting and the mobile nav. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Argentina Vineyards, Farms &amp; Land for Sale in Mendoza | Byron Lutz</title>
+<meta name="description" content="Vineyards, fincas, campo and ranch land for sale across Mendoza, Argentina. 46 active listings in San Rafael and Valle de Uco, walked and vetted in person by Byron Lutz since 2002.">
+<link rel="canonical" href="https://www.byronlutz.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byron Lutz — Argentina Real Estate">
+<meta property="og:title" content="Argentina Vineyards, Farms &amp; Land for Sale in Mendoza">
+<meta property="og:description" content="Vineyards, fincas, campo and ranch land across Mendoza. 46 active listings, walked in person since 2002.">
+<meta property="og:url" content="https://www.byronlutz.com/">
+<meta property="og:image" content="https://www.byronlutz.com/assets/img/feature/hero-1600.webp">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Argentina Vineyards, Farms &amp; Land for Sale in Mendoza">
+<meta name="twitter:description" content="Vineyards, fincas, campo and ranch land across Mendoza. 46 active listings, walked in person since 2002.">
+<meta name="twitter:image" content="https://www.byronlutz.com/assets/img/feature/hero-1600.webp">
+
+<meta name="theme-color" content="#2e1a1c">
+
+<!-- The hero is the LCP element; start it in parallel with the stylesheet. -->
+<link rel="preload" as="image" href="assets/img/feature/hero-1600.webp"
+      imagesrcset="assets/img/feature/hero-640.webp 640w,
+                   assets/img/feature/hero-1000.webp 1000w,
+                   assets/img/feature/hero-1600.webp 1600w,
+                   assets/img/feature/hero-2400.webp 2400w"
+      imagesizes="100vw" fetchpriority="high">
+<link rel="preload" href="assets/fonts/Newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+
+<script>document.documentElement.classList.add('js');</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Byron Lutz — Argentina Real Estate",
+  "url": "https://www.byronlutz.com/",
+  "telephone": "+1-561-480-2940",
+  "email": "byronlutz@hotmail.com",
+  "foundingDate": "2002",
+  "description": "Vineyards, farms, campo and rural land for sale across Mendoza, Argentina, for buyers from the US, Canada and Europe.",
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Mendoza Province, Argentina" },
+    { "@type": "Place", "name": "San Rafael" },
+    { "@type": "Place", "name": "Valle de Uco" },
+    { "@type": "Place", "name": "General Alvear" }
+  ],
+  "knowsLanguage": ["en", "es"]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="utility on-dark">
+  <div class="wrap">
+    <span class="utility__tagline">Byron Lutz &middot; Argentina Real Estate Since 2002</span>
+    <ul class="utility__contact">
+      <li><a class="utility__wa" href="https://wa.me/15614802940">USA Cell &amp; WhatsApp: 1-561-480-2940</a></li>
+      <li><a class="utility__email" href="mailto:byronlutz@hotmail.com">byronlutz@hotmail.com</a></li>
+      <li>
+        <!-- Real links, not dead spans: each goes to this same page in the other
+             language, and works without JavaScript. tools/i18n.py generates the
+             equivalent block on the built pages. -->
+        <p class="lang" role="group" aria-label="Language">
+          <a href="index.html" aria-current="true" lang="en" hreflang="en">EN</a>
+          <a href="es/index.html" lang="es" hreflang="es" title="Español">ES</a>
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand__name">Byron&nbsp;Lutz</span>
+      <span class="brand__sub">Fincas &middot; Vineyards &middot; Campo &middot; Mendoza</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+      <span class="visually-hidden">Menu</span>
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="properties/index.html">All Properties</a></li>
+        <li><a href="properties/index.html?type=vineyard">Vineyards &amp; Wineries</a></li>
+        <li><a href="properties/index.html?type=farm">Farms &amp; Fincas</a></li>
+        <li><a href="properties/index.html?type=campo">Campo &amp; Land</a></li>
+        <li><a href="properties/index.html?type=home">Homes</a></li>
+        <li><a href="properties/sold.html">Recently Sold</a></li>
+        <li><a href="#buying">How Buying Works</a></li>
+        <li><a class="btn btn--primary" href="#contact">Talk to Byron</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <!-- 2400px source, cut from a 4000x3000 original. The old site's hero was a
+         350px thumbnail stretched across the full width. -->
+    <img class="hero__img"
+         src="assets/img/feature/hero-1600.webp"
+         srcset="assets/img/feature/hero-640.webp 640w,
+                 assets/img/feature/hero-1000.webp 1000w,
+                 assets/img/feature/hero-1600.webp 1600w,
+                 assets/img/feature/hero-2400.webp 2400w"
+         sizes="100vw"
+         alt="Rows of vines running toward the snow-capped Andes on a finca in Mendoza"
+         width="2400" height="1350" fetchpriority="high" decoding="async">
+    <div class="hero__scrim"></div>
+    <div class="wrap hero__body on-dark">
+      <p class="eyebrow hero__eyebrow">San Rafael &middot; Valle de Uco &middot; Mendoza</p>
+      <h1>Vineyards, farms and land in Argentina &mdash; bought with someone who lives here.</h1>
+      <p class="hero__lead">I&rsquo;m Byron Lutz. Since 2002 I&rsquo;ve walked these fincas, met the owners, and helped buyers from the US, Canada and Europe close on them. Every listing below I have seen with my own eyes.</p>
+      <div class="hero__actions">
+        <a class="btn btn--cream" href="properties/index.html">Browse 46 properties</a>
+        <a class="btn btn--ghost-dark" href="https://wa.me/15614802940">WhatsApp Byron directly</a>
+      </div>
+    </div>
+  </section>
+
+  <aside class="news" aria-label="Announcement">
+    <div class="wrap">
+      <p class="news__tag">News you can use</p>
+      <p class="news__body"><strong>Bitcoin land sales:</strong> an increasing number of Argentine land owners are accepting bitcoin for land and residential purchases.</p>
+      <p class="news__link"><a href="properties/index.html?pay=bitcoin">See &#8383;-friendly listings &rarr;</a></p>
+    </div>
+  </aside>
+
+  <section class="search" aria-labelledby="search-h">
+    <div class="wrap">
+      <h2 id="search-h" class="visually-hidden">Search properties</h2>
+      <!-- Plain GET to the full listing page, so the query is bookmarkable and
+           works without JavaScript. filters.js applies it there on arrival. -->
+      <form class="search__grid" method="get" action="properties/index.html">
+        <label class="field">
+          <span>Property type</span>
+          <select name="type">
+            <option value="">All types</option>
+            <option value="vineyard">Vineyards &amp; wineries</option>
+            <option value="farm">Farms &amp; fincas</option>
+            <option value="campo">Campo &amp; ranch land</option>
+            <option value="home">Homes</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Region</span>
+          <select name="region">
+            <option value="">All Mendoza</option>
+            <option value="san-rafael">San Rafael</option>
+            <option value="valle-de-uco">Valle de Uco</option>
+            <option value="general-alvear">General Alvear</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Price (USD)</span>
+          <select name="price">
+            <option value="">Any</option>
+            <option value="0-200000">Under $200K</option>
+            <option value="200000-500000">$200K &ndash; $500K</option>
+            <option value="500000-1000000">$500K &ndash; $1M</option>
+            <option value="1000000-">Over $1M</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Size</span>
+          <select name="size">
+            <option value="">Any acreage</option>
+            <option value="0-50">Under 50 acres</option>
+            <option value="50-250">50 &ndash; 250 acres</option>
+            <option value="250-1000">250 &ndash; 1,000 acres</option>
+            <option value="1000-">1,000+ acres</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Water rights</span>
+          <select name="water">
+            <option value="">Any</option>
+            <option value="irrigated">Irrigated / deeded rights</option>
+            <option value="well">Well or windmill</option>
+          </select>
+        </label>
+        <button class="btn btn--primary search__submit" type="submit">Search</button>
+      </form>
+
+      <ul class="chips">
+        <li class="chips__label">Popular:</li>
+        <li><a class="chip" href="properties/index.html?price=0-200000">Under US$200K</a></li>
+        <li><a class="chip" href="properties/index.html?income=yes">Producing income</a></li>
+        <li><a class="chip" href="properties/index.html?home=yes">Has owner&rsquo;s home</a></li>
+        <li><a class="chip" href="properties/index.html?water=irrigated">Strong water rights</a></li>
+        <li><a class="chip" href="properties/index.html?pay=bitcoin">Seller accepts &#8383;</a></li>
+        <li><a class="chip" href="properties/index.html?size=1000-">1,000+ acres</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="new-h">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <h2 id="new-h">New this month</h2>
+          <p class="section__sub">Three I&rsquo;d show you first.</p>
+        </div>
+        <p class="section__link"><a href="properties/index.html">View all 46 &rarr;</a></p>
+      </div>
+
+      <ul class="cards">
+        <li class="card">
+          <div class="card__media">
+            <span class="badge badge--reduced">Just reduced</span>
+            <img src="assets/img/claudia/thumb-400.webp"
+                 alt="Open pasture and quince trees on a 250-acre ranch at Colonia Colomer, with the Andes on the horizon"
+                 width="350" height="219" loading="lazy" decoding="async">
+          </div>
+          <div class="card__body">
+            <p class="card__loc">Colonia Colomer, San Rafael</p>
+            <h3 class="card__title"><a href="properties/ranch-for-cattle-agriculture-home-with-view-for-sale-mendoza-argentina.html">250-Acre Ranch for Cattle or Agriculture with Owner&rsquo;s Home</a></h3>
+            <p class="card__meta">100 ha &middot; quince grove &middot; cattle corral</p>
+            <p class="card__foot">
+              <span class="card__price">US$170,000</span>
+              <span class="card__ppa">US$680/acre</span>
+            </p>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card__media">
+            <span class="badge badge--region">Valle de Uco</span>
+            <img src="assets/img/gualtallary-fotos/thumb1-400.webp"
+                 alt="Trellised fine-wine vines at Gualtallary in the Uco Valley, Andes foothills behind"
+                 width="350" height="219" loading="lazy" decoding="async">
+          </div>
+          <div class="card__body">
+            <p class="card__loc">Gualtallary, Tupungato</p>
+            <h3 class="card__title"><a href="properties/valle-de-uco-mendoza-fine-wine-vineyard-for-sale-with-winery-operation.html">Premium Fine Wine Vineyard with Wine-Making Set-up</a></h3>
+            <p class="card__meta">113 acres &middot; exporting &middot; drip irrigation</p>
+            <p class="card__foot">
+              <span class="card__price">US$1.65M</span>
+              <span class="card__ppa">Reduced</span>
+            </p>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card__media">
+            <span class="badge badge--bitcoin">&#8383; Accepted</span>
+            <img src="assets/img/olives-plums/thumb1-400.webp"
+                 alt="Rows of mature olive and plum trees on a 29-acre farm near San Rafael"
+                 width="350" height="219" loading="lazy" decoding="async">
+          </div>
+          <div class="card__body">
+            <p class="card__loc">San Rafael, Mendoza</p>
+            <h3 class="card__title"><a href="properties/orchard-olives-property-for-sale-in-mendoza-argentina.html">Well-Kept 29-Acre Olive &amp; Plum Farm with Worker&rsquo;s House</a></h3>
+            <p class="card__meta">12 ha &middot; producing &middot; equipment included</p>
+            <p class="card__foot">
+              <span class="card__price">US$140,000</span>
+              <span class="card__ppa">Reduced</span>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--rule" aria-labelledby="regions-h">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <h2 id="regions-h">Where the land is</h2>
+          <p class="section__sub">Mendoza is a big province. Byron works three corners of it,
+          and they are not interchangeable &mdash; the soil, the water and the price per acre
+          are different in each.</p>
+        </div>
+      </div>
+
+      <ul class="regions">
+        <li class="region">
+          <a href="properties/index.html?region=san-rafael">
+            <span class="region__media">
+              <img src="assets/img/feature/region-san-rafael-600.webp"
+                   srcset="assets/img/feature/region-san-rafael-600.webp 600w,
+                           assets/img/feature/region-san-rafael-900.webp 900w"
+                   sizes="(min-width: 900px) 33vw, 100vw"
+                   alt="Horses grazing open pasture near San Rafael, hills on the horizon"
+                   width="900" height="675" loading="lazy" decoding="async">
+            </span>
+            <span class="region__body">
+              <span class="region__name">San Rafael</span>
+              <span class="region__count">37 for sale</span>
+              <span class="region__note">Byron&rsquo;s home ground and the widest choice &mdash;
+              farms, campo, vineyards and houses, from US$69,900 up.</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="region">
+          <a href="properties/index.html?region=valle-de-uco">
+            <span class="region__media">
+              <img src="assets/img/feature/region-valle-de-uco-600.webp"
+                   srcset="assets/img/feature/region-valle-de-uco-600.webp 600w,
+                           assets/img/feature/region-valle-de-uco-900.webp 900w"
+                   sizes="(min-width: 900px) 33vw, 100vw"
+                   alt="Trellised vine rows in the Uco Valley with the Andes beyond"
+                   width="900" height="675" loading="lazy" decoding="async">
+            </span>
+            <span class="region__body">
+              <span class="region__name">Valle de Uco</span>
+              <span class="region__count">5 for sale</span>
+              <span class="region__note">High-altitude fine-wine country &mdash; Gualtallary,
+              Vista Flores, Tunuyán. Four of the five are vineyards.</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="region">
+          <a href="properties/index.html?region=general-alvear">
+            <span class="region__media">
+              <img src="assets/img/feature/region-general-alvear-600.webp"
+                   srcset="assets/img/feature/region-general-alvear-600.webp 600w,
+                           assets/img/feature/region-general-alvear-900.webp 900w"
+                   sizes="(min-width: 900px) 33vw, 100vw"
+                   alt="A windmill drawing water into a tank on open campo at General Alvear"
+                   width="900" height="675" loading="lazy" decoding="async">
+            </span>
+            <span class="region__body">
+              <span class="region__name">General Alvear</span>
+              <span class="region__count">2 for sale</span>
+              <span class="region__note">Big open campo east of San Rafael. Where acreage gets
+              cheap &mdash; 25,000 acres here work out at US$64 an acre.</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--rule" id="inventory" aria-labelledby="inv-h">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <h2 id="inv-h">The whole inventory, by the numbers</h2>
+          <p class="section__sub">Size, water and income for all 46 properties on one screen &mdash; sort by price per acre and compare like a farmer, not a tourist.</p>
+        </div>
+        <div class="table-tools">
+          <label>
+            Sort
+            <select id="sort" name="sort">
+              <option value="ppa-asc">Price per acre &uarr;</option>
+              <option value="ppa-desc">Price per acre &darr;</option>
+              <option value="price-asc">Price &uarr;</option>
+              <option value="price-desc">Price &darr;</option>
+              <option value="size-desc">Size &darr;</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="table-scroll" tabindex="0" role="region" aria-labelledby="inv-h">
+        <table class="inventory">
+          <caption>Active listings, sorted by price per acre. Scroll sideways for water and income columns.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Property</th>
+              <th scope="col">Size</th>
+              <th scope="col">Water</th>
+              <th scope="col">Income</th>
+              <th scope="col" class="num">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                <span class="prop-cell">
+                  <span class="prop-cell__thumb"><img src="assets/img/manuel-fotos/thumb-400.webp" alt="" width="66" height="48" loading="lazy" decoding="async"></span>
+                  <span>
+                    <span class="prop-cell__name"><a href="properties/1000-plus-acres-for-sale-in-argentina-campo.html">25,000-Acre Campo on Paved Highway, 5 Windmills</a></span>
+                    <span class="prop-cell__loc">General Alvear</span>
+                  </span>
+                </span>
+              </th>
+              <td>10,120 ha</td>
+              <td>5 windmills</td>
+              <td class="income income--none">Raw land</td>
+              <td class="num"><span class="price-main">US$1.6M</span><span class="price-ppa">$64/ac</span></td>
+            </tr>
+
+            <tr>
+              <th scope="row">
+                <span class="prop-cell">
+                  <span class="prop-cell__thumb"><img src="assets/img/resolana/thumb-400.webp" alt="" width="66" height="48" loading="lazy" decoding="async"></span>
+                  <span>
+                    <span class="prop-cell__name"><a href="properties/large-ranch-alfalfa-range-land-for-sale-in-mendoza-argentina.html">4,690-Acre Ranch for Alfalfa, Cattle &amp; More</a></span>
+                    <span class="prop-cell__loc">La Resolana, San Rafael</span>
+                  </span>
+                </span>
+              </th>
+              <td>1,900 ha</td>
+              <td>865 ac irrig.</td>
+              <td class="income">Alfalfa</td>
+              <td class="num"><span class="price-main">US$1.6M</span><span class="price-ppa">$341/ac</span></td>
+            </tr>
+
+            <tr>
+              <th scope="row">
+                <span class="prop-cell">
+                  <span class="prop-cell__thumb"><img src="assets/img/raw-fotos/thumb-400.webp" alt="" width="66" height="48" loading="lazy" decoding="async"></span>
+                  <span>
+                    <span class="prop-cell__name"><a href="properties/ranch-land-for-sale-in-argentina-for-agriculture.html">850-Acre Ranch for Cattle, Agriculture or Development</a></span>
+                    <span class="prop-cell__loc">Route 146, San Rafael</span>
+                  </span>
+                </span>
+              </th>
+              <td>345 ha</td>
+              <td>120 ac rights</td>
+              <td class="income income--none">Raw land</td>
+              <td class="num"><span class="price-main">US$450,000</span><span class="price-ppa">$529/ac</span></td>
+            </tr>
+
+            <tr>
+              <th scope="row">
+                <span class="prop-cell">
+                  <span class="prop-cell__thumb"><img src="assets/img/claudia/thumb-400.webp" alt="" width="66" height="48" loading="lazy" decoding="async"></span>
+                  <span>
+                    <span class="prop-cell__name"><a href="properties/ranch-for-cattle-agriculture-home-with-view-for-sale-mendoza-argentina.html">250-Acre Ranch, Quince Grove &amp; Owner&rsquo;s Home</a><span class="tag-inline tag-inline--reduced">Reduced</span></span>
+                    <span class="prop-cell__loc">Colonia Colomer, San Rafael</span>
+                  </span>
+                </span>
+              </th>
+              <td>100 ha</td>
+              <td>Deeded</td>
+              <td class="income">Cattle</td>
+              <td class="num"><span class="price-main">US$170,000</span><span class="price-ppa">$680/ac</span></td>
+            </tr>
+
+            <tr>
+              <th scope="row">
+                <span class="prop-cell">
+                  <span class="prop-cell__thumb"><img src="assets/img/malvinas90/thumb-400.webp" alt="" width="66" height="48" loading="lazy" decoding="async"></span>
+                  <span>
+                    <span class="prop-cell__name"><a href="properties/lush-working-farm-in-production-for-sale-san-rafael-mendoza-argentina.html">Lush 90-Acre Working Farm &mdash; Corn, Tomatoes, Alfalfa</a></span>
+                    <span class="prop-cell__loc">Las Malvinas, San Rafael</span>
+                  </span>
+                </span>
+              </th>
+              <td>36.5 ha</td>
+              <td>Lots of water</td>
+              <td class="income">Row crops</td>
+              <td class="num"><span class="price-main">US$210,000</span><span class="price-ppa">$2,333/ac</span></td>
+            </tr>
+
+            <tr>
+              <th scope="row">
+                <span class="prop-cell">
+                  <span class="prop-cell__thumb"><img src="assets/img/olives-plums/thumb1-400.webp" alt="" width="66" height="48" loading="lazy" decoding="async"></span>
+                  <span>
+                    <span class="prop-cell__name"><a href="properties/orchard-olives-property-for-sale-in-mendoza-argentina.html">29-Acre Olive &amp; Plum Farm with Barn</a><span class="tag-inline tag-inline--bitcoin">&#8383;</span></span>
+                    <span class="prop-cell__loc">San Rafael, Mendoza</span>
+                  </span>
+                </span>
+              </th>
+              <td>12 ha</td>
+              <td>Irrigated</td>
+              <td class="income">Olives, plums</td>
+              <td class="num"><span class="price-main">US$140,000</span><span class="price-ppa">$4,828/ac</span></td>
+            </tr>
+
+            <tr>
+              <th scope="row">
+                <span class="prop-cell">
+                  <span class="prop-cell__thumb"><img src="assets/img/manisur/thumb1-400.webp" alt="" width="66" height="48" loading="lazy" decoding="async"></span>
+                  <span>
+                    <span class="prop-cell__name"><a href="properties/vineyard-and-wine-company-for-sale-in-mendoza-argentina.html">Wine Company, 69 Acres of Malbec &amp; Cabernet</a></span>
+                    <span class="prop-cell__loc">Colonia Elena, San Rafael</span>
+                  </span>
+                </span>
+              </th>
+              <td>49 ha</td>
+              <td>2 wells, pond</td>
+              <td class="income">600k btl/yr</td>
+              <td class="num"><span class="price-main">US$700,000</span><span class="price-ppa">$5,785/ac</span></td>
+            </tr>
+
+            <tr>
+              <th scope="row">
+                <span class="prop-cell">
+                  <span class="prop-cell__thumb"><img src="assets/img/gualtallary-fotos/thumb1-400.webp" alt="" width="66" height="48" loading="lazy" decoding="async"></span>
+                  <span>
+                    <span class="prop-cell__name"><a href="properties/valle-de-uco-mendoza-fine-wine-vineyard-for-sale-with-winery-operation.html">Fine Wine Vineyard with Winery, Valle de Uco</a></span>
+                    <span class="prop-cell__loc">Gualtallary, Tupungato</span>
+                  </span>
+                </span>
+              </th>
+              <td>45.7 ha</td>
+              <td>Drip + well</td>
+              <td class="income">Exporting</td>
+              <td class="num"><span class="price-main">US$1.65M</span><span class="price-ppa">$14,600/ac</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="table-foot">
+        <span id="result-count">Showing 8 of 46 &middot; sorted by price per acre</span>
+        <a class="btn btn--outline" href="properties/index.html">See all 46 properties</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- One full-bleed image to break the rhythm of cards and tables, and to put a
+       person in the page. Decorative: the caption carries the meaning. -->
+  <figure class="band">
+    <img src="assets/img/feature/band-1400.webp"
+         srcset="assets/img/feature/band-900.webp 900w,
+                 assets/img/feature/band-1400.webp 1400w,
+                 assets/img/feature/band-2000.webp 2000w"
+         sizes="100vw"
+         alt="A rider on horseback moving at pace along a fenced vine row in Mendoza"
+         width="2000" height="857" loading="lazy" decoding="async">
+    <figcaption class="band__caption">
+      <span class="wrap">This is still a working countryside &mdash; not a resort with vines
+      attached.</span>
+    </figcaption>
+  </figure>
+
+  <section class="split" id="buying" aria-labelledby="buying-h">
+    <div class="split__inner">
+      <div class="split__media">
+        <!-- No photo of Byron on file yet; the mockup marked this a placeholder too. -->
+        <p class="split__ph">Photo placeholder &mdash;<br>Byron on a finca, San Rafael</p>
+      </div>
+      <div class="split__body">
+        <p class="eyebrow">Buying here as a foreigner</p>
+        <h2 id="buying-h">You can own land in Argentina outright. Here&rsquo;s how it actually goes.</h2>
+        <p>Foreigners buy rural property in their own name, no local partner required. Deeds are signed before an <span lang="es">escribano</span>, title is searched, and water rights transfer with the land. I walk clients through every step &mdash; and I&rsquo;ve done it for my own farm.</p>
+        <dl class="stats">
+          <div><dt>years in Mendoza</dt><dd>23</dd></div>
+          <div><dt>active listings</dt><dd>46</dd></div>
+          <div><dt>properties sold</dt><dd>100+</dd></div>
+        </dl>
+        <p class="split__actions">
+          <a class="btn btn--primary" href="#contact">Read the buyer&rsquo;s guide</a>
+          <a class="btn btn--outline" href="#contact">About Byron</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="quotes-h">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <h2 id="quotes-h">What buyers say</h2>
+          <p class="section__sub">A buyer who made the move, in his own words.</p>
+        </div>
+      </div>
+      <!-- Only genuine material here. The two invented quotes that shipped with the
+           mockup were removed; the quote below is Dennis Atencio's own, published by
+           Byron in this video's description, and is dated so it can't read as recent. -->
+
+
+      <div class="testimonials">
+        <!-- The one real testimonial on this page, so it leads. Same click-to-play
+             facade as the listing videos: nothing reaches YouTube until pressed. -->
+        <figure class="video testimonials__video">
+          <button class="video__play" type="button"
+                  data-embed="https://www.youtube-nocookie.com/embed/1IdFjRslHnU"
+                  data-watch="https://www.youtube.com/watch?v=1IdFjRslHnU"
+                  aria-label="Play video: a buyer&rsquo;s story, living the dream in San Rafael">
+            <img src="assets/img/video-posters/1IdFjRslHnU.webp" alt=""
+                 width="1100" height="619" loading="lazy" decoding="async">
+            <span class="video__icon" aria-hidden="true"></span>
+          </button>
+          <figcaption class="video__caption">
+            <span class="video__label">Living the dream in San Rafael</span>
+            <a class="video__external" href="https://www.youtube.com/watch?v=1IdFjRslHnU"
+               rel="noopener" target="_blank">Open on YouTube</a>
+          </figcaption>
+          <noscript>
+            <iframe class="video__frame" src="https://www.youtube-nocookie.com/embed/1IdFjRslHnU"
+                    title="Success Story &mdash; Living the Dream in San Rafael"
+                    loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </noscript>
+        </figure>
+
+        <ul class="quotes quotes--stacked">
+          <li>
+            <figure class="quote">
+              <blockquote cite="https://www.youtube.com/watch?v=1IdFjRslHnU">
+                <p>&ldquo;I&rsquo;m happy here, I wouldn&rsquo;t want to live anywhere else. This is my paradise!&rdquo;</p>
+              </blockquote>
+              <figcaption>
+                <strong>Dennis Atencio</strong> &mdash; American, moved to Argentina in 2003.
+                Built a home and planted malbec on his finca near San Rafael.
+                <span class="quote__source">His words, from the film above &middot; filmed 2013</span>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer on-dark" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Contact Byron Lutz</h2>
+      <p class="footer__contact">
+        USA Cell &amp; WhatsApp: <strong><a href="https://wa.me/15614802940">1-561-480-2940</a></strong>
+        <span class="footer__note">(Call us in Argentina using the USA phone number above.)</span>
+        Email: <a href="mailto:byronlutz@hotmail.com">byronlutz@hotmail.com</a>
+      </p>
+    </div>
+    <div class="footer__cols">
+      <nav aria-labelledby="f-props">
+        <h3 id="f-props">Properties</h3>
+        <ul>
+          <li><a href="properties/index.html?type=vineyard">Vineyards &amp; wineries</a></li>
+          <li><a href="properties/index.html?type=farm">Farms &amp; fincas</a></li>
+          <li><a href="properties/index.html?type=campo">Campo &amp; ranch land</a></li>
+          <li><a href="properties/index.html?type=home">Homes</a></li>
+          <li><a href="properties/sold.html">Recently sold</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-learn">
+        <h3 id="f-learn">Learn</h3>
+        <ul>
+          <li><a href="#buying">How buying works</a></li>
+          <li><a href="#buying">Water rights explained</a></li>
+          <li><a href="properties/index.html">Regions of Mendoza</a></li>
+          <li><a href="properties/index.html?pay=bitcoin">Bitcoin purchases</a></li>
+          <li><a href="#buying">About Byron</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="wrap footer__legal">
+    <p>&copy; 2026 Byron Lutz. Prices in US dollars and subject to change &mdash; confirm current price, acreage and water rights before relying on them.</p>
+  </div>
+</footer>
+
+<script src="js/filters.js" defer></script>
+<!-- Drives the click-to-play testimonial video. -->
+<script src="js/gallery.js" defer></script>
+</body>
+</html>

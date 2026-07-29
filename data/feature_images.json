@@ -1,0 +1,65 @@
+{
+ "hero": {
+  "source": "vistaflores-fotos/finca-andes.jpg",
+  "sourceSize": [
+   4000,
+   3000
+  ],
+  "ratio": 1.7778,
+  "widths": [
+   2400,
+   1600,
+   1000,
+   640
+  ]
+ },
+ "band": {
+  "source": "vistaflores-fotos/riding-fast.JPG",
+  "sourceSize": [
+   3888,
+   2592
+  ],
+  "ratio": 2.3333,
+  "widths": [
+   2000,
+   1400,
+   900
+  ]
+ },
+ "region-san-rafael": {
+  "source": "correina/pasture2.jpg",
+  "sourceSize": [
+   4096,
+   2757
+  ],
+  "ratio": 1.3333,
+  "widths": [
+   900,
+   600
+  ]
+ },
+ "region-valle-de-uco": {
+  "source": "vistaflores-fotos/harvest09-3.JPG",
+  "sourceSize": [
+   3264,
+   2448
+  ],
+  "ratio": 1.3333,
+  "widths": [
+   900,
+   600
+  ]
+ },
+ "region-general-alvear": {
+  "source": "manuel-fotos/main.jpg",
+  "sourceSize": [
+   1280,
+   960
+  ],
+  "ratio": 1.3333,
+  "widths": [
+   900,
+   600
+  ]
+ }
+}

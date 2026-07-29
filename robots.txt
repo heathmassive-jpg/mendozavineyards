@@ -1,0 +1,15 @@
+# ============================================================
+#  DEMO BUILD ONLY -- Byron Lutz redesign preview
+# ============================================================
+#  This is a PRIVATE demo copy. Every crawler is blocked so the
+#  preview cannot be indexed, and therefore cannot compete with
+#  or duplicate the live site at https://www.byronlutz.com/
+#
+#  >>> BEFORE THIS SITE EVER GOES PUBLIC <<<
+#  Replace this file with the real robots.txt from the source
+#  folder (ByronWebsite\robots.txt), which allows crawling.
+#  Shipping THIS file to production would deindex the whole site.
+# ============================================================
+
+User-agent: *
+Disallow: /

@@ -1,0 +1,106 @@
+/* Design tokens for byronlutz.com — colour, type, spacing, motion.
+   Values come from the approved mockup, with three contrast corrections noted below.
+   Nothing else in the CSS should contain a raw hex value. */
+
+:root {
+  /* ---- Brand colour ------------------------------------------------------ */
+  --c-dark:        #2e1a1c;  /* oxblood ground — headers, footer, hero */
+  --c-dark-deep:   #1c0e10;  /* hero scrim */
+  --c-wine:        #7a2231;  /* primary action, prices, accents */
+  --c-gold:        #c9a227;  /* pull-quote rule, region badge */
+  --c-amber:       #c47a1a;  /* bitcoin badge */
+  --c-green:       #2f6b3f;  /* "producing income" signal */
+  --c-whatsapp:    #4fbe72;
+
+  /* ---- Surfaces ---------------------------------------------------------- */
+  --c-paper:       #fbf8f2;  /* page ground */
+  --c-paper-warm:  #f6ecd9;  /* news strip */
+  --c-cream:       #f0e5d8;  /* table head, split panel */
+  --c-white:       #fff;
+  --c-stone:       #d6cdbd;  /* image placeholder */
+
+  /* ---- Text -------------------------------------------------------------- */
+  --c-ink:         #2e1a1c;  /* headings */
+  --c-body:        #3d2a24;  /* body copy */
+  --c-body-soft:   #4a352c;
+  --c-detail:      #5c473c;  /* card meta */
+
+  /* CORRECTED from the mockup's #8a6f52, which measured 4.43:1 on paper and
+     3.78:1 on cream — both below WCAG AA 4.5:1 for the 10–12px text it was used on.
+     #7d6245 clears AA on every surface it appears against (4.56–5.67:1). */
+  --c-muted:       #7d6245;
+  --c-table-head:  #6b5344;
+
+  /* On dark ground */
+  --c-on-dark:         #f0e5d8;
+  --c-on-dark-strong:  #fdf9f2;
+  --c-on-dark-soft:    #e8ded0;
+  --c-tan:             #d9b98b;  /* eyebrow text on dark */
+  /* Over a photograph the plain tan only reached 3.18:1 on sunlit ground. This
+     lighter tone clears AA against the hero's brightest patch while still reading
+     as the same accent. Measured by tools/tests/test_hero_contrast.py. */
+  --c-tan-on-photo:    #e5c597;
+
+  /* CORRECTED: mockup put white on --c-amber at 3.42:1. Dark text reads 4.94:1
+     and matches how the gold badge already works. */
+  --c-on-amber:    #241c05;
+  --c-on-gold:     #241c05;
+
+  /* ---- Lines & shadow ---------------------------------------------------- */
+  --line:          rgba(46, 26, 28, 0.12);
+  --line-strong:   rgba(46, 26, 28, 0.20);
+  --line-faint:    rgba(46, 26, 28, 0.09);
+  --line-on-dark:  rgba(240, 229, 216, 0.45);
+  --shadow-card:   0 1px 2px rgba(46, 26, 28, 0.05);
+  --shadow-lift:   0 6px 20px rgba(46, 26, 28, 0.13);
+
+  /* Gold is only 2.28:1 on paper, so it can't carry focus on light surfaces. */
+  --focus:         var(--c-wine);
+  --focus-on-dark: var(--c-gold);
+
+  /* ---- Type -------------------------------------------------------------- */
+  --f-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --f-ui:      'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --f-narrow:  'Archivo Narrow', 'Archivo', -apple-system, sans-serif;
+
+  /* Fluid scale, 360px → 1280px viewport */
+  --t-hero:    clamp(2rem, 1.28rem + 3.2vw, 3.25rem);
+  --t-h2:      clamp(1.375rem, 1.1rem + 1.2vw, 1.75rem);
+  --t-h3:      clamp(1rem, 0.94rem + 0.28vw, 1.125rem);
+  --t-lead:    clamp(0.975rem, 0.93rem + 0.2vw, 1.03rem);
+  --t-body:    0.9375rem;
+  --t-small:   0.8125rem;
+  --t-meta:    0.75rem;
+  --t-eyebrow: 0.65625rem;
+
+  --lh-tight: 1.1;
+  --lh-head:  1.28;
+  --lh-body:  1.6;
+  --ls-eyebrow: 0.16em;
+  --ls-tight:  -0.02em;
+
+  /* ---- Space ------------------------------------------------------------- */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.375rem;
+  --s-6: 1.75rem;
+  --s-7: 2.25rem;
+  --s-8: 3rem;
+  --s-9: 4rem;
+
+  --pad-block: clamp(1.75rem, 1.2rem + 2.4vw, 2.5rem);
+  --pad-inline: clamp(1rem, 0.5rem + 2.2vw, 1.75rem);
+  --measure: 62ch;
+  --wrap: 1180px;
+  --radius-pill: 99px;
+
+  /* ---- Motion ------------------------------------------------------------ */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur: 160ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur: 0ms; }
+}
