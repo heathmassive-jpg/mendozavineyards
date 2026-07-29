@@ -1,0 +1,981 @@
+{
+  "_note": "German translations of the property descriptions, index-aligned with the English `paragraphs` in listings.json. Formal 'Sie'. Figures are preserved exactly — where the English gives both acres and hectares, both are kept; where it gives only acres, the hectare equivalent is added in brackets, because a German buyer does not think in acres. German number convention (1.234,5). Rural vocabulary: Finca, Campo, Bewässerung, Wasserrechte, Luzerne, Brunnen, Windpumpe, Quincho — Argentine terms kept where they name the actual thing and glossed on first use. Reviewed-by: PENDING — a native German speaker should read this before launch.",
+  "_verify": "py tools/tests/test_listing_translations.py de",
+  "_corrections": [
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] valle-de-uco-mendoza-fine-wine-vineyard[2]: English typo 'elaboated' read as 'elaborated'.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] valle-de-uco-mendoza-fine-wine-vineyard[37]: English read 'elaborated per per client specifications' — duplicated word removed.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] valle-de-uco-vineyard-wine-exports[2]: English typo 'distrubution' read as 'distribution'.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] real-estate-for-sale-in-argentina-with-vineyard-on-3-farms-reduced[8]: English typo 'parters' read as 'partners'.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] valle-de-uco-vineyard-wine-exports[14]: a Tastings note read 'grey depth', read as 'great depth' and confirmed by Heath. Translated as 'große Tiefe'.",
+    "valle-de-uco-vineyard-wine-exports[13]: the introducing paragraph now says '(aus dem Englischen übersetzt)'. The critic tasting notes ARE translated, because a tasting note is technical information a German buyer needs — but the note prevents the page implying Parker or Suckling wrote in German. Same convention as the Spanish pass.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] read[5]: English read 'Annual plus harvest', a typo for 'plum' — the paragraph is about plums throughout.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] boutique-tourism-winery kicker: 'Botles' -> 'Bottles'.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] boutique-tourism-winery[0]: 'Cuandro Benegas' -> 'Cuadro Benegas'.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] boutique-tourism-winery[10]: 'a husband and wine' -> 'a husband and wife', describing a real couple.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] boutique-winery-and-vineyard[4]: 'registed' -> 'registered'.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] boutique-winery-and-vineyard[12]: 'This ia a' -> 'This is a'.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] 'DAgen' -> \"D'Agen\" in 2 places, matching the 7 already correct.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] grape name spelled three ways: 'torontes' (x2) and 'torrentes'/'Torrentes' normalised to the file's dominant 'torrontes'/'Torrontes'. German renders it Torrontés throughout.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] olive-factory[5] 'They'->'Their'; [9] 'with produce'->'which produce'.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] argentina-farm-on-river[1] 'memoribilia'->'memorabilia'; [9] 'indigineous'->'indigenous'.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] forested-tourism[10] '100 a dditional'->'100 additional' (space inside the word); [5] '$172 month'->'$172 a month'.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] winery-vineyard-tourism[4] 'electic'->'electric' and '12-foor-deep'->'12-foot-deep'; [5] 'deisired'->'desired'; [11] stray 'with' in 'under construction with which will be completed'.",
+    "VALIDATOR FIXES made during the German pass: money_tokens read the English '$172 month' as $172 million because the bare [KkMm] suffix matched the m of 'month' — now requires a word boundary. That in turn exposed that the Spanish singular 'millón' had only ever matched by that same accident, so it is now listed explicitly. numbers() also collapses no-break-space digit grouping for French, but ONLY no-break spaces: treating a plain space as grouping fused the English '2023 100' into 2023100.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] home-with-guesthouse[2]: 'There are are' -> 'There are'; missing comma in 'alfalfa walnuts'.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] historic-rural-estate[3]: '324.5 meters' -> '324.5 square meters' (unit missing; the sq-ft figure confirms area, not length); 'sqare feet' -> 'square feet'. [4]: 'utilitized' -> 'utilized'.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] new-home-with-agricultural-land[3]: 'semi-covers' -> 'semi-covered'. [10]: 'should torn down' -> 'should be torn down'; 'It old structure' -> 'The old structure'.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] malbec-vineyard[5]: 'maintentance' -> 'maintenance', 'at currently prices' -> 'at current prices'. [7]: 'There is also house' -> 'also a house'; 'municiple' -> 'municipal'.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] lasparedes[5]: '3 bed- roooms' -> '3 bedrooms'.",
+    "NOTE: several paragraphs are duplicated into a derived 'excerpt' field on the same listing, so a source typo must be fixed in both or the card and the detail page disagree.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] orchard-olives[2] 'an and average'; algarrobal[3] 'and and has been', [4] 'othr'->'other'; winery-vineyard-b-b[2] 'and and the owners'; award-winning-winery[6] 'verticle'->'vertical'; vineyard-and-wine-company[10] 'The also sell'->'They also sell', [11] 'is worker house'->'is a worker house'; cabernet-vineyard[2] 'quince tress'->'trees'; garden-property[5] 'full- -time'->'full-time'.",
+    "🔴 OPEN FOR HEATH/BYRON: the title of winery-vineyard-b-b-property-for-sale-in-argentina ends with the dangling words 'Starting at' and no amount. Translated literally as 'ab' pending a price; a figure was clearly intended.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] farm-property[1] 'specatacular'; pichana[5] 'removated'->'renovated'; lacorreina[5] 'it is is'; top-winery[3] 'wine show'->'wine shows'; well-kept-fine-wine[1] 'wiery'->'winery' and an unclosed parenthesis, [2] 'kichen'->'kitchen', [5] 'propwerty'->'property'; ranch-land-with-home-and-alfalfa[3] 'ecalyptus'->'eucalyptus'; cute-home[1] stray comma in 'goat and sheep cheese, project'.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] conde[4] 'and and kitchen'; cattle-ranch-500[1] 'hectres'->'hectares', [2] 'I deal'->'Ideal', [3] 'a tiled floors' and 'accomodations'; charming-vineyard-home[0] 'has 2-story owners home'->'has a 2-story owner's home', [3] 'had had'; mercedes kicker 'Georgeous'->'Gorgeous', [2] 'included'->'including'; farm-and-land[2] 'property in on'->'is on', [3] \"owner's have\"->'owners have'; farm-land-with-orchard[2] 'ahd'->'and'; sweet-home[1] 'a outdoor'->'an outdoor', [2] 'electrify'->'electricity', [3] 'Valle Grade'->'Valle Grande'; vineyard-property[2] missing comma after tractor.",
+    "🟠 OPEN: farm-and-land-for-sale-in-argentina-with-orchard — the title says '24-Acre Farm' but paragraph 0 says '9-hectare (22 acre)'. 22 acres is 8.9 ha, so the body is self-consistent and the title looks wrong. Title translated as given (9,7 ha / 24 acres); worth confirming with Byron.",
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] gorgeous-vineyard[2] 'well and and a'; 72[2] 'does not looks'; nice-pool-home[0] 'from the the center', [1] 'is a a park area' and 'eucalytus'->'eucalyptus', [3] missing comma in 'annual vegetables vineyard'; cheap-cabernet[2] 'is the roughly the estimated'.",
+    "🔴 OPEN FOR HEATH/BYRON: property-for-sale-in-mendoza-argentina-with-pool-home-and-olive-farm has a SINGLE paragraph that is truncated mid-sentence in the source — it ends '5 bedrooms (en-suite...'. The rest of the description is missing from listings.json entirely. Translated as-is including the ellipsis; the English needs the missing text recovered."
+  ],
+  "listings": {
+    "valle-de-uco-mendoza-fine-wine-vineyard-for-sale-with-winery-operation": {
+      "title": "Premium-Weinberg für Spitzenweine mit Weinbereitungsanlage im Valle de Uco, Mendoza",
+      "kicker": "45,7-ha-Anwesen und preisgekrönter Wein",
+      "paragraphs": [
+        "Dieses hervorragend gepflegte Weingut liegt im atemberaubenden Valle de Uco an der Ruta 89 in Gualtallary, im Herzen von Mendoza, das für außergewöhnliche Weine weltbekannt ist.",
+        "Das Anwesen verfügt über einen prächtig gedeihenden Weinberg, der unter idealen Bedingungen mit renommierten Rebsorten bewirtschaftet wird und Weine hoher Qualität hervorbringt. Über das weinbauliche Potenzial hinaus bietet das Gut in idyllischer Lage einen atemberaubenden Blick auf die majestätische Andenkette.",
+        "Der derzeitige Eigentümer verkauft einen Teil der Trauben, um die Bewirtschaftungskosten zu decken, und lässt einen weiteren Teil in einer angesehenen Bodega in Mendoza zu hochwertigem Premiumwein ausbauen.",
+        "Der Weinberg verfügt über ein eingearbeitetes Team, das bereit ist, an Bord zu bleiben. Wenn die neuen Käufer ihren eigenen Wein erzeugen möchten, würden die derzeitigen Eigentümer beim Ausbau helfen und wären möglicherweise auch daran interessiert, künftig Trauben vom Weinberg zu kaufen, um ihr bestehendes Weingeschäft zu ergänzen. Wollen die neuen Eigentümer stattdessen einen anderen Weg gehen, können die derzeitigen Eigentümer mit Rat zu Bodegas weiterhelfen, die den Ausbau übernehmen, und entsprechende Empfehlungen geben.",
+        "In der Bodega, in der der Wein derzeit erzeugt wird, stehen eigene Weintanks, die separat erworben werden können, um die Weinproduktion fortzuführen.",
+        "Der Weinberg umfasst 13 Rebsorten und verbindet ikonische Namen wie Malbec, Cabernet Sauvignon und Chardonnay mit selteneren wie Viognier, Petit Verdot, Gewürztraminer und Roussanne – daraus entstehen komplexe Weine, die das herausragende Terroir der Region zeigen. Bepflanzte Fläche: 30,0 ha (74,13 acres)",
+        "Cabernet Sauvignon – 6,5 ha (16 acres); Malbec – 8,75 ha (21,62 acres); Semillon – 0,5 ha (1,24 acres); Sauvignon Blanc – 0,5 ha (1,24 acres); Gewürztraminer – 1 ha (2,47 acres); Syrah – 1 ha (2,47 acres); Petit Verdot – 1 ha (2,47 acres); Merlot – 1 ha (2,47 acres); Viognier – 1,75 ha (4,32 acres); Pinot Noir – 2 ha (4,94 acres); Roussanne und Grenache – 0,5 ha (1,24 acres); Chardonnay – 5,5 ha (13,59 acres)",
+        "Dies sind Fotos eines Teils der Weinbereitungsanlagen, die bei Interesse separat erworben werden können",
+        "2023 renoviert, 100 m² Wohnfläche. Solarwarmwasserbereiter. Erbaut auf einem umzäunten Grundstück von 850 m² für Privatsphäre und Sicherheit, mit Grillbereich, Außenbackofen und Pergola.",
+        "200 m² (2.152 sq ft). 2023 renoviert. Mit zwei Bädern und einer kleinen Wohnung für Mitarbeiter.",
+        "Zwei Wasserbecken (8 Millionen Liter Fassungsvermögen), 2023 errichtet. Brunnen 2024 saniert, mit folgenden Daten: – Durchmesser: 12 Zoll – Fördermenge: 222 m³/h (drucklos), 204 m³/h (bei 4,5 kg Druck) – Motorleistung: 175 PS – elektrischer Schaltschrank – der gesamte Weinberg verfügt über eine moderne Tropfbewässerung",
+        "70 % der Weinbergpfosten kürzlich ersetzt. Tropfbewässerung. Hagelschutznetze über einem Großteil des Weinbergs. Robuste und gut instand gehaltene Anlage.",
+        "36 Photovoltaikmodule (je 600 Wp, AMERISOLAR AS-8M120-HC-600W) – ein dreiphasiger 40-kW-Solarwechselrichter (GROWATT MID40KTL3-X) – Trägerkonstruktion aus Aluminium samt Fundament – vollständige Elektroinstallation – erweiterbar auf 162 Module, um das gesamte Anwesen zu versorgen",
+        "Zwei Wasserbecken mit 8 Millionen Liter Fassungsvermögen, die über eine Pumpe an die Bewässerung angeschlossen werden können",
+        "Traktor Roland (60 PS, 4WD 4x4), Baujahr 2023. Schlegelmäher. 2 Unterstockbearbeitungsgeräte. Einachs-Wasserfassanhänger. Zweiachsanhänger mit Bordwänden. Einachsanhänger. Sprühgerät (2.000 Liter Fassungsvermögen), Baujahr 2023. Meißelpflug. Scheibenegge. Untergrundlockerer.",
+        "Das Anwesen ist durchgehend mit einheimischen Bäumen und Obstbäumen gestaltet, darunter 80 ausgewachsene Olivenbäume, die Olivenölproduktion ermöglichen und das Erscheinungsbild prägen – das steigert die Artenvielfalt und den ökologischen Wert.",
+        "BESTAND AN GARTEN- UND OBSTGEHÖLZEN – ZIER- UND EINHEIMISCHE BÄUME",
+        "20 Leyland-Zypressen (Cupressus leylandii), 25 Blaufichten (Picea pungens *Glauca*), 150 Nandinen (Nandina domestica), 150 Neuseeländer Flachslilien (Phormium rubra), 50 Espuma de Leche (einheimische Zierpflanze), 55 Goldakazien (Acacia frisia), 55 Rotakazien (Acacia casquerouge), 90 Weißeschen (Fraxinus americana), 80 Roteschen (Fraxinus spp.), 20 Goldeschen (Fraxinus spp.), 13 Trompetenbäume (Catalpa spp.), 80 Blutpflaumen (Prunus cerasifera), 30 Silberahorne (Acer saccharinum), 10 Dreispitzahorne (Acer buergerianum) und 60 Hybrid-Maulbeerbäume (Morus spp.)",
+        "20 Kirschbäume, 20 Walnussbäume, 60 Pfirsichbäume, 30 Aprikosenbäume, 40 Apfelbäume, 20 Birnbäume, 30 Pflaumenbäume, 20 schwarze Feigenbäume, 5 weiße Feigenbäume, 232 verschiedene Beerensträucher und 80 Olivenbäume",
+        "150 Pappeln (Populus spp.), 80 Weiden (Salix spp.), 30 Deutsche Schwertlilien (Iris germanica), 1.250 Französischer Lavendel und 1.000 Rosenstöcke",
+        "Zu dem Anwesen gehören detaillierte Bauplanung und Baugenehmigungen für: – eine Bodega mit Betriebsgebäuden – einen Tourismusbereich mit Restaurant",
+        "Dieses vorausschauende Projekt eröffnet erhebliches Potenzial und passt für Weinliebhaber wie für Investoren, die eine besondere Gelegenheit suchen.",
+        "AUSZEICHNUNGEN UND BEWERTUNGEN DER WEINE AUS DIESEM WEINBERG",
+        "Malbec Gran Reserva – 94 Punkte: Gilbert & Gaillard; 91 Punkte: Vinous; 91 Punkte: Wine Enthusiast",
+        "Our Blend – 93 Punkte: Gilbert & Gaillard; 90 Punkte: Wine Enthusiast; 91–93 Punkte: Vinous",
+        "Malbec Reserva – 93 Punkte: Gilbert & Gaillard; 90 Punkte: Wine Enthusiast; 90 Punkte: Vinous",
+        "Cabernet Sauvignon Reserva – 91 Punkte: Gilbert & Gaillard; 90 Punkte: Wine Enthusiast",
+        "Viognier – 90 Punkte: Gilbert & Gaillard; 92 Punkte: Vinous; 90 Punkte: Wine Enthusiast",
+        "Sauvignon Blanc – 90 Punkte: Vinous; 90 Punkte: Wine Enthusiast",
+        "Ihr Malbec Rosé wurde im Premium Rosé Report 2023 des IWSC – Club Oenologique ausgewählt und mit 91 Punkten bewertet. Er wurde gegen 223 weitere Premium-Roséweine aus aller Welt verkostet und war einer von nur zwei argentinischen Weinen, die aufgenommen wurden.",
+        "1. Strategische Lage – die erste Weinbauregion Mendozas",
+        "Der Weinberg liegt in Gualtallary, einer angesehenen Unterregion des Valle de Uco, und teilt sein Terroir mit international renommierten Erzeugern wie Salentein und Rutini. Land ist hier knapp und sehr begehrt. Wer jetzt investiert, sichert sich eine Position in einer rasch an Wert gewinnenden Mikroregion.",
+        "2. Voll betriebsfähig, mit schlüsselfertigem Erweiterungspotenzial",
+        "Mit 30 bereits bepflanzten Hektar, zwei Wasserbecken, Solarstrom und vorliegenden Genehmigungen für Bodega und Tourismusbetrieb ist das Anwesen bereit zu wachsen. Die Grundlagen sind gelegt, es muss nicht bei Null begonnen werden.",
+        "3. Diversifiziertes Ertragspotenzial. Über die Weinerzeugung hinaus bietet dieses Anwesen",
+        "Tourismuseinnahmen aus dem geplanten Restaurant und Besucherzentrum. – Hochwertige Weinexporte auf Basis der vorhandenen Sortenvielfalt. – Olivenölproduktion aus 80 ausgewachsenen Olivenbäumen. – Möglichkeiten für ein Öko-Retreat oder Agrotourismus auf der noch unbebauten Fläche.",
+        "Mit Solarstrom, Tropfbewässerung und einer kürzlich modernisierten Weinbergsanlage (70 % der Pfosten erneuert) sichert das Anwesen langfristig einen effizienten Betrieb und ökologische Standards – wesentlich für bewusste Konsumenten und Investoren.",
+        "Die Käufer können ihren eigenen Wein unter eigener Marke erzeugen; die Eigentümer stellen einen lizenzierten Ausbau bereit, abgerechnet pro Kilo Trauben und ausgebaut nach den Vorgaben des Kunden (Alkoholgehalt, Cuvées, Holzausbau und Reifung usw.).",
+        "Sobald der Wein als Fasswein fertig ist, kann sich der Käufer am Einkauf von Flaschen und weiterem Material beteiligen, um das Produkt zu etikettieren, zu verkorken, zu füllen und zu verpacken, wobei die Kosten geteilt werden. Das sichert bessere Preise bei den Lieferanten; abgefüllt kann der Wein in einem klimatisierten Lager aufbewahrt oder direkt an Käufer und Händler versandt werden.",
+        "6. Attraktiver Preis im Vergleich zu anderen Weinregionen der Welt",
+        "Im Vergleich zum Napa Valley oder zur Toskana bietet Mendoza einen außergewöhnlichen Landwert und ein verlässliches Klima. Dieser Weinberg bietet europäische Bedingungen für die Weinerzeugung zu einem Bruchteil der Kosten, bei besserem Zugang zu Wasser und geringen regulatorischen Hürden.",
+        "Dieser Weinberg in Gualtallary ist eine seltene Investitionsgelegenheit in einer der begehrtesten Weinregionen Mendozas. Mit direkter Anbindung an die Ruta 89 liegt er ideal, um Weintouristen und begeisterte Konsumenten anzuziehen",
+        "Außergewöhnliches Terroir und Klima sichern die Erzeugung von Premiumweinen. – Die sanierte Infrastruktur (Weinberg, Lagergebäude, Wohnhaus) trägt zu einem effizienten Betrieb bei. – Einheimische Bäume, Obstbäume und Olivenhaine schaffen ein harmonisches und nachhaltiges Umfeld. – Solarstrom und Wasserbecken stehen für einen modernen, umweltbewussten Ansatz. – Ein Bodega- und Tourismusprojekt ist für den Standort bereits mit Plänen und Genehmigungen bewilligt und bietet eine schlüsselfertige Entwicklungsmöglichkeit."
+      ]
+    },
+    "real-estate-for-sale-in-argentina-with-vineyard-on-3-farms-reduced": {
+      "title": "Erstklassiger Weinberg – über 40 ha (100+ acres) mit 30 ha (75 acres) Premium-Weintrauben",
+      "kicker": "Die Eigentümer haben US$1,5 Millionen investiert!",
+      "paragraphs": [
+        "Dies ist ein laufender Weinbaubetrieb mit 3 getrennten Liegenschaften im Gebiet Las Paredes von San Rafael. Insgesamt umfasst er über 40 ha (100+ acres), davon 30 ha (75 acres) hochwertige, voll im Ertrag stehende Reben (50 % Malbec, dazu Sauvignon Blanc, Cabernet Sauvignon, Pinot Noir, Cabernet Franc, Syrah und etwas Torrontés).",
+        "Weitere über 4 ha (10+ acres) Land stehen für Neuanpflanzungen bereit, dazu etwa 6 ha (15+ acres) mit zwei Mitarbeiterhäusern auf getrennten Liegenschaften, Geräte- und Vorratsschuppen, Nebengebäuden, Wegen sowie Oliven- und Obstbäumen.",
+        "Zur Liegenschaft gehört ein Wasserbecken von 1 ha (2,5 acres) mit einer Tropfbewässerung für 22 ha (55 acres).",
+        "Die Produktion liegt bei rund 230.000 bis 290.000 Kilo Trauben, die jedes Jahr an verschiedene Bodegas verkauft werden.",
+        "Alle Rebzeilen sind mit Hagelschutznetzen überspannt.",
+        "In den letzten Jahren hat die Bodega Bianchi – eine der führenden Weinkellereien Argentiniens – vertraglich einen großen Teil der Ernte abgenommen. Bianchi wählt beim Traubeneinkauf sehr streng aus und kauft in der Regel nur die hochwertigsten Weintrauben der Region.",
+        "Auf den Liegenschaften stehen außerdem etwa 150 Olivenbäume. Mehr als 100 davon sind 8 Jahre alt und tragen, wurden jedoch vor vier Jahren von Hagel stark getroffen und erholen sich noch.",
+        "Im Preis enthalten sind ein Traktor, ein Motorrad sowie verschiedene Anbaugeräte und Werkzeuge, dazu die vorhandenen Vorräte.",
+        "Die Eigentümer sind nach mehr als 10 Jahren Aufbauarbeit und mehr als US$1.500.000 an Investitionen zum Verkauf bereit, aus Gesundheitsgründen und wegen des fortgeschrittenen Alters einiger Partner. Sie wären möglicherweise bereit, die Liegenschaften einzeln statt gemeinsam zu verkaufen.",
+        "(WEITERE ANGABEN DER EIGENTÜMER UNTERHALB DER FOTOS)",
+        "WEITERE ANGABEN ZU DEN DREI BETRIEBEN IN DEN WORTEN DER EIGENTÜMER",
+        "\"Dies ist eine Parzelle von 6 ha (14,8 acres) an der Calle Jensen in San Rafael, nicht weit von der Hauptstraße, dem Flughafen und der Bodega Bianchi (Google-Maps-Koordinaten -34.602871, -68.414740). Sie liegt gegenüber den Weinbergen von Mumm, in einer sehr schönen Gegend mit Weinbergen und Häusern.",
+        "\"La Angela ist etwa zur Hälfte mit Syrah und zur Hälfte mit Malbec bepflanzt. Diese Reben wurden ursprünglich von einem Mumm-Manager als sein persönlicher Weinberg angelegt. Wir besitzen die Parzelle seit 11 Jahren. Die Reben sind 18 Jahre alt und von hoher Qualität. Die Fläche wird über einen Kanal, der an der Vorderseite des Grundstücks an der Calle Jensen entlangläuft, im Furchenverfahren bewässert. Wir haben die Bewässerung über die Jahre verbessert. Die Liegenschaft verfügt über eingetragene Kanalwasserrechte, die für die 6 ha Reben ausreichen.",
+        "\"Auf der restlichen Fläche stehen ein Mitarbeiterhaus und ein Lagerbereich in einem einstöckigen Gebäude, dazu eine separate Garage und ein Wasserturm sowie ein Backofen und verschiedene Nebenanlagen. In diesem Bereich wachsen unterschiedliche Obst- und Nussbäume, die jedes Jahr geerntet werden, außerdem gibt es einen Gemüsegarten. Die gesamte Liegenschaft ist eingezäunt und sehr gut instand gehalten.",
+        "\"Den hochwertigen Malbec dieser Liegenschaft verkaufen wir jedes Jahr ohne Schwierigkeiten, überwiegend an die Bodega Bianchi. Syrah ist derzeit etwas aus der Mode und wird vor allem für Cuvées verwendet; wenn wir die Trauben nicht verkaufen können, lassen wir sie häufig in der Bodega Giaroli zu Most verarbeiten und verkaufen den Most später im Jahr zum Marktpreis an Bodegas.\"",
+        "\"Dies ist eine Liegenschaft von 30 ha (74,13 acres), ursprünglich Weideland, die wir in den letzten 12 Jahren erschlossen und bepflanzt haben. Sie liegt im Gebiet Las Paredes im Norden der Stadt, etwa 20 Minuten vom Zentrum entfernt (Google-Maps-Koordinaten -34.535589, -68.378554). Wie zu sehen ist, liegt sie in einer Gegend mit zahlreichen Weinbergen und Obstgärten, auch wenn die Google-Karte recht alt zu sein scheint.",
+        "\"Über die Jahre haben wir verschiedene Sorten gepflanzt, etwa 50 % Malbec und in geringerem Umfang Pinot Noir, Sauvignon Blanc, Cabernet Sauvignon, Cabernet Franc und Torrontés. Die ältesten Pflanzen sind 12 Jahre alt (Malbec), die jüngsten (6 Jahre) sind Torrontés und Cabernet Franc. Alle Reben stehen voll im Ertrag. Von den 30 ha sind etwa 75 % Weinberg, der Rest sind Innenwege, Wasserbecken und Olivenbäume.",
+        "\"Wir haben auf dieser Liegenschaft ein Wasserbecken von 1 ha und eine Tropfbewässerung angelegt. Zwei funktionsfähige italienische Pumpen dafür stehen in einem separaten Gebäude neben dem Becken, mit einer eigenen Stromleitung. Wir haben einen Graben vom Kanal zum Becken gezogen; das Becken hält den Wasservorrat für etwa 2 Wochen. Die Liegenschaft verfügt über eingetragene Kanalwasserrechte für die gesamten 30 ha.",
+        "\"Auf der Liegenschaft stehen außerdem rund 80 tragende Olivenbäume von etwa 12 Jahren, dazu weitere etwa 50, die vor rund 3 Jahren gepflanzt wurden und noch weit vom Ertrag entfernt sind.",
+        "\"Die Trauben dieser Liegenschaft gelten als gut, wenn auch nicht so gut wie die von La Angela. Wir haben keine Schwierigkeiten, den Großteil der Trauben jedes Jahr zu verkaufen, überwiegend an Bianchi und Mumm, auch wenn wir gelegentlich einen Teil in der Bodega Giaroli zu Most verarbeiten lassen müssen, je nach Bedarf der Bodegas. Den Most verkaufen wir jedes Jahr ohne Probleme.\"",
+        "\"Dies ist eine Liegenschaft von 5 ha (12,3 acres), nur ein Grundstück östlich von La Paca (Google-Maps-Koordinaten -34.529392, -68.375445). Sie umfasst etwa 4 ha planiertes, aber nicht bepflanztes Land; der Rest ist von einem großen Gebäude und Stellflächen eingenommen. Dieses große einstöckige Gebäude enthält eine Mitarbeiterwohnung, eine Garage für Traktoren, ein Firmenbüro sowie verschiedene Lagerräume für Werkzeug und Material für La Paca.\"",
+        "\"Zusätzlich zu den 3 Liegenschaften gehören ein gebrauchter Traktor, ein Motorroller sowie verschiedene Werkzeuge und Vorräte zum Verkauf. Je nach Jahreszeit haben wir außerdem Wein in Tanks bei Giaroli, der in den Verkauf einbezogen werden könnte, sofern er nicht vorher verkauft ist. Unser Betriebsleiter und unsere 3 Vollzeitkräfte wären bereit, für einen Käufer der Liegenschaften weiterzuarbeiten.\"",
+        "Malbec – 99.808 kg (2021) – 106.632 kg (2022); Pinot Noir – 27.460 kg (2021) – 38.720 kg (2022); Sauvignon Blanc – 42.880 kg (2021) – 56.004 kg (2022); Cabernet Sauvignon – 3.670 kg (2021) – 2.970 kg (2022); Cabernet Franc – 15.871 kg (2021) – 26.700 kg (2022); Torrontés – 30.005 kg (2021) – 35.020 kg (2022); Syrah – 23.740 kg (2021) – 24.040 kg (2022)",
+        "2018: 288.714 Kilo; 2019: 231.085 Kilo; 2020: 290.086 Kilo; 2021: 243.164 Kilo"
+      ]
+    },
+    "valle-de-uco-vineyard-wine-exports-hotel-project-for-sale-mendoza-argentina": {
+      "title": "Valle de Uco! Außergewöhnliches Weingut mit preisgekrönten Weinexporten und Plänen für ein Luxusresort-Projekt",
+      "kicker": "Insgesamt drei Weinberge",
+      "paragraphs": [
+        "Dieses Unternehmen ist ein wirklich schlüsselfertiger Betrieb. Es arbeitet mit einer erfahrenen Weinmanagementgesellschaft in Mendoza zusammen, die die Weinberge und die betrieblichen Abläufe einschließlich Vertrieb, Logistik und Export führt. Seit über einem Jahrzehnt haben die beiden Unternehmen gemeinsam eine tragfähige Strategie entwickelt, um hochwertige Boutiqueweine aus den eigenen Weinbergen zu erzeugen, zu vermarkten und zu verkaufen.",
+        "Um die Weinqualität zu steuern, werden ausschließlich Trauben aus den drei eigenen Weinbergen verwendet. Das Alter der Reben reicht von 15 bis 75 Jahren. Auf den zusammengenommenen Flächen wachsen Malbec, Cabernet Sauvignon, Cabernet Franc, Syrah, Petit Verdot und Carmenère. Je nach Lage verfügt der Weinberg über einen Brunnen und Tropfbewässerung oder über Wasser, das aus den Anden über das Kanalsystem kommt. Die Traktoren des Unternehmens stehen zusammen mit dem Lkw und weiteren Geräten in der Lagerscheune.",
+        "Etwa 40 ha (rund 98 acres) sind mit Reben bepflanzt, der Großteil der Trauben wird jedoch an örtliche Traubenkäufer verkauft. Die Weinproduktion ließe sich also erheblich steigern und mit mehr Marketing und Vertrieb höhere Erlöse erzielen.",
+        "Die Weine des Unternehmens werden unter 2 verschiedenen Marken vertrieben und bieten dem Markt 6 unterschiedliche Weine. Über die Jahre haben die Weine zahlreiche Auszeichnungen von Weinkritikern wie Parker, Suckling, Tanzer, Wine Enthusiast, Tastings, Wine Spectator, Guía Descorchados und vielen anderen erhalten.",
+        "Die Eigentümer planen derzeit ein Luxusresort-Weinprojekt, entworfen von einem renommierten Architekten aus Mendoza, eingebettet in den Weinberg Vistaflores mit spektakulärem Blick auf die Anden. (Fotos unten)",
+        "Vollständig ausgebaut liegen die Baukosten bei rund USD 1,5 Millionen. Die Eigentümer arbeiten derzeit an der Baugenehmigung, mit günstiger Finanzierung durch die Provinzregierung von Mendoza.",
+        "Bei Weinwettbewerben haben die Weine des Unternehmens sehr gut abgeschnitten. In den Vereinigten Staaten wurden sie beim Houston Rodeo Wine Competition und beim New Orleans International Wines Competition hervorgehoben und gewannen dort goldene und silberne Gürtelschnallen bzw. Gold- und Best-in-Class-Auszeichnungen. Bei europäischen Wettbewerben erhielten die Weine Auszeichnungen von Harpers Wine Stars in London sowie Bronzemedaillen in Bordeaux. Bei Wettbewerben in Hongkong wurden sie mit Silber- und Bronzemedaillen bedacht.",
+        "Je nachdem, wie viel oder wie wenig Zeit ein Eigentümer in dieses Projekt stecken möchte, kann er das Tempo selbst bestimmen. Es gibt viele Phasen der Weinerzeugung, an denen man sich beteiligen kann: die Arbeit mit den Agronomen bei der Rebpflege, die Teilnahme an den Erntefeiern, die Zusammenarbeit mit den Kellermeistern bei der Wahl der Cuvées, die Vertretung des Unternehmens bei internationalen Weinmessen wie Vinexpo und ProWein oder die Arbeit mit den Händlern des Unternehmens in aller Welt, um den Wein einzuführen und zu verkaufen.",
+        "So stellt der Architekt das geplante Luxusresort dar",
+        "Sortiertisch: Zurück in der Bodega fällt auf, dass Stiele und Blätter von Hand und nicht maschinell entfernt werden. Diese sorgfältige Auswahl, welche Trauben in die Gärbehälter gelangen, sichert Reinheit und Qualität, damit das Endprodukt außergewöhnlich wird. Nur Spitzenerzeuger gehen diesen zusätzlichen Schritt.",
+        "Herrlicher Andenblick und Rosen. Die Fotos zeigen Rosen neben den Reben. Spitzenweinberge pflanzen häufig Rosen, weil Rosen vorwarnen können, wenn Blattläuse oder Mehltau im Anzug sind. Diese Schädlinge und Krankheiten treten zuerst an den Rosen auf und zeigen den Arbeitern, dass sie ein biologisch zugelassenes Pflanzenschutzmittel auf die Reben ausbringen müssen.",
+        "Rebschnitt: Im Winter hängen die Arbeiter ihre Jacken an die Weinbergpfosten, während sie die Reben schneiden. Guter Rebschnitt ist eine Kunst, die von erfahrenen Fachleuten geführt werden muss, sonst leiden Ernte und Traubenqualität.",
+        "Fotos der Mitarbeiterhäuser. Das erste Foto ist eine Nahaufnahme. Die weiteren Häuser sind im Winter in der Ferne zu sehen.",
+        "Hier einige Weinbewertungen und Punktzahlen führender internationaler Kritiker (aus dem Englischen übersetzt)",
+        "FAMILY SELECTION (96 Punkte) „Eine wunderbar vielschichtige Rotwein-Cuvée im Stil der Alten Welt, mit großer Tiefe und Balance.“ – Tastings (Beverage Testing Institute)",
+        "RESERVE MALBEC (92 Punkte) „Duftige Aromen von getoastetem Holz, erdigen Mineralien, asiatischen Gewürzen, Leder und Schwarzkirsche führen zu einem samtig texturierten, saftigen, gut proportionierten Wein, der sich im Glas öffnet und ausgezeichnetes Volumen und Länge zeigt.“ – Robert Parker Wine Advocate",
+        "RESERVE CABERNET FRANC (92 Punkte) „Brombeeren, Maulbeeren, Pflaumen und viel Backgewürz und Vanille. Voller Körper, saftige Tannine, lebendige Säure und ein zielstrebiger Abgang. Zeigt Klarheit und Spannung.“ – James Suckling, amerikanischer Weinkritiker",
+        "MALBEC VALLEY (93 Punkte) „Dunkelviolett-schwarze Farbe. Lebhafte Aromen und Geschmacksnoten von gewürzten Kirschen und Beerenkuchen, mit einem seidigen, lebhaften, trockenen und doch fruchtigen mittleren bis vollen Körper und einem wärmenden, charmanten, mittellangen Abgang mit Anklängen an Vanillecreme und geröstete Rote Bete, mit kaubaren Tanninen und leichtem Holz. Ein köstlicher und würziger Begleiter zu Tisch.“ – Tastings (Beverage Testing Institute)",
+        "TRES FINCAS BLEND (92 Punkte) „Satte Aromen und Geschmacksnoten von Blaubeerkuchen mit Eis und gewürzten Äpfeln. Mittlerer bis voller Körper und ein wärmender, interessanter, mittellanger Abgang mit Anklängen an Vanillecreme und würziges Wurzelgemüse, mit kaubaren Tanninen und leichtem Holz. Ein lebendiger und schmackhafter Roter, der zu kräftigen Gerichten hervorragend passt.“ – Tastings (Beverage Testing Institute)",
+        "Klicken Sie unten für einen Link zum THE VISTA FLORES ESTATE WINE PROJECT mit weiteren Informationen",
+        "Klicken Sie hier für einen Link zum Vista Flores Wine Project"
+      ]
+    },
+    "castro": {
+      "title": "Finca mit 5,9 ha (14,6 acres), angenehmem Wohnhaus, Obstgarten und Weinberg",
+      "kicker": "Gerade um US$50.000 reduziert für einen schnellen Verkauf",
+      "paragraphs": [
+        "Diese Finca von 5,9 ha (14,6 acres) in Cañada Seca bei San Rafael ist die perfekte Gelegenheit für alle, die ländlich wohnen und dennoch Geschäfte und Dienstleistungen in der Nähe haben möchten – mit idyllischer Landschaft sowie städtischem Wasser und Strom.",
+        "Das teilmöblierte Wohnhaus passt bestens für eine Familie mit Kindern, in einer begehrten und ruhigen Gegend im Herzen der argentinischen Wein- und Tourismusregion (San Rafael wird durchgehend zu den 4 bis 5 besten Urlaubszielen des Landes gezählt). Es liegt etwa 350 m von 2 kleinen Geschäften mit allem Nötigen und einer Bushaltestelle an derselben Ecke entfernt, rund 1 km vom örtlichen Gesundheitszentrum und 2 Grundschulen, und etwa 10 Minuten von mehreren Supermärkten, Bäckereien, Metzgereien, Obst- und Gemüsehändlern, 2 weiterführenden Schulen, Friseuren, 2 weiteren Gesundheitszentren, Tierärzten, Dienstleistern usw.",
+        "Die Liegenschaft liegt an einer Sackgasse und ist in zwei Teile geteilt: die Parzelle mit dem Familienhaus ist vollständig eingezäunt und mit verschließbaren Toren versehen; die Obstanlage hat ebenfalls verschließbare Tore und eine durchgehende Drahtumzäunung. Alle Papiere, Urkunden und Titel sind in Ordnung, alle Steuern und Abgaben sind bezahlt, die Liegenschaft ist frei von Schulden.",
+        "Die jährlichen Steuern sind wegen der ländlichen Lage außerordentlich niedrig.",
+        "Die Liegenschaft verfügt über vollständige, endgültige Wasserrechte der Provinzbehörde für Bewässerung und ist für eine einfache Selbstbewässerung über das bestehende Kanalsystem vorbereitet.",
+        "Es gibt 3 Pflaumensorten, dazu Aprikosen, Quitten, Oliven (für Öl und zum Essen) sowie einen kleinen Weinberg mit sehr guter Bonarda (Barbera). Außerdem gibt es einen Corral von 35 m x 7 m mit einem großzügigen überdachten Stall, geeignet für Pferde oder andere Tiere. Eine derzeit ungenutzte Fläche bietet Platz für Cabañas oder zusätzliche Kulturen.",
+        "Nicht alle Möbel auf den Fotos sind im Verkauf enthalten.",
+        "(WEITERE ANGABEN ZUM HAUS UNTERHALB DER FOTOS)",
+        "Umgeben von ausgewachsenen Bäumen, die im Sommer herrlichen Schatten geben, darunter mehrere Maulbeerbäume, Japanische Wollmispeln, Feigen, Granatäpfel, Oliven- und Pfirsichbäume. An der Vorderseite eine überdachte L-förmige Veranda mit einem traditionellen Grillplatz, der als „Churrasquera“ bekannt ist.",
+        "Von der Veranda gelangt man in einen großzügigen Wohn- und Essbereich mit Doppeltür zum hinteren Patio. Der Raum ist mit einem Klima- und Heizgerät ausgestattet.",
+        "Die Küche ist vollständig ausgestattet, mit Holzkamin und einer Seitentür zur Veranda.",
+        "Ein vollständiges Badezimmer hat neue Sanitärobjekte und neue Armaturen. Es gibt eine Speisekammer mit reichlich Regalfläche. Das vordere Schlafzimmer verfügt über einen begehbaren Kleiderschrank. Die Bibliothek lässt sich leicht in ein drittes Schlafzimmer umwandeln. Der Flur zum Hauptschlafzimmer dient derzeit als Arbeitsbereich. Das Hauptschlafzimmer hat ein eigenes Bad mit freistehender Wanne auf Klauenfüßen und Dusche, einen begehbaren Kleiderschrank, einen großen Holzofen und ein mobiles Klimagerät.",
+        "Draußen im hinteren Bereich führt eine Treppe zu einer 25 m² großen Dachterrasse mit 360-Grad-Blick. Von der Veranda aus erreicht man einen Waschraum mit Waschmaschine, vielen Regalen, Waschbecken und Gefriertruhe. Die angebaute Garage von 43 m² ist geräumig, mit großer Werkbank und Regalen, in denen Garten- und Landwirtschaftsgeräte untergebracht sind.",
+        "* 4 Deckenventilatoren * 2 Fliegengittertüren * alle Fenster mit Fliegengittern * Gitter an Fenstern und Doppeltüren * traditioneller Außenofen für Brot und Pizza * 2 Dachwassertanks * 2 elektrische Warmwasserbereiter, beide neu * 2 Klärgruben, davon eine ein Biodigestor * 3 gut gebaute Hühnerstallungen * Holzschuppen * Dach vor 4 Jahren erneuert * eigener Internetmast (28 m Höhe) * DirecTV-Antenne * Alarmanlage mit Überwachung per Mobiltelefon"
+      ]
+    },
+    "read": {
+      "title": "Um US$1 Million reduziert! Luxuswohnhaus auf 86,7-ha-Anwesen (210 acres) mit Obstgarten und Weinberg",
+      "paragraphs": [
+        "Diese Finca von 86,7 ha (210 acres) westlich von San Rafael hat ein schönes Wohnhaus, umgeben von Weinbergen, und mehr als ein Drittel der Fläche steht im Ertrag.",
+        "Ursprünglich mit US$1,5 Millionen angesetzt, senken die Eigentümer den Preis für einen schnellen Verkauf auf US$500.000.",
+        "Es gibt einen Internetmast, der über eine lange Antenne eine außergewöhnlich starke Verbindung liefert. Zum Anwesen gehören drei Mitarbeiterhäuser und zwei große Lagergebäude, in denen die Landmaschinen stehen.",
+        "Im Ertrag stehen: – 15 ha Pflaumen (27 acres) – 7 ha Trauben für Rosinen (17 acres) – 1.700 Walnussbäume (entspricht 22 acres) – 25 ausgewachsene Olivenbäume, Quitten und Aprikosen",
+        "Die Rosinentrauben sind weiße kernlose Sultaninen (in den USA als Thompson Seedless bekannt) und erzielen einen deutlich höheren Marktpreis als andere Rosinen. Die gesamte Anlage steht unter Hagelschutznetzen – in einer Mischung aus Parral- und Spaliererziehung. Sie werden zu einem ausgezeichneten Preis unter Vertrag verkauft, Ernte inklusive. Üblicherweise bringen sie etwa 15.000 Kilo pro Hektar (insgesamt 100.000 kg).",
+        "Die Pflaumen sind die französische Sorte D'Agen, die bevorzugte Zuckerpflaume für die Trockenpflaumenherstellung in Südamerika. Für Trockengestelle sind 1,5 ha (3,7 acres) vorgesehen, weil der Erlös deutlich höher ist, wenn die Früchte fertig als Trockenpflaumen verkauft werden, statt sie zur Erntezeit frisch an die Trocknungsbetriebe der Gegend abzugeben. Die jährliche Pflaumenernte lag schon bei bis zu 200.000 kg.",
+        "Die Quittenernte liegt im Schnitt bei 4.000 kg pro Jahr, die Ernte von Aprikosen und Oliven ist begrenzt.",
+        "Die Walnussbäume werden künftig der größte Ertragsbringer der Finca sein. Sie wurden vor etwa 8 Jahren gepflanzt und erreichen den Vollertrag in 8 bis 10 Jahren. In dieser Saison ist mit einer deutlichen Ernte zu rechnen.",
+        "Die Obst- und Nusserträge der vergangenen zwei Jahre wurden durch Frost erheblich beeinträchtigt.",
+        "Das Wohnhaus – von einem führenden örtlichen Architekten individuell geplant – hat 2 Schlafzimmer mit eigenem Bad, eine Wohnküche mit Essbereich und weitere schöne Details, darunter einen voll ausgestatteten Waschraum neben der Küche und 2 Garagen. Beide Garagen lassen sich bei Bedarf zu Schlafzimmern umbauen.",
+        "Das Haus wird vollständig möbliert übergeben, mit antiken und hochwertigen Einrichtungsgegenständen von durchweg bester Qualität. Sogar die Bilder an den Wänden sind im Verkauf enthalten.",
+        "Im Wohnbereich liegt ein schöner Travertinboden, in den Schlafzimmern ein hochwertiger Massivholzboden. Die Wohnfläche beträgt einschließlich der integrierten Garagen mehr als 375 m² (4.000 sq ft). Erbaut wurde das Haus 2009.",
+        "Das Haus ist klimatisiert, und die Eigentümer haben fast US$30.000 aufgewendet, um städtisches Wasser auf die Finca zu bringen. Auf dem Grundstück liegt Dreiphasenstrom.",
+        "Das Anwesen liegt sehr geschützt und privat und ist dennoch über sehr gute Straßen nur 12 Fahrminuten vom Flughafen San Rafael entfernt.",
+        "Das Haus verfügt zusätzlich zu den Verwaltern vor Ort über eine Alarmanlage. Die Eigentümer sagen, dass die Arbeiter nicht nur nach dem Anwesen sehen, sondern ausgezeichnete und erfahrene Kräfte sind, die gern bei einem neuen Eigentümer bleiben würden.",
+        "Die Obstanlagen werden über Kanalwasserrechte bewässert, die mit der Urkunde verbunden sind und aus dem Río Diamante stammen. Die Liegenschaft verfügt über 34 Stunden endgültiger Wasserrechte und kann deshalb die gesamte Fläche im Furchenverfahren bewässern. Die Bewässerungsgebühren für 2022 betrugen rund US$1.000.",
+        "Im Verkauf enthalten sind der Traktor samt Anbaugeräten sowie weiteres auf der Finca genutztes Werkzeug."
+      ]
+    },
+    "finca-m": {
+      "title": "Gut gepflegter Weinberg mit starkem Ertrag und Pflaumen auf 26 ha (64 acres)",
+      "kicker": "Um US$25.000 reduziert!",
+      "paragraphs": [
+        "(Hinweis: ursprünglich mit US$135.000 angeboten, wurde diese Finca auf einen Preis von US$110.000 reduziert)",
+        "Zur Finca gehört ein gemauertes Mitarbeiterhaus von etwa 1.000 sq ft mit Zinkblechdach, das zuletzt von Familienangehörigen für Ferienaufenthalte genutzt wurde.",
+        "Mit der Urkunde sind Wasserrechte für die vollen 26 ha verbunden. Dieses Wasser erreicht die Finca über das Kanalnetz der Region, das aus der Schneeschmelze der Anden gespeist und über eine Reihe von Staudämmen geregelt wird.",
+        "Es gibt 8,9 ha (22 acres) Reben und 2 ha (5 acres) Pflaumen. 4,9 ha (12 acres) wurden planiert und mit Luzerne bestellt, müssen aber möglicherweise neu angesät werden, da Luzernebestände nach etwa 5 Jahren erneuert werden müssen. Weitere etwa 10,1 ha (25 acres) liegen brach, waren zuvor Weide, sind planiert und ebenfalls pflanzfertig.",
+        "2 ha (5 acres) Bonarda (eine Klasse-B-Qualitätsweinsorte) unter Hagelschutznetzen, in Spaliererziehung (espaldero), mit einem durchschnittlichen Jahresertrag von etwa 35.000 Kilo.",
+        "2 ha (5 acres) Pinot Blanc (Chenin) für Weißwein oder Schaumwein unter Netzen, in Spaliererziehung, mit einem durchschnittlichen Jahresertrag von 30.000 Kilo. (Hinweis: Trauben für Schaumwein erzielen zuletzt höhere Preise, weil diese Sorten aus verschiedenen Gründen knapp sind.",
+        "2,8 ha (7 acres) Weinberg in Parral-Erziehung mit gemischten Sorten (Muscatel, Pedro Ximénez, Cereza und Criolla) für einfachen Tafelwein, Most, Tafeltrauben oder Rosinen. Dieser Abschnitt bringt im Jahresmittel 80.000 Kilo der genannten Sorten.",
+        "2 ha (5 acres) Weinberg mit gemischten Sorten in Spaliererziehung (Muscatel und Pedro Ximénez) für weißen Tafelwein oder Roséwein, mit einer Jahresernte von durchschnittlich 40.000 Kilo.",
+        "2 ha (5 acres) D'Agen-Pflaumen zum Trocknen als Trockenpflaumen, mit einer Jahresernte von 40.000 Kilo. Diese Pflaumen stehen noch nicht im Vollertrag und sollten in den kommenden Jahren 50.000 Kilo jährlich erreichen.",
+        "10,1 ha (25 acres) Land, früher Weide, planiert und geeignet für die in der Region üblichen Kulturen.",
+        "4,9 ha (12 acres), früher mit Luzerne bestellt, die neu angesät oder durch eine andere Kultur ersetzt werden sollte.",
+        "„Diese Liegenschaft wurde in den 1970er-Jahren von unserer Familie vollständig (26 ha) als unbebautes Rohland erworben. Sie wurde von den Eigentümern geplant und bepflanzt, die den Boden räumten, planierten und in Abschnitte gliederten, passend für den Anbau von Reben und Obstbäumen.",
+        "„Die Finca war ursprünglich zu 50 % mit Obst bepflanzt, etwa Pfirsichen und Birnen, und zu 50 % mit Reben. Über die Jahre haben die Eigentümer an Qualität und Erträgen gearbeitet und einen größeren Teil der Fläche dem Traubenanbau gewidmet. Derzeit besteht mehr als die Hälfte der bewirtschafteten Fläche aus jungen Pflanzen im Vollertrag.",
+        "„Die Finca liegt in der Provinz Mendoza, San Rafael, Distrikt Monte Comán, in Colonia Gelman, nahe der Nationalstraße 146. Die Gegend ist von großen Temperaturunterschieden geprägt, mit warmen Tagen und kühlen Nächten, und bietet ein ausgezeichnetes Klima für Trauben mit großer Konzentration und festen Tanninen – sehr gute Voraussetzungen für die Weinerzeugung. Die Winter sind kalt mit starkem Frost, gelegentlich fällt auch Schnee.",
+        "„Colonia Gelman wird von den beiden Flüssen Río Diamante und Río Atuel begrenzt. Das Kanalwasser für diese Finca wird dem Río Atuel entnommen.“"
+      ]
+    },
+    "valle-de-uco-top-organic-andes-vineyard-wine-estate-for-sale-argentina": {
+      "title": "Traumhafter Bio-Weinberg für Spitzenweine mit eindrucksvollem Blick im Valle de Uco",
+      "kicker": "Lage, Lage, Lage!",
+      "paragraphs": [
+        "Die Finca La Tranquila ist ein Bio-Weingut in zurückgezogener Lage im Herzen des Valle de Uco, nur Minuten von Vista Flores in Tunuyán, Mendoza. Die Gegend ist international für die Erzeugung hochwertiger Weintrauben anerkannt und gilt heute als eines der begehrtesten Terroirs Argentiniens.",
+        "Zu den Sorten gehören Malbec, Cabernet Franc, Pinot Noir, Petit Verdot und Cabernet Sauvignon.",
+        "In diesem Jahr wurden die Pinot-Noir-Trauben von Chandon für einen Wein nach Champagner-Art gekauft. In den vergangenen Jahren wurde der Großteil der Trauben von Domaine Bousquet ausgewählt, der führenden Bio-Bodega Argentiniens. In früheren Jahren gingen Trauben auch an Viña Cobos, die Bodega des bekannten internationalen Kellermeisters Paul Hobbs.",
+        "In Mendoza wächst die Nachfrage von Touristen nach Aufenthalten in Luxushotels auf Weingütern und in Bodegas. Diese Lage in Vistaflores hat den besten Blick auf die Anden und ist für einen solchen Tourismus hervorragend positioniert – gleichzeitig gibt es in der Gegend fast kein Angebot, die Nachfrage bleibt also unbedient. Reben und Aussicht dieses Anwesens sind genau das, was Gäste suchen, die auf einem Weingut wohnen möchten.",
+        "Bei Sonnenuntergang leuchten die Anden hinter dem Weinberg auf und schaffen eine einzigartig ruhige und intime Stimmung.",
+        "Architekturzeichnungen der Planung für künftiges Wohnhaus und Zufahrt",
+        "Trockenes Flussbett und Campo-Land für Bebauung und Freizeit",
+        "Das Anwesen umfasst insgesamt 33 ha (81 acres), davon 16 ha (40 acres) mit Qualitätsweintrauben. Weitere 6 ha (16 acres) sind planiert und gut geeignet für weitere Reben, Oliven, Nussbäume oder Obst.",
+        "Der Weinberg ist überwiegend mit Malbec bepflanzt (78,25 %), ergänzt durch Cabernet Franc (12,25 %), Pinot Noir (7 %), Petit Verdot (1,5 %) und Cabernet Sauvignon (1 %). Der laufende Ertrag geht an führende Bodegas in Mendoza, was für gleichbleibende Qualität und professionelle Weinbergsführung spricht.",
+        "Der Weinberg ist von LETIS bio-zertifiziert, einem argentinischen Unternehmen, das Bio-Weinberge nach nationalen und internationalen Qualitäts- und Nachhaltigkeitsstandards zulässt. Der Betrieb müsste nicht biologisch bleiben, und der Ertrag würde dann steigen, doch die Bio-Zertifizierung verschafft ihm eine gute Nische im Markt, und Bio-Trauben erzielen in der Regel höhere Preise als konventionelle.",
+        "Bewässert wird über eine Drucktropfbewässerung, unterstützt von einem malerischen Rückhaltebecken; es bestehen vollständige Kanalwasserrechte für 22 ha (54 acres).",
+        "Über die landwirtschaftliche Grundlage hinaus verfügt die Liegenschaft über ausgewählte Außenbereiche für private Zusammenkünfte und zwangloses Beisammensein sowie über Wege und Freiflächen, die die umgebende Naturlandschaft zur Geltung bringen. 16 acres offenes Land und Wald könnten für Bauprojekte oder Freizeit genutzt werden.",
+        "Das Anwesen eignet sich gut für ein hochwertiges Projekt geringer Dichte, das Wein, Gastronomie und zurückhaltende Gastlichkeit verbindet.",
+        "Die Liegenschaft bietet freien Blick auf die Anden, was ein starkes Ortsgefühl und langfristig den Schutz des Landschaftsbildes sichert. Das Bewässerungswasser stammt aus reiner Schneeschmelze der Anden.",
+        "Das Anwesen genießt außergewöhnliche Privatsphäre, natürlich abgeschirmt durch die umliegenden ländlichen Liegenschaften, was eine ruhige und ungestörte Lage sichert – ein Zug, der sich in seinem Namen wiederfindet: Finca La Tranquila."
+      ]
+    },
+    "boutique-winery-and-vineyard-for-sale-in-argentina": {
+      "title": "11 ha (28 acres) Weinberg und Obstgarten mit Boutique-Weinbereitung",
+      "kicker": "Mit Wohnhaus und 2 Scheunen!",
+      "paragraphs": [
+        "Diese Finca von 11 ha (28 acres) mit Wohnhaus hat knapp 6 ha (15 acres) Reben und 2 ha (5 acres) Pflaumen unter Netzen. Zu den Rebsorten gehören Bonarda, Torrontés Riojano, Malbec und Cabernet Franc. Die meisten stehen unter Netzen. Die Pflaumen sind D'Agen-Pflaumen zum Trocknen.",
+        "Das Haus mit 1.720 sq ft (160 m²) hat außerdem einen großen überdachten Außenpatio sowie drei Schlafzimmer und ein Bad. Es gibt zwei weitere Scheunen- und Wirtschaftsgebäude in sehr gutem Zustand, eines mit 516 sq ft (48 m²), das andere mit 688 sq ft (64 m²).",
+        "Auf der Finca wurde noch 2019 Wein erzeugt, während der Pandemie wurde das aber eingestellt. Die Kapazität liegt bei 5.000 Litern, also etwa 6.500 Flaschen. Mit zusätzlichen Tanks lässt sie sich erhöhen.",
+        "Die Bodega besitzt eine vollständige Kellereilizenz – keine Hausweinlizenz –, das heißt, der Wein darf nach Sorte etikettiert (nicht nur als rot oder weiß wie bei einer Hausweinlizenz) und im Inland verkauft oder exportiert werden. Der Inlandsverkauf wäre hier wahrscheinlich das bessere Modell.",
+        "Im Verkauf enthalten sind die eingetragenen eigenen Weinetiketten der Marke Rausch, was viel Kosten, Papierkram und Zeit erspart. Für die Fortführung des Betriebs kann zusätzliche Ausrüstung nötig sein, gemietet oder gekauft. Die neuen Eigentümer müssten einen örtlichen Önologen beauftragen, der den Betrieb in Teilzeit oder nach Bedarf begleitet.",
+        "Auf den letzten Fotos weiter unten ist zu sehen, dass Unkraut geschnitten, etwas Gerümpel entfernt und grundlegend aufgeräumt werden muss. Das beeinträchtigt die Schönheit der Liegenschaft und damit ihren Wert.",
+        "Das lässt sich leicht beheben, und mit etwa zwei Wochen Arbeit wird aus der Liegenschaft ein hübsches Schmuckstück.",
+        "Aufräumen, Streichen und Ähnliches würde den Wert bei sehr geringem Aufwand konservativ um mindestens US$20.000 bis US$30.000 oder mehr steigern.",
+        "(WEITERE ANGABEN ZU DEN WEINBERGEN UNTERHALB DER FOTOS)",
+        "Bereich der Finca, der aufgeräumt werden sollte, um den Wert zu steigern",
+        "3 ha Torrontés Riojano und Bonarda: Dieser Teil der Finca bringt 85.000 Kilo Trauben. 67.000 Kilo sind Bonarda, 18.000 die weiße Sorte Torrontés. Die Reben sind 20 Jahre alt. Es gibt 125 Rebzeilen von 105 Metern Länge im Abstand von 2,20 Metern. 90 Zeilen sind Bonarda, 35 Torrontés. Sie sind mit Netzen überspannt.",
+        "1,5 ha Bonarda: Diese Reben sind sechs Jahre alt und bringen 25.000 Kilo Trauben. 52 Zeilen von 113 Metern Länge stehen im Abstand von 2,20 Metern. Sie sind mit Netzen überspannt.",
+        "Neuer Malbec: Dies ist eine dreijährige Malbec-Anlage, die noch nicht im Ertrag steht.",
+        "Neuer Cabernet Franc: Dies ist etwa ein Fünftel Hektar Cabernet Franc, erst ein Jahr alt und noch nicht im Ertrag. Es gibt 15 Zeilen von 65 Metern Länge im Abstand von 2,20 Metern.",
+        "2 ha D'Agen-Pflaumen. Diese Anlage bringt 65.000 Kilo Pflaumen zum Trocknen. Es gibt 24 Reihen von 165 Metern Länge im Abstand von 5 Metern. Die Anlage ist mit Netzen überspannt."
+      ]
+    },
+    "boutique-tourism-winery-vineyard-property-for-sale-in-argentina": {
+      "title": "Boutique-Bodega mit Weinberg, Obstgarten, Wohnhaus mit Pool und gutem Absatz",
+      "kicker": "Kapazität 30.000 Flaschen pro Jahr!",
+      "paragraphs": [
+        "Diese Bodega liegt in der Tourismuszone Cuadro Benegas, etwa 7 Meilen (11 km) von San Rafael, Mendoza.",
+        "Sie steht auf 4,5 ha (11 acres) und hat 2 ha (5 acres) Malbec für Qualitätsweine sowie 1,5 ha (3,7 acres) Pflaumen. Alles steht unter Schutznetzen.",
+        "Außerdem stehen einige Feigen-, Walnuss-, Quitten-, Mandel-, Kirsch- und Pfirsichbäume auf der Liegenschaft.",
+        "Es gibt ein Wohnhaus mit Pool und 3 Schlafzimmern von 1.550 sq ft (144 m²) mit 1 Bad, Lagerräumen und einer Garage von etwa 430 sq ft (40 m²).",
+        "Die Bodega verfügt über Weintanks, Geräte zum Pressen der Trauben und eine Abfülllinie, die 2.500 Flaschen pro Tag schafft.",
+        "Es gibt einen Verkostungsraum mit Empfangsbereich, zugelassen für etwa 20 Gäste gleichzeitig, sowie einen Weinkeller, in dem ebenfalls verkostet wird.",
+        "Sie sind für etwa 30.000 Flaschen pro Jahr zugelassen. Ein Teil des Weins wird beim Verkauf mit übergeben, je nach Lagerbestand zum Zeitpunkt des Verkaufs. Solarmodule liefern den Strom für die Bodega.",
+        "Die Eigentümer führen Weinproben mit Touristen in verschiedenen Formen durch, teils mit Mittagessen (das beliebteste Angebot); obwohl sie eine Exportlizenz haben, nehmen die Besuche derzeit fast die gesamte Weinproduktion auf, sodass sie keinen Großhandel oder Vertrieb brauchen.",
+        "Sie erzeugen außerdem Marmeladen und Gelees aus eigener Ernte, Weinliköre und einige hausgemachte Produkte von Nachbarn, um das Angebot zu ergänzen.",
+        "Die Mittagessen bestehen durchweg aus regionalen Erzeugnissen und Käse, und es ist nicht ungewöhnlich, dass Gäste stundenlang bleiben, das Essen genießen und Produkte zum Mitnehmen kaufen. Reiseagenturen bringen regelmäßig Kunden heraus, sodass der eigene Werbeaufwand gering ist.",
+        "Die Eigentümer sind ein Ehepaar, das die Produkte selbst herstellt, die Trauben presst, den Wein abfüllt und etikettiert. Der Kellermeister, der die Weinbereitung überwacht, ist ein zertifizierter Önologe – wie es die Vorgaben des Weininstituts verlangen – und kann diese Rolle auch bei neuen Eigentümern weiterführen.",
+        "Die derzeitigen Eigentümer helfen zudem beim Übergang und zeigen den Käufern, was sie wissen müssen, damit die Übergabe reibungslos verläuft und der Absatz wie gewohnt weitergeht.",
+        "Weinproben und Besuche nehmen weiter zu, da immer mehr Agenturen Gäste zur Bodega bringen; kürzlich war eine Gruppe von Journalisten aus Buenos Aires mit Mittagessen und Verkostung zu Gast, was weiter für kostenlose Publicity sorgt (die Journalisten haben ihr Erlebnis jeweils selbst bezahlt, es war also auch dabei ein Geschäft).",
+        "Dies ist ein Geschäft, das man selbst in die Hand nehmen muss, und wahrscheinlich nicht das Richtige für jemanden, der es aus der Ferne führen möchte, ohne je in San Rafael zu sein. Man müsste während der Vegetationszeit und während der Weinbereitung im Land sein, um alles zu überwachen und zu steuern, und zu weiteren Zeitpunkten, wenn der Weinberg Aufmerksamkeit braucht."
+      ]
+    },
+    "ranch-for-cattle-agriculture-home-with-view-for-sale-mendoza-argentina": {
+      "title": "Campo von 100 ha (250 acres) für Rinder oder Landwirtschaft, mit Quittenanlage und Eigentümerhaus",
+      "kicker": "Blick auf die Anden!",
+      "paragraphs": [
+        "Diese Finca von 100 ha (250 acres) liegt in Colonia Colomer östlich von San Rafael und umfasst einen Quadratkilometer.",
+        "Sie hat ein Eigentümerhaus mit 3 Schlafzimmern und 2 Bädern, einer riesigen Wohnküche von etwa 500 sq ft (46 m²), einem Waschraum, einer großen Eingangsdiele und einem separaten Raum, der sich als Arbeitszimmer nutzen lässt. Es gibt einen großzügigen Außenpatio und eine angebaute Garage mit Gerätebereich sowie eine Scheune.",
+        "Es gibt zwei Bewässerungsbrunnen: einen Sechs-Zoll-Brunnen mit Vorratstank für die Gartenbewässerung und für Rinder, Pferde oder anderes Vieh in 23 Metern Tiefe. Der zweite ist ein gebohrter 12-Zoll-Brunnen in 50 Metern Tiefe. Motor und Schaltschrank fehlen, doch die Eigentümer haben Anfang dieses Jahres ein Angebot eingeholt, diesen Brunnen mit einer Pumpe, neuer Elektrik und 100 Solarmodulen auszustatten, zum Preis von etwa US$50.000 – ausreichend, um 40 ha (100 acres) mit Tropfbewässerung zu versorgen, etwa für Knoblauch, Tomaten, Zwiebeln usw.",
+        "Derzeit bewässern sie mit 20 Stunden Kanalwasser pro Woche, was für die 21 ha (51,8 acres) planierten oder früher bewirtschafteten Flächen ausreicht.",
+        "Tatsächlich sind 100 acres (40 ha) der Liegenschaft planiert und bepflanzbar, und 125 acres (50 ha) sind Campo, auf dem Rinder frei weiden können.",
+        "Es gibt eine gut gepflegte Quittenanlage von 10 acres (4 ha) (Sorte Champion für Tafelobst), und früher waren etwa 40 acres (16 ha) mit Tomaten, Mais, Luzerne usw. bestellt. (Siehe Fotos)",
+        "Für die Quitten besteht eine Hagel- und Frostversicherung, sodass sie selbst in einem schlechten Jahr eine Ausgleichszahlung erhalten (in ihrem Fall US$2.200, wenn der Schaden mit 100 % bewertet wird), dazu im Folgejahr Nachlässe bei Grundsteuer und Bewässerungsgebühren. Sie haben ein einfaches Versicherungspaket für US$140 im Jahr, es sind aber auch andere Tarife verfügbar.",
+        "Die früheren Eigentümer besaßen eine Supermarktkette und betrieben auf der Finca eine Rindermast für die Fleischproduktion. Sie hielten dauerhaft 500 Ochsen in den Corrals und ließen 100 Ochsen mit Elektrozäunen auf den Feldern laufen. Damals kauften sie die 500 Tiere für die Mast mit etwa 100 Kilo und mästeten sie über 6 bis 8 Monate auf 300 bis 400 Kilo, bevor sie für den Verkauf in ihren Läden geschlachtet wurden. Sobald die Tiere geschlachtet waren, kamen sofort neue nach, sodass die Mast dauerhaft belegt war.",
+        "Damals bewirtschafteten sie etwa 75 acres (30 ha) Luzerne auf der Liegenschaft und erzeugten zwischen 1.500 und 2.000 Heuballen pro Jahr, dazu 25 acres (10 ha) Hafer. Die Ration ergänzten sie mit zugekauftem Mais."
+      ]
+    },
+    "olive-factory": {
+      "title": "Boutique-Olivenölmanufaktur auf 8-ha-Finca (20 acres) mit Touristenhütten und Obstgärten",
+      "kicker": "Die Finca erzeugt auch Naturkosmetik!",
+      "paragraphs": [
+        "Diese schöne Finca liegt etwa 15 Minuten von San Rafael, aber abseits der Hauptstraße, sodass die Zufahrt über einen Landweg und nicht über eine asphaltierte Straße führt.",
+        "Das Ehepaar führt die Produktion derzeit mit wenig Fremdhilfe.",
+        "Es gibt drei Touristenhütten mit Grillstellen für Asados und einen Pool, die im Sommer betrieben werden und etwa 90 Tage im Jahr belegt sind – mit Werbung ließe sich das ausbauen. Derzeit werden sie für rund US$65 pro Nacht vermietet. Zwei sind Einzimmerhütten (500 sq ft / 46 m²) für 3 Gäste, die dritte ist eine Zweizimmerhütte (550 sq ft / 51 m²) mit Platz für 5 Gäste.",
+        "Auf der Finca steht ein altes Adobe-Gebäude, das kunstvoll zu einer Produktionsstätte für hausgemachtes Olivenöl und andere Naturprodukte umgebaut wurde. Es gibt einen 29-seitigen Katalog und eine Website, die derzeit überarbeitet wird.",
+        "Schreiben Sie uns für den Katalog; auf Anfrage geben wir gern ausführlichere Auskünfte zur Finca und zum Betrieb.",
+        "Die Ölanlage kann 9 bis 10 Liter Öl pro Stunde pressen; derzeit werden etwa 2.000 Liter kaltgepresstes Olivenöl bester Qualität erzeugt, das im Einzelverkauf für rund USD $17 je Flasche abgegeben wird. Die gepresste Menge ließe sich etwas steigern, für eine deutliche Erhöhung wären jedoch zusätzliche Pressen nötig.",
+        "Derzeit werden alle Produkte in Argentinien verkauft, ein Export wäre aber für jemanden mit Erfahrung oder Kontakten möglich. Die Eigentümer haben diesen Weg nicht verfolgt, hatten mit der Kosmetiklinie aber schon Gelegenheit, nach Chile und Paraguay zu expandieren.",
+        "Alle Produkte sind naturbelassen, ohne Chemie, und umfassen",
+        "kaltgepresstes Olivenöl extra vergine – aromatisierte Olivenöle mit Chimichurri, Rosmarin, Zitrone, Basilikum usw. – Walnussöl – Aprikosenkernöl – Mohnblütenöl – Mandelöl – Hagebuttenöl – Honig – Tomatensauce – aromatisierte Essige – Feuchtigkeitscremes aus Olivenöl, Aprikosenkernöl usw. – Lippenpflege – Shampoo gegen Haarausfall – Hautpflegemittel – Sonnenschutz – natürliches Deodorant – Olivenölseife – ätherische Hautöle aus Oliven, Aprikosenkernen, Pflaumen usw. – natürliche Zahnpasta – natürliche entzündungshemmende Creme – natürliches Insektenschutzmittel – Babyöl – Lavendelöl",
+        "Zur Finca gehören ein Olivenhain, eine Aprikosenanlage, eine Pflaumenanlage, Quittenbäume, einige Walnussbäume und ein Weinberg mit Malbec, der mehr als 250 Flaschen Wein für den Eigenbedarf ergibt und dessen Wein auch in den hausgemachten Verkaufsprodukten verwendet wird.",
+        "HIER KLICKEN FÜR EIN DROHNENVIDEO DES ANWESENS",
+        "BOUTIQUE-MANUFAKTUR FÜR OLIVENÖL, EINGEMACHTES, ÄTHERISCHE ÖLE UND NATURKOSMETIK",
+        "EINIGE DER PRODUKTE, DIE AUF DER FINCA VERKAUFT WERDEN (Katalog auf Anfrage per E-Mail)"
+      ]
+    },
+    "argentina-farm-for-sale-on-river-with-view-of-the-andes": {
+      "title": "Wasser, Wasser, Wasser! Ertragsstarke Finca am Fluss mit Andenblick und Mineralquelle",
+      "kicker": "Tourismuspotenzial – Valle de Uco!",
+      "paragraphs": [
+        "In 20 Jahren Immobilienverkauf in Mendoza habe ich noch keine Finca mit so viel Wasser gesehen. Wasser ist in Mendoza Gold, und diese außergewöhnliche, ertragsstarke Finca ist eine Seltenheit. Ein Teil der Fläche ist mit Knoblauch bestellt.",
+        "Das Land liegt nicht abseits. Es ist nur 5 Kilometer vom Zentrum von Tunuyán und 2 Kilometer von der berühmten Ruta 40 entfernt, der Weinstraße, die auf Hüten, T-Shirts und Souvenirs in den Touristenläden gefeiert wird.",
+        "Im Norden grenzt die Liegenschaft an den Río Tunuyán, im Osten und Süden an den breiten, klaren Bach Arroyo San Carlos.",
+        "Für die Kulturen besteht eine sehr gute Kanalbewässerung, außerdem hat die Liegenschaft eine eingetragene Mineralquelle, die durchgehend rund um die Uhr fließt. Die Eigentümer haben eine Wasseranalyse durchführen lassen, die eine gute Mineralqualität belegt – das Wasser könnte als Quellwasser abgefüllt werden.",
+        "Derzeit stehen 10 ha (25 acres) unter Knoblauch. Die Eigentümer verpachten diese Fläche an Knoblauchbauern für US$1.500 pro Hektar und Jahr – insgesamt also US$15.000 pro Jahr. Der Vertrag läuft von Jahr zu Jahr.",
+        "Sie haben geplant, weitere 10 ha (25 acres) zu planieren und ebenfalls zu verpachten, was die Pachteinnahmen verdoppeln würde. Die Bodenfruchtbarkeit ist sehr gut, auch andere einjährige Gemüse würden auf dieser Fläche gut gedeihen.",
+        "Außerdem ist ein großes Rückhaltebecken geplant, etwas größer als ein olympisches Schwimmbecken, um die Bewässerung noch einfacher zu machen.",
+        "Die Liegenschaft bietet schöne Blicke auf den Fluss, den Arroyo San Carlos und die Andenkette. Über dem Fluss liegt eine hübsche Anhöhe, ein wunderbarer Platz für ein oder zwei Häuser, Touristenhütten und Ähnliches.",
+        "Entlang der Kanäle stehen große, schöne Pappeln, und die Eigentümer haben zusätzlich neue Bäume gepflanzt, die schnell wachsen.",
+        "Ein Teil der Fläche ist naturbelassen, und die derzeitigen Eigentümer wollen nicht alles umbrechen, sondern einen Teil mit einheimischen Pflanzen im Naturzustand erhalten. In den Bächen leben Fischotter und im Fluss verschiedene Fischarten. Auf der Liegenschaft selbst gibt es Füchse, Hasen, einheimische Vögel und anderes Wild. In den Felswänden über dem Fluss horsten große Eulen.",
+        "PERSÖNLICHE ANMERKUNG: Ich bin diese Liegenschaft einige Stunden mit den Eigentümern abgegangen und abgefahren und war von ihrer Schönheit, ihrem Potenzial und ihrem Wasser beeindruckt.",
+        "Dauerhafte Mineralquelle und einer der Bewässerungskanäle"
+      ]
+    },
+    "forested-tourism-finca-with-home-cabins-vineyard-pool-for-sale-argentina": {
+      "title": "Schöne bewaldete Tourismus-Finca mit Hütten, Pool und Weinberg",
+      "kicker": "An einer asphaltierten Straße!",
+      "paragraphs": [
+        "Diese malerische Tourismusliegenschaft von gut 2,5 ha (6 acres) liegt an einer ruhigen asphaltierten Straße, etwa 15 Minuten von San Rafael, in Cuadro Benegas, einem Tourismusgebiet.",
+        "Die Grundsteuer ist niedrig und liegt derzeit unter US$11 im Monat (USD $126 im Jahr).",
+        "Das zweistöckige Haupthaus hat etwa 2.200 sq ft (204 m²), mit einem Gästezimmer im Obergeschoss samt Bad und eigenem Eingang sowie drei Schlafzimmern mit Bad im Erdgeschoss.",
+        "Es gibt drei geräumige Mietkabinen, jede für fünf Gäste, dazu zwei Garagen und einen Außengrill für die Gäste.",
+        "Die Hauptvermietungszeit liegt in der Sommersaison, besonders im Januar und Februar, wenn die Preise US$60 pro Tag für zwei Personen, US$80 für drei Personen und US$100 bei einer Belegung mit vier oder fünf Personen betragen. In den übrigen Monaten gibt es einzelne Buchungen, besonders im Juli während der Winterferien und der Skisaison, wo der Preis US$30 je Person und Hütte beträgt. Die Einnahmen lagen laut Buchhaltung bei etwa US$14.400 pro Jahr.",
+        "Im vollen Betrieb, mit Heizung im Winter und Klimaanlage im Sommer, liegen die Kosten bei etwa US$172 im Monat bei voller Belegung und US$14 im Monat für Wasser; diese Kosten fallen aber nur an, wenn zahlende Gäste da sind, nicht in jedem Monat.",
+        "Außerdem gibt es einen Gärtner auf Teilzeit für die Pflege der Anlagen, der US$85 im Monat erhält.",
+        "Der kleine Weinberg hat 13 Zeilen Malbec und zwei Zeilen kernlose Tafeltrauben. Der Weinberg kann etwa 500 Flaschen Wein ergeben; in diesem Jahr hat eine örtliche Boutique-Bodega den Wein für sie ausgebaut.",
+        "Es stehen acht sehr große, ausgewachsene Olivenbäume, die Oliven für Öl liefern; einer davon ist die Sorte Criollo, die sich auch als Tafeloliven verwenden lässt.",
+        "Auf dem Land wachsen verschiedene Obstbäume, darunter Aprikosen, Äpfel und Feigen, dazu eine kleine Anlage von etwa 30 Pflaumenbäumen. Außerdem gibt es hier und da einige Himbeerflächen.",
+        "Zu den Zierpflanzen gehören eindrucksvolle große Eichen, Eukalyptus, Zedern und Arabien-Bäume. Viele Rosen (100 zusätzliche in diesem Jahr gepflanzt), dazu Jasmin und weitere Zierpflanzen, die den Hauptgartenbereich prägen.",
+        "Es gibt Solarmodule, die etwa 20 Prozent des Strombedarfs der Liegenschaft deckten und bei Bedarf erweitert werden könnten. Sie werden für Pumpen und Filter des Swimmingpools genutzt, der Überschuss steht für andere Zwecke auf der Liegenschaft bereit."
+      ]
+    },
+    "winery-vineyard-tourism-project-for-sale-in-ran-rafael-argentina": {
+      "title": "Boutique-Bodega, Weinberg und Tourismusprojekt mit Restaurant auf 91 ha (225 acres)",
+      "kicker": "Mit einem schönen See von 2,4 ha (6 acres)!",
+      "paragraphs": [
+        "Diese spektakuläre Liegenschaft in Cuadro Benegas außerhalb von San Rafael, Mendoza, liegt gegenüber den Algodon Golf and Wine Estates im Millionenwert, die derselbe Entwickler gebaut hat.",
+        "Er verkauft das Projekt in einem malerischen Anwesen, zu dem Weinberge und Obstanlagen mit einem See von 6 acres, ein Restaurant und eine ganz neue Boutique-Bodega gehören, die wahrscheinlich fertig ist, wenn Sie dies lesen. Bei Bedarf könnte auf dem Gelände auch ein Hotel gebaut werden.",
+        "AN DER LANDSTRASSE 144 AUF DEM WEG ZUM SKIGEBIET",
+        "Entlang der Ruta 144 – der Straße von San Rafael nach Malargüe und zum Skigebiet Las Leñas – liegen 3200 Fuß Straßenfront.",
+        "Zur Infrastruktur gehören Dreiphasenstrom und Tropfbewässerung der Weinberge für Wassergabe und Düngung. Der See hat einen Bootssteg und ist 12 Fuß tief.",
+        "Platz und ausreichend Wasser für deutlich mehr Weinberg, Oliven oder Obst, falls gewünscht.",
+        "2 ha (5 acres) Malbec Cot wurden 2017 gepflanzt.",
+        "1,5 ha (3,7 acres) Malbec, Cabernet Franc, Bonarda, Chardonnay und Syrah wurden 2018 gepflanzt.",
+        "2,5 ha (6 acres) wurden 2019 mit Malbec, Chardonnay, Cabernet Franc, Merlot und Bonarda bestellt.",
+        "Es gibt 2,5 ha (6 acres) große, ausgewachsene Aprikosenbäume und verschiedene Obstbäume: Pflaume, Pfirsich, Apfel, Birne, Kirsche, Mandel usw.",
+        "Es gibt ein strohgedecktes Restaurant von 1880 sq ft mit Steinboden, Küche und Sanitärräumen.",
+        "Eine neue Bodega ist im Bau und wird in den nächsten Tagen fertig. Die Bodega hat insgesamt 2.700 sq ft (250 m²), darunter zwei Keller von je 387 sq ft (36 m²) und einen Verkostungsraum von 775 sq ft (72 m²) mit schönem Blick auf den See. Dazu gehört ein Zwischengeschoss von 345 sq ft (32 m²) für Labor und Büros. Getrennt von der Bodega werden zwei Sanitär- und Umkleideräume für Mitarbeiter und Besucher gebaut.",
+        "Es gibt ein Lager- und Werkstattbüro von 540 sq ft mit Bad.",
+        "Ein Verwalterhaus hat ein Wohn-Ess-Küchenzimmer mit Kamin sowie 2 Schlafzimmer und 1 Bad.",
+        "Die Liegenschaft hat guten Boden und liegt auf Höhenland in einer Gegend, die ausgezeichneten Wein erzeugt, mit Kanälen, die das Land aus der Schneeschmelze der Anden versorgen, und mit Blick auf die bunten Hügel der Sierra Pintada.",
+        "Lageplan mit Aufteilung (zeigt, wie das Land in Parzellen von 12,5 acres geteilt werden kann, falls der Käufer eine Wohnbebauung einbeziehen möchte)"
+      ]
+    },
+    "home-with-guesthouse-on-farm-land-in-mendoza-argentina": {
+      "title": "Gartenhaus und Gästehaus auf 11-ha-Finca (27 acres)",
+      "kicker": "Schöne Finca nahe der Stadt",
+      "paragraphs": [
+        "Diese Finca von 11 ha (27 acres) liegt etwa 15 Minuten (12 km) von San Rafael. Sie hat ein schönes Wohnhaus mit 2 Schlafzimmern und 1 Bad sowie ein Gästehaus mit 2 Schlafzimmern in einer reizvollen Gartenanlage.",
+        "Es ist eine ruhige Landlage abseits einer Hauptstraße, mit Zufahrt über einen hübschen Gartenweg, der Privatsphäre gibt. Schöne Bäume, Blumen und Sträucher umgeben das Haus.",
+        "Es gibt mindestens 8 ha (20 acres), die sich für fast jede in der Gegend übliche Kultur nutzen lassen: Obstgarten, Weinberg, Oliven, Luzerne, Walnüsse oder einjähriges Gemüse.",
+        "Die Finca liegt nahe Valle Grande, wo es zahlreiche Aktivitäten gibt, etwa Rafting, Reiten und Bootsfahrten. Auch mehrere Bodegas sind in der Nähe.",
+        "Dieses Land hat außerdem Potenzial für Tourismuseinnahmen, etwa durch Mietcabañas oder eine andere Entwicklung.",
+        "Die Liegenschaft verfügt über alle Anschlüsse: Strom, Erdgas, schnelles Internet und öffentliches Wasser.",
+        "* Haupthaus außen und innen neu gestrichen * Cabaña außen neu gestrichen * Vorderseite des Galpón neu gestrichen * neue Industrieumzäunung mit Toren an der Vorderseite * Betonboden in der Garage und Beton um die Cabaña * neue Elektrik im Haupthaus * neue Elektrik in der Cabaña * neue Elektrik im Galpón * neuer LVP-Boden in Wohn- und Schlafzimmern des Haupthauses * Klimaanlage für Wohn- und Schlafzimmer des Haupthauses * Klimagerät für die Cabaña * neues Heizgerät für das Haupthaus * neues Kochfeld für das Haupthaus * neue Keramikfliesen im ganzen Bad, neue Dusche und Waschtischarmaturen * neue Keramikfliesen im Bad des Haupthauses mit neuen Duscharmaturen * neues WC in der Cabaña * neuere Sanitär- und Gasleitungen in der Cabaña * neuer Warmwasserbereiter im Haupthaus * neuer Warmwasserbereiter in der Cabaña * Nachtbeleuchtung rund um alle 3 Gebäude ergänzt * Dach der Cabaña neu gestrichen * neuer Spiegel im Bad des Haupthauses * neuer Spiegel im Bad der Cabaña * neue Bewässerungsleitungen außen * neuer Schotter auf der Außenzufahrt * neue Gitter (Rejas) an den Fenstern der Cabaña * neue Keramikfliesen im Bad der Cabaña * neue Küchenarmaturen im Haupthaus * neue Türgriffe für alle Türen im Haupthaus und neue Küchengriffe * Durlock in allen Räumen des Haupthauses * Kamin im Haupthaus instand gesetzt und erneuert"
+      ]
+    },
+    "historic-rural-estate-home-property-for-sale-in-mendoza-argentina-reduced": {
+      "title": "Schönes historisches Anwesen mit Pool, Wohnhaus und Gästehäusern",
+      "kicker": "Gerade um US$250.000 reduziert!",
+      "paragraphs": [
+        "Dieses Anwesen von 3,2 ha (8 acres) war ursprünglich das Landhaus von Coronel Campos der 7. argentinischen Kavallerie, der es vor mehr als 120 Jahren erbaute. Die nächste Straße ist nach ihm benannt.",
+        "Der Preis wurde für einen schnellen Verkauf gerade um US$200.000 (25 %) gesenkt.",
+        "Der Mittelteil des Hauses hat Adobewände, und der schöne originale Parkettboden unterstreicht den Charakter des Hauptgebäudes, ebenso die hohen originalen Türen, die wie vor hundert Jahren nach Maß gearbeitet wurden.",
+        "Das Haus hat 324,5 m² (3.492 sq ft), dazu zwei große überdachte Galerien entlang des Hauses mit insgesamt 136,75 m² (1.470 sq ft).",
+        "Das Haus hat insgesamt 4 Schlafzimmer. Zwei davon haben ein eigenes Bad, die beiden anderen werden derzeit als Fitnessraum, Arbeitszimmer und Ähnliches genutzt. Es gibt ein Esszimmer, ein Wohnzimmer, eine Küche, eine Bibliothek und eine Garderobe mit Dusche.",
+        "Die Grundsteuer beträgt derzeit nur US$175 im Jahr. Und die Liegenschaft hat erhebliches Einnahmepotenzial durch die Vermietung des Salons, des Gästehauses, der Anlagen und des Campingbereichs.",
+        "UNTERHALB DER FOTOS FOLGT EINE AUSFÜHRLICHE BESCHREIBUNG ALL DIESER BESONDERHEITEN IN DEN WORTEN DER EIGENTÜMER!",
+        "Nahe am Haus gibt es eine große Parrilla und einen Brot- und Pizzaofen.",
+        "Es gibt eine große Wohnküche mit Frühstücksbereich, die über ein Splitgerät zum Heizen und Kühlen verfügt. Ein weiteres schönes Detail ist eine funktionsfähige Cocina Económica, ein traditioneller Holzküchenofen.",
+        "Das Esszimmer hat hohe Decken und die originalen Holzböden.",
+        "Auch die Bibliothek hat eine hohe Decke und den originalen Holzboden. Sie lässt sich in ein weiteres Doppelschlafzimmer mit gemeinsam genutztem Bad umwandeln.",
+        "Ein langer Galerie-Wohnbereich mit großem offenem Kamin, durch einen Bogen in einen zweiten Wohnbereich geteilt. Beide Bereiche haben Gasheizungen.",
+        "2 Doppelschlafzimmer mit eigenem Bad, beide mit Gasheizung. Das Hauptschlafzimmer hat einen offenen Kamin und ein Ankleidezimmer.",
+        "2 weitere Schlafzimmer. Bei einem liegt ein Nebenraum, aus dem ein weiteres eigenes Bad mit Ankleide werden könnte. Es hat außerdem eine Gasheizung und einen gusseisernen Holzofen.",
+        "Mehr über diese Liegenschaft – ausführliche Angaben der Eigentümer"
+      ]
+    },
+    "new-home-with-agricultural-land-for-sale-mendoza-agentina": {
+      "title": "Neues Wohnhaus auf 11 ha (28 acres) Ackerland mit schönem Blick, 6 Wochen vor Fertigstellung",
+      "kicker": "Toller Blick vom Balkon!",
+      "paragraphs": [
+        "Diese Finca von 11 ha (28 acres) liegt in Las Malvinas bei San Rafael, Mendoza.",
+        "Die Fertigstellung des Hauses dauert sechs Wochen, und im Rahmen des Ablaufs muss die jeweils bis Freitag erbrachte Arbeit abgenommen werden.",
+        "Die Fertigstellung des Hauses ist bereits bezahlt. Hochwertige Keramikfliesen sind schon verlegt, die neuen Eigentümer können jedoch die Farben innen und außen auswählen, die der Bauunternehmer dann nach ihren Wünschen ausführt.",
+        "Das Haus hat etwa 185 m² (1.935 sq ft), dazu weitere 28,28 m² halbüberdacht und eine Terrasse von 16 m².",
+        "Das Haus mit 1½ Geschossen hat unten zwei Schlafzimmer mit einem Bad und oben ein Schlafzimmer oder Atelier (der Eigentümer ist Künstler und wollte ein Atelier mit Aussicht). Es gibt eine Innengarage mit demselben Keramikboden, der im übrigen Haus verlegt ist. Es sollte ihr Traumhaus werden, doch schwere gesundheitliche Probleme zwangen sie zur Rückkehr in die USA.",
+        "Angeschafft werden müssen nur noch ein Warmwasserbereiter, eine Wasserpumpe für den Vorratstank und ein Waschbecken (weil es dafür unterschiedliche Ausführungen und Marken gibt).",
+        "Wasser liegt am Haus, ebenso neuer Strom.",
+        "Die Küchenmöbel wurden nach Maß gebaut und sind eingelagert, zusammen mit schlagfesten Fenstern mit Aluminiumrahmen, Holztüren sowie einigen Geräten.",
+        "Auf der Liegenschaft stehen viele ausgewachsene Bäume, besonders an der Vorderseite, wo es einen bewaldeten Parkbereich gibt. Es sind Aprikosen, wilder Spargel, ein Kirschbaum, Granatäpfel, einige Olivenbäume, ein paar Pfirsichbäume, Wildpflaumen und einige alte Rebstöcke.",
+        "Die Liegenschaft hat vollständige Bewässerungsrechte mit einem Kanal an einer Seite und zusätzlich einen internen Bewässerungskanal, der über das Grundstück läuft (siehe Fotos).",
+        "Auf der Liegenschaft steht ein altes Haus, das abgerissen oder anders genutzt werden sollte. Der alte Bau ist derzeit nicht an Wasser oder Strom angeschlossen.",
+        "Innenansichten des Hauses (Küchenfotos und Fenster vom Bauunternehmer – noch nicht eingebaut)"
+      ]
+    },
+    "malbec-vineyard-on-good-land-for-sale-in-mendoza-argentina": {
+      "title": "17 ha (42 acres) Malbec auf 20-ha-Finca (50 acres) mit Wohnhaus",
+      "paragraphs": [
+        "Diese Finca von 20 ha (50 acres) hat 17 ha (42 acres) Malbec für Qualitätsweine und liegt in Calle Larga bei San Rafael.",
+        "Die Rebstöcke sind zwischen 8 und 10 Jahre alt und stehen damit alle im Vollertrag. Der Eigentümer verkauft die Trauben derzeit an die Weinkooperative Sierra Pintada.",
+        "Für die gesamte Fläche bestehen im Grundbuch eingetragene Wasserrechte über angrenzende Kanäle, und ein tiefer Bewässerungsbrunnen mit Elektropumpe sorgt dafür, dass es nie an Wasser fehlt.",
+        "Der gesamte Weinberg wird per Tropfbewässerung versorgt, was Pflegekosten senkt und Wasser spart. Der Weinberg ist außerdem mit Hagelschutznetzen überspannt.",
+        "Den Weinberg neu anzulegen, ein Rückhaltebecken und einen Bewässerungsbrunnen zu erstellen, eine automatische Tropfbewässerung zu installieren und Dreiphasenstrom anzuschließen würde mehr als US$375.000 kosten – und das, wenn man die 20 ha (50 acres) Land umsonst bekäme. Danach kämen etwa sechs Jahre Lohn- und Pflegekosten bis zur ersten vollen Ernte.",
+        "Der Eigentümer gibt die Pflegekosten derzeit mit etwa US$1.000 im Monat oder US$12.000 im Jahr an. Bei den aktuellen Preisen braucht er also rund 30.000 Kilo Ernte, um die Kosten zu decken. In einem guten Jahr bringt die Finca mehr als 200.000 Kilo.",
+        "In der Saison 2022-23 gab es starken Frost, der fast jeden Weinberg in Mendoza und auch in anderen Provinzen traf. Die meisten Betriebe verloren bis zu 80 Prozent ihrer normalen Ernte, manche alles. 2023-2024 war ein Jahr der Erholung, sodass die letzte Ernte auf diesem Weinberg etwa 80.000 Kilo statt der erwarteten mehr als 200.000 Kilo brachte. Dennoch ergab sich ein guter positiver Cashflow.",
+        "Es gibt außerdem ein Haus mit rückwärtig angebauter Garage bzw. Scheune für Werkzeug sowie einen gemauerten Außengrill – alles 2011 errichtet. Das Haus selbst hat 700 sq ft (65 m²), ist an das städtische Wasser angeschlossen und derzeit nicht bewohnt. Es ist ein Ziegelbau und könnte erweitert werden.",
+        "Ein alter Deutz-Traktor ist enthalten, der für die Arbeit gut genügt."
+      ]
+    },
+    "lasparedes": {
+      "title": "Gerade um US$60.000 reduziert! 15 ha (37 acres) mit Weinberg, Wohnhaus, Tourismus und Bio-Weinverkauf",
+      "kicker": "Weinverkauf vor Ort und online",
+      "paragraphs": [
+        "Diese Finca von 15 ha in Las Paredes hat 8 acres (3,2 ha) Qualitätsweintrauben – zur Hälfte Cabernet Sauvignon und zur Hälfte Bonarda – sowie 1 acre junge Walnussbäume, die zwischen 5 und 7 Jahre alt sind. Es ist eine Weinbergslage der Zone 1 mit ausgezeichnetem Boden, und die Trauben stehen unter teuren Netzen. Auf der Finca stehen außerdem etwa 40 junge Olivenbäume.",
+        "Der Weinberg erzeugt Bio-Weine, die unter dem Label Halito vermarktet werden. Dazu gehören ein Cabernet Sauvignon und ein Pet Nat Bonarda.",
+        "Pet Nats gehören zu den Naturschaumweinen – Weine, die während der Bereitung kaum oder gar nicht eingegriffen bekommen, weshalb sie oft die trübe Farbe und den weniger gefilterten Geschmack haben, den viele schätzen.",
+        "Ihr Pet Nat Bonarda wird beschrieben als „sehr leichter, frischer Wein, sehr fruchtig, mit festlichem Zug und feiner Perlage“.",
+        "Der Cabernet Sauvignon wird beschrieben als „wilder Ausdruck eines jungen Weins, der ohne Holzausbau getrunken werden soll, aromatisch in der Nase, intensiv und ausgewogen am Gaumen“.",
+        "Das Eigentümerhaus ist im Stil einer „Casa de Campo“ gebaut, mit sichtbaren Holzbalken, neuen Geräten, 3 Schlafzimmern, großem Bad, Wohnzimmer, Küche und einem Holzofen. Es hat städtisches Wasser, Strom und Internetzugang. Es gibt eine Scheune von etwa 650 sq ft (60 m²) sowie große Schattenbäume und ansprechende Pflanzungen rund um das Haus, was es sehr angenehm macht.",
+        "Die Eigentümer nutzen es als Tourismusbetrieb und lassen Gäste übernachten, was zusätzliche Einnahmen bringt.",
+        "Es gibt 7,5 acres (3 ha) Brachland, planiert und pflanzfertig. Zusätzlich stehen 15 acres (6 ha) aufgegebener einfacher Reben, deren Anlage noch vorhanden ist und die herausgerissen und neu bepflanzt werden könnten.",
+        "Die Finca hat ausgezeichnete Wasserrechte und erhält die erste Bewässerung aus den Betonkanälen, die die Gegend versorgen."
+      ]
+    },
+    "orchard-olives-property-for-sale-in-mendoza-argentina": {
+      "title": "Gut gepflegte Oliven- und Pflaumenfinca mit 12 ha (29 acres)",
+      "kicker": "Die Verkäufer akzeptieren Bitcoin!",
+      "paragraphs": [
+        "Diese Finca von 12 ha (29,5 acres) hat ein Mitarbeiterhaus mit Scheune, Geräte sind enthalten.",
+        "Sie hat 4 ha (10 acres) D'Agen-Pflaumen (für Trockenpflaumen), die 2024 etwa 100.000 Kilo (240.000 Pfund) brachten; die Wetterbedingungen führten 2025 jedoch zu einem schlechten Jahr mit nur 25 % dieser Menge. Der derzeitige Verwalter sagt allerdings, die Bäume sähen in diesem Jahr bisher gut aus, was auf eine ausgezeichnete Ernte hindeutet, wenn alles hält.",
+        "Es gibt 8 ha (knapp 20 acres) ausgewachsene Olivenbäume, die in früheren Jahren durchschnittlich 80.000 Kilo (176.000 Pfund) Oliven brachten, 2024 und 2025 aber ebenfalls litten. Auch hier sagt der Verwalter, die Blüte an den Bäumen sei in diesem Jahr hervorragend, was ebenfalls auf eine ausgezeichnete Ernte in dieser Saison hindeutet, wenn alles hält.",
+        "Die Olivensorten sind Arbequina und Frantoio, beide für Olivenöl. 80.000 Kilo ergäben etwa 16.000 Liter Öl. Zur Einordnung: das entspricht rund 33.800 Flaschen Olivenöl zu 16 Unzen. Es wird noch einige Monate dauern, bis belastbare Schätzungen möglich sind, doch die Aussichten sind bisher positiv.",
+        "Die Finca ist in gutem Zustand, gut gepflegt und mit gesunden Bäumen.",
+        "Die Liegenschaft verfügt über vollständige, im Grundbuch eingetragene Wasserrechte, die für die derzeit angebauten Kulturen ausreichen.",
+        "Ein Traktor John Deere 2030 ist enthalten, dazu Anbaugeräte und ein gezogenes Sprühgerät mit 500 Litern für den Traktor. Es ist ein alter Traktor, doch er wurde überholt und leistet die Arbeit einwandfrei.",
+        "Die Finca liegt an einer Hauptstraße und wenige Minuten von der Stadt San Rafael.",
+        "TROCKENGESTELLE: Hier werden die frischen Pflaumen in Holzhorden auf dem Drahtgeflecht in der Sonne getrocknet.",
+        "DIESES SCHILD AN DER STRASSE WIRBT FÜR OLIVENÖL ZUM VERKAUF"
+      ]
+    },
+    "algarrobal": {
+      "title": "Finca mit 30 ha (74 acres), davon 28 ha (70 acres) Weinberg, 2 Häuser usw.",
+      "paragraphs": [
+        "Der Eigentümer erklärt, er sei bereit, US$90.000 Anzahlung zu akzeptieren und den Restbetrag von US$90.000 in 20 Monatsraten von je US$4.500 zu finanzieren. BESCHREIBUNG",
+        "Diese Finca besteht aus 30 ha (74 acres) in drei im Grundbuch getrennten Parzellen in Algarrobal, etwa 20 Minuten von San Rafael.",
+        "* Bonarda-Rotweintrauben (8 Jahre) – 37 acres * Bonarda-Rotweintrauben (3 Jahre) – 13 acres * Torrontés-Weißweintrauben (4 Jahre) – 20 acres",
+        "Die Ernte 2021 lag bei 350.000 Kilo Trauben. Die Finca hat zwei Arbeiter. Der Eigentümer sagt, einer von ihnen sei außerordentlich fähig und seit 20 Jahren auf dem Betrieb.",
+        "Die gesamte Liegenschaft ist eingezäunt, es gibt zwei Häuser mit Strom und städtischem Wasser. Eines ist ein Mitarbeiterhaus, das andere ein Eigentümerhaus mit Außengrill und Parkbereich. Dazu kommen 2 Scheunen mit Metalldach, Betonboden und Metalltoren.",
+        "TRAKTOR UND GERÄTE IM WERT VON MEHREREN TAUSEND ENTHALTEN",
+        "Die beiden im Verkauf enthaltenen Traktoren sind ein Universal (Baujahr 2000) in sehr gutem Zustand und ein Weinbergtraktor Fiat 400 (1974) in gutem Zustand. Zu den Geräten gehört ein Sprühgerät Puenche, Modell 2000, mit 1.000 Litern Fassungsvermögen.",
+        "Zu den Geräten zählen außerdem eine neue Scheibenegge mit 16 Scheiben mit Funksteuerung, eine hydraulische Scheibenegge mit 14 Scheiben, ein Weinbergpflug mit 6 Scharen, ein Grabenfräser, ein Meißelpflug mit 5 Zinken und ein Anhänger mit vier Rädern.",
+        "Es gibt zahlreiche Handwerkzeuge, 3 Rückenspritzen, einen Freischneider, Sägen usw.",
+        "Die Finca hat ausreichende Wasserrechte für die gesamte bepflanzte Fläche.",
+        "Die Finca ist Mitglied der Weinkooperative Goudge für Ausbau und Verkauf des Weins aus diesem Betrieb. Diese Mitgliedschaft wird auf den neuen Eigentümer übertragen."
+      ]
+    },
+    "award-winning-winery-for-sale-in-mendoza-argentina": {
+      "title": "Preisgekrönte Bodega auf 15 ha (36 acres) mit Qualitätsweinberg",
+      "kicker": "Zwei Häuser und Pool!",
+      "paragraphs": [
+        "Das Anwesen hat knapp 15 acres (6 ha) Qualitätsweintrauben, darunter Malbec, Cabernet Sauvignon, Cabernet Franc und Bonarda.",
+        "Die Produktionskapazität liegt derzeit bei 85.000 Litern, das entspricht 113.000 Flaschen (750 ml).",
+        "Die Bodega wurde 2008 gebaut, die Ausrüstung ist überwiegend neu. Erzeugt wird ausschließlich hochwertiger Wein, vor allem für den Export.",
+        "Die Bodega hat bei der New York International Wine Competition folgende Auszeichnungen gewonnen",
+        "Doppel-Gold: 2013 Artina Gran Reserve – Gold: 2014 von Auring Gran Reserve – Silber: 2015 YIYBOS Estate Syrah – Argentinische Barrique-Bodega des Jahres",
+        "Malbec, 2 ha (4,94 acres) – Cabernet Sauvignon, 2,5 ha (6,17 acres) – Bonarda, 1 ha (2,47 acres) – Cabernet Franc, 0,5 ha (1,23 acres)",
+        "Die Bodega mit 3.164 sq ft (21 x 14 Meter) hat drei Edelstahltanks (zwei mit 13.000 Litern und einen mit 1.000 Litern) sowie sieben Fiberglastanks mit insgesamt 54.500 Litern. Zur Ausrüstung gehören eine Mühle mit Abbeermaschine, ein Sortiertisch, eine Pumpe für Traubenmaische, eine Kreiselpumpe, eine vertikale Hydraulikpresse und eine Kühlanlage. An die Bodega ist ein Labor angeschlossen. Eine gewerbliche Abfüllanlage gibt es nicht; bei Bedarf wird ein mobiler Abfüller genutzt.",
+        "Haupthaus: (1.290 sq ft – 120 m²) Vollständig möbliertes Haus mit viel Tageslicht und großer offener Küche mit Wohnbereich. Zwischen üppigen Bäumen und Reben gelegen, bietet es eine ruhige Atmosphäre.",
+        "Zweites Haus: (1.290 sq ft – 120 m²) Ein eigenständiges, helles und luftiges Haus mit 2 Schlafzimmern und einem großen Wohnzimmer, bestens für Mitarbeiter oder Familie und Freunde.",
+        "Quincho: Neben dem Swimmingpool, mit Bad, und als Gästehaus nutzbar.",
+        "UNTEN KLICKEN FÜR EIN DROHNENVIDEO VON WEINBERG UND BODEGA",
+        "Auszeichnungen der New York International Wine Competition"
+      ]
+    },
+    "winery-vineyard-b-b-property-for-sale-in-argentina": {
+      "title": "Bodega mit Weinberg und/oder ertragsstarkes Bed & Breakfast: ab",
+      "kicker": "Starke Cashflow-Gelegenheit!",
+      "paragraphs": [
+        "Dieser Verkauf umfasst zwei verschiedene, aneinandergrenzende Liegenschaften, die einzeln oder gemeinsam erworben werden können.",
+        "Dies ist eine Bed-and-Breakfast-Tourismusliegenschaft mit Eigentümerwohnung, die 6 Monate im Jahr betrieben wird, von Eigentümern, die nur sechs Monate in Argentinien leben.",
+        "Das ist ein ausgezeichnetes Geschäft, und die Eigentümer können von den Einnahmen sehr gut leben. Es gibt drei Einheiten, die vermietet etwa US$150 pro Nacht bringen, und die Eigentümer berichten von einer Belegung von rund 85 % zwischen dem 15. Oktober und dem 15. Mai. Neunzig Prozent der Gäste sind Wiederkehrer.",
+        "Der Gartenbereich ist reizvoll und ein ruhiger Ort, an dem die Gäste im Pool baden oder draußen Asados machen. Auf der Liegenschaft stehen verschiedene Obstbäume, die Gesamtfläche beträgt etwa 2½ acres (1 ha).",
+        "Das Wirtschaftsgebäude mit den Touristenapartments ist mehr als 100 Jahre alt. Die derzeitigen Eigentümer haben das historische Gebäude saniert und mit schönen antiken Möbeln und weiteren besonderen Details eingerichtet, von denen Sie erfahren, wenn Sie dieses Anwesen selbst besichtigen.",
+        "Die angrenzende Liegenschaft umfasst 3 ha (7 acres) Malbec-Weinberg mit insgesamt etwa 8000–10.000 Rebstöcken.",
+        "Die Bodega ist ein voll ausgestatteter Betrieb von 1000 sq ft (93 m²), der aus der Traubenernte 15.000 Flaschen Wein im Jahr erzeugt. Der Eigentümer gibt an, hier in Argentinien etwa US$75.000 Weinumsatz im Jahr zu machen, bei US$5 bis US$6 je Flasche.",
+        "Zum Verkauf gehört außerdem ein Apartment (66 sq ft), das er über der Bodega baut und das einen spektakulären Blick auf die Sierra Pintada im Süden haben wird. (SIEHE LETZTES FOTO UNTEN FÜR DEN BAUFORTSCHRITT)",
+        "Dies ist ein neues Apartment, das auf der Liegenschaft über der Bodega gebaut wird."
+      ]
+    },
+    "vineyard-and-wine-company-for-sale-in-mendoza-argentina": {
+      "title": "Weinunternehmen mit 28 ha (69 acres) Malbec und Cabernet auf 49-ha-Finca (121 acres)",
+      "kicker": "Die Finca hat 2 Brunnen und ein Wasserbecken!",
+      "paragraphs": [
+        "Diese Finca von 49 ha (121 acres) in La Resolana grenzt an eine asphaltierte Straße, etwa 16 Meilen vom Zentrum von San Rafael, in Colonia Elena, Mendoza.",
+        "Es gibt 28 ha (69 acres) Qualitätsweintrauben unter Netzen",
+        "11 ha (27 acres) Malbec – 11 ha (27 acres) Cabernet Sauvignon – 6 ha (15 acres) Bonarda",
+        "Die Finca hat Kanalwasserrechte für die gesamte Liegenschaft und zwei Bewässerungsbrunnen mit einem großen Rückhaltebecken. Ein Brunnen kann 150.000 Liter Wasser pro Stunde fördern, der andere 280.000 Liter aus 60 Metern Tiefe mit einer Tauchpumpe.",
+        "Fünfzehn Hektar (37 acres) sind mit Pfosten und Draht ausgestattet (siehe Fotos) für hohe Netze und können für weiteren Weinberg, Obst, Olivenbäume, Pistazien oder einjähriges Gemüse genutzt werden. Weitere 10 ha (25 acres) liegen brach.",
+        "Die Finca zieht außerdem 15.000 junge Rebstöcke auf, die bei Bedarf als Ersatzreben gepflanzt werden können.",
+        "Die Eigentümer vermarkten die Trauben auf den folgenden drei Wegen",
+        "1) Sie verarbeiten die Trauben zu Wein unter dem Label „La Resolana“ und verkaufen ihn im Inland an Weinhandlungen und Ähnliches.",
+        "Im vergangenen Jahr wurden 60.000 Flaschen für Verkauf und Vertrieb erzeugt.",
+        "2) Ein Teil der Trauben wird zu Wein für den Fassweinverkauf ausgebaut.",
+        "3) Einen Teil der Trauben verkaufen sie an örtliche Bodegas, um Mittel für die laufenden Betriebskosten zu haben.",
+        "Es gibt ein Mitarbeiterhaus, das sich zum Eigentümerhaus umbauen ließe, eine Scheune und zwei Traktoren samt Geräten (siehe Fotos)."
+      ]
+    },
+    "cabernet-vineyard-on-paved-road-for-sale-in-argentina": {
+      "title": "Cabernet-Sauvignon-Weinberg mit Poolhaus auf 19-ha-Finca (48 acres)",
+      "paragraphs": [
+        "Diese Finca von 48 acres (19 ha) hat 7 ha (17 acres) Reben, davon 5,5 ha (13,5 acres) Cabernet Sauvignon und 1,5 ha (3,5 acres) einfache Sorten Muscatel und Cereza.",
+        "Die Trauben brachten in den vergangenen zehn Jahren im Schnitt 61.000 Kilo pro Jahr. In diesem Jahr gab es allerdings Frostschäden, die sich mit Frostschutzmaßnahmen auf etwa 50 Prozent begrenzen ließen.",
+        "Es gibt 100 Quittenbäume, die in diesem Jahr überaus reich tragen und im Vorjahr 10.500 Kilo Früchte brachten.",
+        "Außerdem stehen etwa 15 große, ausgewachsene Olivenbäume, die in diesem Jahr 295 Kilo Oliven gaben; die Eigentümer tauschten sie bei der Ölmühle Yacanelo gegen 38 Liter Öl (entspricht 80 Flaschen à 16 Unzen).",
+        "Zehn Hektar (25 acres) Land liegen unbewirtschaftet.",
+        "Das Haus hat einen gut gepflegten Innenbereich mit 2 Schlafzimmern und 1 Bad auf etwa 1.000 sq ft (93 m²). Es ist an das städtische Wasser angeschlossen und hat guten Strom. Neben dem Haus liegt ein Swimmingpool, und an der Seite zum Pool steht eine Rebenlaube, die jährlich reichlich Tafeltrauben trägt.",
+        "Eine relativ neue Garage bzw. Scheune hat gut 1.000 sq ft (32 x 32 Fuß) und lässt sich auch als Werkstatt nutzen.",
+        "Die Finca hat Bewässerungsrechte aus den Kanälen vor dem Grundstück und zusätzlich einen tiefen Bewässerungsbrunnen von 62 Metern Tiefe mit einer Tauchpumpe, die in 25 Metern Tiefe sitzt."
+      ]
+    },
+    "garden-property-tourism-home-with-pool-for-sale-mendoza-argentina": {
+      "title": "Traumhafte von Mauern umgebene Gartenliegenschaft mit Poolhaus auf knapp einem Acre, vollständig möbliert",
+      "kicker": "Preis gerade gesenkt!",
+      "paragraphs": [
+        "Diese malerische, von Mauern umgebene Gartenliegenschaft umfasst knapp einen Acre und ist außerordentlich gut gepflegt. Sie liegt etwa 15 Minuten von San Rafael in einer sehr begehrten Tourismusgegend namens Rama Caída.",
+        "Das umgebaute Haus hat 3 Schlafzimmer, 2 Bäder, einen separaten Wohnbereich und eine offene Küche mit Wohn- und Essbereich. Das Haus hat 1.100 sq ft (102 m²) mit einem Patio von 160 sq ft. Außerdem gibt es einen Internetmast. Im hinteren Teil der Liegenschaft steht eine Garage bzw. Werkstatt mit Strom und Wasseranschluss (705 sq ft), die sich in ein schönes, komfortables Gästehaus umbauen ließe.",
+        "Der herrliche Parkbereich ist eindrucksvoll gestaltet und hat eine große Vielfalt an Bäumen, Blumen und Sträuchern, die einen großen Pool mit Patio umgeben. Dazu gehören Rosmarin, Lavendel, Zedern, Tannen, Magnolien, Zypressen, Kiefern und Zylinderputzer.",
+        "Einige der großen Bäume im Parkbereich wurden 1926 gepflanzt. Zu den Obstbäumen gehören Feigen, Kirschen, Birnen, Granatäpfel, Aprikosen und etwa ein Dutzend ausgewachsene Olivenbäume, die als Tafeloliven geerntet oder in einer der örtlichen Ölmühlen gegen Olivenöl getauscht werden können.",
+        "In der Gegend gibt es kleine Läden, Geschäfte und Lebensmittelhändler; Einkaufen in der Stadt, Baumärkte, Banken und Restaurants sind 15 Minuten entfernt im schönen, von Bäumen gesäumten San Rafael.",
+        "Die Eigentümer haben hier seit 2008 in den Sommermonaten, oft auch länger, ihren Traum gelebt. Sie sind heute älter, haben ihr Argentinien-Abenteuer genossen und kehren aus gesundheitlichen Gründen dauerhaft nach Kanada zurück.",
+        "Hintere Garage, die sich in ein Gästehaus umbauen lässt"
+      ]
+    },
+    "peach-farm-with-two-homes-for-sale-in-mendoza-argentina": {
+      "title": "10 ha (25 acres) mit Pfirsichanlage, offenem Land und zwei Häusern",
+      "kicker": "Sechs Meilen von der Stadt, an asphaltierter Straße",
+      "paragraphs": [
+        "Diese Finca von 10 ha (25 acres) liegt verkehrsgünstig nur 6 Meilen vom Stadtzentrum an einer asphaltierten Straße mit allen Anschlüssen und etwa 600 Fuß Straßenfront.",
+        "Drei Acres sind mit einer Pfirsichanlage bepflanzt, überwiegend unter Netzen, und die Anlage ist in sehr gutem Zustand. Die Ernte im Januar 2025 lag bei 40.000 Kilo (88.000 Pfund).",
+        "Die Finca hat etwa 25 Olivenbäume, die im Schnitt rund 2.500 Kilo im Jahr bringen. Der Eigentümer tauscht sie in der örtlichen Ölmühle Yancanelo gegen Öl.",
+        "Im Verkauf enthalten sind der Traktor und alle nötigen Geräte. Ein Nachbar bewirtschaftet die Pfirsichanlage gegen einen Anteil an der Ernte.",
+        "Es gibt 5 ha (12½ acres), die mit anderen Kulturen bestellt werden könnten. Früher hatte der Eigentümer dort Reihenkulturen und Gemüse.",
+        "Der Eigentümer lebt an der Atlantikküste Argentiniens und wohnt bei Aufenthalten mit seiner Frau im kleinen Gästehaus.",
+        "Das Haupthaus ist bis Juni 2025 vermietet. Es hat 2 Schlafzimmer, 2 Bäder und eine große überdachte Außenveranda mit Patio. Es hat Holzdecken, Feinsteinzeugböden usw. Fotos habe ich nicht, weil es derzeit bewohnt ist.",
+        "An das Haupthaus ist eine Scheune von 12 x 8 Metern (1.000 sq ft) angebaut.",
+        "Die Finca hat außerdem einige Reben, Pfirsiche und Nektarinen für den Eigenbedarf. Alles davon schön.",
+        "HAUPTHAUS (nur wenige Fotos, weil das Haus derzeit bewohnt ist)",
+        "BLICK AUF DAS BRACHLAND (beachten Sie die Olivenbäume an der Seite)"
+      ]
+    },
+    "farm-property-for-sale-in-argentina-with-spectacular-view": {
+      "title": "Finca mit 17 ha (42 acres), Malbec-Weinberg und spektakulärer Aussicht",
+      "paragraphs": [
+        "Diese schöne Finca von 17 ha (42 acres) hat 5 ha (12,5 acres) Malbec-Weinberg unter Netzen mit Tropfbewässerung.",
+        "Es gibt spektakuläre Blicke auf die Sierra Pintada – jeder anders, je nachdem, wo man steht.",
+        "Es gibt gepflügtes Land, bereit für Luzerne oder eine andere Kultur. Zur Liegenschaft gehören außerdem ein Mitarbeiterhaus und ein kleines Becken zur Steuerung der Tropfbewässerung.",
+        "Es stehen auch viele alte, voll ausgewachsene Olivenbäume – etwa 50 –, die je Ernte sehr große Mengen Oliven bringen können.",
+        "Das Land liegt in einem wichtigen Tourismusgebiet, etwa eine Meile von den Algodon Golf and Wine Estates im Millionenwert. Die Aussicht von dieser Liegenschaft ist allerdings die schönere.",
+        "Auf der Liegenschaft stehen zwei Gebäude. Eines ist eine alte Adobescheune, mehr als 100 Jahre alt. Sie ist teilweise erhalten und verstärkt worden.",
+        "Das zweite Gebäude ist ein Ziegelhaus, das teilweise saniert und verstärkt, aber nicht fertiggestellt wurde.",
+        "Der Verkäufer hat angrenzend weitere 165 ha (407 acres), die er für zusätzliche US$350.000 ebenfalls verkauft.",
+        "Das ist überwiegend Weideland, umfasst aber 20 ha (50 acres) mit Wasserrechten und Anlagen von Oliven und Aprikosen, ein Haus, Scheunen und Rückhaltebecken mit insgesamt 5.000 Kubikmetern (das entspricht etwa zwei olympischen Schwimmbecken von 6 Fuß Tiefe)."
+      ]
+    },
+    "pichana": {
+      "title": "Pflaumenanlage mit 10,5 ha (25 acres), Wohnhaus und Merlot-Trauben",
+      "paragraphs": [
+        "Diese Finca von 25,9 acres (10,5 ha) südöstlich von San Rafael hat 22 acres Pflaumen (9 ha) im Vollertrag, dazu 3 acres (1,2 ha) Merlot für Qualitätsweine und einige Aprikosen.",
+        "Sie hat außerdem eine Obsttrocknungsanlage mit Gestellen zur Sonnentrocknung, einen Holzofen zur Ofentrocknung und eine Anlage zur Fruchtkonservierung.",
+        "Die Trocknungsanlage erlaubt es, den Erlös zu maximieren, da Trockenobst verkauft werden kann, wenn die Marktpreise am besten sind, während Frischobst in denselben Erntewochen mit allen anderen Betrieben konkurriert, was die Preise drückt.",
+        "Der Betrieb könnte auch Obst von anderen Höfen annehmen, um den Gewinn zu steigern, und zum Beispiel auch getrocknete Tomaten herstellen.",
+        "Die Anlage kann laut Verwalter im Schnitt 150.000 Kilo pro Jahr bringen.",
+        "Auf der Liegenschaft steht ein gut gebautes Ziegelhaus von etwa 750 sq ft (70 m²), das sich mit geringem Aufwand schön sanieren und vergrößern ließe.",
+        "Die Liegenschaft hat vollständige, mit der Urkunde verbundene Wasserrechte sowie städtisches Wasser und Strom. Es liegt dreiphasiger Industriestrom an.",
+        "Zu sehen ist hier der Trockenplatz, auf dem die Gestelle auf dem Drahtgeflecht liegen, um Pflaumen und Aprikosen in der Sonne zu trocknen",
+        "Diese Fotos zeigen das holzbefeuerte Trockenhaus, die hölzernen Trockengestelle und das Schwefelhaus zur Fruchtkonservierung",
+        "Bewässerungskanäle und weitere Ansichten: (Die Kanäle waren zur Reinigung abgestellt, als die Fotos entstanden.)"
+      ]
+    },
+    "large-ranch-alfalfa-range-land-for-sale-in-mendoza-argentina": {
+      "title": "Campo von 1.900 ha (4.690 acres) für Luzerne, Rinder und mehr",
+      "kicker": "US$845 pro Hektar!",
+      "paragraphs": [
+        "Dieses Campo mit Luzernefläche liegt 20 Meilen (32 km) von der Stadt San Rafael im Gebiet Resolana, mit Zufahrt über Asphalt.",
+        "Insgesamt sind es 4.690 acres (1900 ha), davon 865 acres (350 ha) ackerfähig, der Rest ist natürliches Campo. Das Campo könnte durch Räumen und Planieren in Kultur genommen werden.",
+        "Seit den Anfängen wird die Liegenschaft mit Weide und Futter für die Viehhaltung bewirtschaftet.",
+        "Die 865 acres sind in Parzellen von 15 bis 25 acres (6 bis 10 ha) unterteilt, was die Verteilung des Viehs und die Futterrotation erleichtert.",
+        "Diese Fläche hat ein passendes Wassersystem, das eine effiziente Bewässerung der Parzellen erlaubt und die Viehrotation mit der Bewässerungsrotation vereinbar macht.",
+        "Der Rohcampo-Teil des Betriebs wird derzeit für Zucht und Aufzucht von Vieh genutzt.",
+        "Das Land ließe sich für andere Kulturen nutzen, etwa Weinberg, Obst oder Reihenkulturen, dafür wären aber möglicherweise zusätzliche Bewässerungsbrunnen nötig – und ganz sicher, wenn die unerschlossenen Flächen geräumt würden.",
+        "Es gibt eine Bohrung für Grundwasser mit einem Rückhaltebecken (das derzeit gereinigt und vertieft werden sollte), das 30 Millionen Liter speichern könnte. Die Liegenschaft hat Kanalwasserrechte für 100 acres (40 ha), sodass neben dem Brunnenwasser auch Kanalwasser zur Bewässerung genutzt wird."
+      ]
+    },
+    "lacorreina": {
+      "title": "13 ha (31 acres) mit Blick auf die Sierra Pintada und viel Wasser",
+      "kicker": "PREIS REDUZIERT! TOLLER BLICK!",
+      "paragraphs": [
+        "Viel im Grundbuch eingetragenes Bewässerungswasser (20 Stunden) auf dieser schönen Finca im Abschnitt La Correina von San Rafael, Mendoza.",
+        "Diese Finca liegt an Asphalt, 15 Fahrminuten von der Stadt San Rafael und 15 Minuten vom stark besuchten Ausflugsziel Valle Grande – was neben der landwirtschaftlichen Nutzung, Reiten und Ähnlichem alle Arten von Tourismuspotenzial eröffnet.",
+        "Auf der Liegenschaft steht ein Mitarbeiterhaus, und die Eigentümer nehmen derzeit einige Verbesserungen vor.",
+        "Auf der Finca liegt Strom, und es gibt ein bewohntes Mitarbeiterhaus in schlechtem Zustand mit einer kleinen Scheune.",
+        "Der große Wert liegt hier im Land – 13 ha –, im guten Boden, im Klima und in der planierten Fläche, die sich für alle Arten von Projekten anbietet. Das Land ist geeignet für Weinberg, Obst, Oliven, Luzerne, Walnüsse, Feigen, einjähriges Gemüse usw.",
+        "Der derzeitige Bewirtschafter meint, die beste Nutzung für einen künftigen Käufer wäre, dort Landwirtschaft anzulegen, wo jetzt vorne rechts Bäume stehen. Dahinter könnte ein neues Wohnhaus entstehen, mit Sichtschutzbäumen zur Abgrenzung des Mitarbeiterhauses. Die restliche Fläche halten sie für gut geeignet für Rinder, da es eine Wasserquelle gibt und sie eingekoppelt ist.",
+        "Die Verkäufer sind „krypto-freundlich“ und auch offen dafür, die Zahlung in den USA zu erhalten."
+      ]
+    },
+    "top-winery-for-sale-in-mendoza-argentina": {
+      "title": "Preisgekrönte Premium-Bodega mit Restaurant",
+      "kicker": "Wein Nr. 2 der Welt!",
+      "paragraphs": [
+        "Diese schöne moderne Bodega mit historischen Wurzeln liegt in einer Gegend bedeutender Weingüter nahe der Stadt Mendoza.",
+        "Sie verfügt über eine vollständige Ausstattung zur Weinbereitung, darunter Kühltechnik, Edelstahltanks, ein Labor, zwei Waagen zum Verwiegen von Trauben und Lastwagen, einen Verkostungsraum und ein Restaurant mit Tischen und Stühlen, das nahezu fertig und bereit für Gäste ist.",
+        "Die Bodega hat über die Jahre bei internationalen Wettbewerben preisgekrönte Weine erzeugt und keltert außerdem Wein im Auftrag einiger der besten Bodegas Argentiniens.",
+        "Der Weltverband der Weinschriftsteller und -journalisten führte den Bicentenario Malbec dieser Bodega als Wein Nummer 2 der Welt für das Jahr 2013. Die WAWWJ stellt die Rangliste jedes Jahr auf Basis von 80 internationalen Weinmessen in aller Welt zusammen.",
+        "Die Bodega hat keine eigenen Weinberge, verfügt aber über einen Zehnjahresvertrag mit einem außergewöhnlichen Weinberg im Valle de Uco, der sie mit Qualitätsweintrauben höchster Güte versorgt. Dieser Vertrag ist auf den neuen Eigentümer übertragbar.",
+        "Derzeit umfassen die Tanks 64.500 Liter in Edelstahl und 476.000 Liter in Epoxidtanks. Der Barriquekeller hat 70 Fässer und Platz für weitere 90, was eine Kapazität von 36.000 Litern Holzausbau ergäbe.",
+        "AUSFÜHRLICHERE ANGABEN SIND AUF ANFRAGE ERHÄLTLICH"
+      ]
+    },
+    "well-kept-fine-wine-vineyard-for-sale-in-mendoza": {
+      "title": "Gut gepflegter Qualitätsweinberg mit Pool und Cabaña in bester Lage",
+      "kicker": "Traktor und Geräte enthalten",
+      "paragraphs": [
+        "Dieser gut gepflegte Weinberg mit Trauben für Qualitätsweine hat eine hervorragende Lage am Ortseingang von San Rafael, an der Route durch die Wüste von der Stadt Mendoza.",
+        "Es gibt 13,8 acres (5,6 ha) Weinberg unter Netzen, davon 5 ha Malbec und 8,8 acres Merlot. Früher kaufte die Bodega Valentin Bianchi – die bekannteste Kellerei in San Rafael – Trauben von diesem Weinberg für ihren hochwertigen Merlot „Particular“, der ausgezeichnete Bewertungen erhielt.",
+        "Die Cabaña, die als Wohnhaus und als Ferienvermietung genutzt wurde, hat 485 sq ft (45 m²) plus einen großen überdachten Außenpatio. Sie hat ein Schlafzimmer, ein Bad und eine offene Wohnküche mit Essbereich. Außerdem hat sie eine Alarmanlage.",
+        "Der Swimmingpool misst 16 x 8 Fuß und hat Pumpe und Filter.",
+        "Auf der Finca stehen mehrere Obstbäume, besonders Aprikosen, Walnüsse, Olivenbäume und Pfirsiche.",
+        "SCHEUNE UND TRAKTOR Die Scheune auf der Liegenschaft ist sehr gut gebaut, 600 sq ft (56 m²) groß, und enthält einen älteren Weinbergtraktor Fiat 400, ein Sprühgerät mit 1.000 Litern und einen Pflug mit 16 Scheiben. Auch die Scheune hat eine Alarmanlage. Bewässert wird über den Kanal, und die Liegenschaft hat vollständige, mit der Urkunde verbundene Bewässerungsrechte für die gesamte Fläche.",
+        "Die Finca hat Strom und ist an das städtische Wasser angeschlossen."
+      ]
+    },
+    "c-jensen": {
+      "title": "Malbec-Weinberg mit altem Poolhaus im Kolonialstil",
+      "kicker": "10 ha (25 acres): ausgezeichnetes Tourismuspotenzial!",
+      "paragraphs": [
+        "Dieser Malbec-Weinberg mit altem Poolhaus im Kolonialstil liegt sehr nahe am Nevado Golf Club, der Bodega Mumm, der Bodega Bianchi, dem Flughafen und weiteren wichtigen Anlaufpunkten für Touristen. Ein guter Preis in dieser Gegend, mit solchem Potenzial für landwirtschaftliche Einnahmen und Tourismus. Die Ziegelscheune lässt sich in eine Boutique-Bodega umbauen, es ist Platz für mehr Landwirtschaft, und Touristenhütten können hier sehr günstig errichtet werden.",
+        "Diese Finca von 10 ha hat 3,5 ha (8,5 acres) Malbec unter Netzen, ein englisch anmutendes Kolonialhaus von 380 m² (etwa 4.000 sq ft einschließlich Veranden), dazu ein Mitarbeiterhaus und eine Scheune von etwa 100 m² (1.070 sq ft). Es gibt einen schönen Parkbereich mit sehr großen alten Bäumen; die restliche Fläche liegt brach und ist für weiteren Weinberg, Obst, Luzerne oder Pferdeweide geeignet.",
+        "Auf der Liegenschaft stehen außerdem mindestens zwei Dutzend große, ausgewachsene Olivenbäume, die Oliven für den Eigenbedarf liefern oder in der Ölmühle einige Kilometer entfernt gegen viele Liter Olivenöl getauscht werden können. Es gibt auch Walnuss- und Feigenbäume auf der Finca. Für die gesamte Liegenschaft bestehen ausgezeichnete, im Grundbuch eingetragene Wasserrechte, und zwar in guter Menge.",
+        "Ziegelscheune von 1.070 sq ft – oder künftige Boutique-Bodega"
+      ]
+    },
+    "ranch-land-for-sale-in-argentina-with-home-and-alfalfa": {
+      "title": "Campo von 220 ha (540 acres) mit Eigentümerhaus und Luzerne. Vollständig eingezäunt, mit viel gutem Wasser",
+      "paragraphs": [
+        "Dieses außergewöhnliche Campo von 540 acres (220 ha) östlich von San Rafael ist vollständig mit einem hochfesten 7-Draht-Zaun eingefasst und in drei Abschnitte mit entsprechenden Toren geteilt.",
+        "Die Liegenschaft hat ein Haupthaus mit Park und Pool (reparaturbedürftig), eine Galerie, eine gemauerte Grillstelle (Churrasquería), einen Pizza- und Brotofen aus Adobeziegeln im Freien und Ähnliches. Es gibt außerdem ein altes, sanierungsbedürftiges Haus mit Scheune.",
+        "Die Liegenschaft hat natürliche Entwässerungskanäle mit Wasser das ganze Jahr über. Es gibt auch einige Brunnen, von denen einer derzeit in Betrieb ist.",
+        "Einhundert Acres (40 ha) wurden mit Luzerne und einjährigem Gemüse bewirtschaftet. Entlang der Kanäle stehen Reihen von Pappeln und Eukalyptus. Ein großer Teil der Finca ist noch unberührtes Rohland, und es gibt etwas einheimischen Wald.",
+        "Sie liegt nur etwa 20 Minuten von San Rafael und wenige Minuten vom Ort Goudge; eine öffentliche Schule ist zu Fuß erreichbar.",
+        "Die Liegenschaft hat gutes Potenzial für Pferde oder einen Rinderbetrieb. Der Boden ist sehr gut, und die Fläche ließe sich für andere in der Gegend übliche Kulturen nutzen.",
+        "HINWEIS: Viele der Fotos unten stammen aus dem Winter oder von der Zeit nach dem Pflügen, sodass die grünen Weiden, die es heute gibt, nicht zu sehen sind."
+      ]
+    },
+    "cute-home-in-rural-campo-development-for-sale-in-mendoza-argentina": {
+      "title": "Hübsches Poolhaus mit 1 Schlafzimmer in einer Campo-Anlage",
+      "paragraphs": [
+        "Dieses reizvolle Haus mit 1 Schlafzimmer liegt in einer ländlich-rustikalen Campo-Anlage nahe der Natur in Pueblo Benegas außerhalb von San Rafael, Mendoza. Es liegt in der Nähe der Algodon Golf and Wine Estates im Millionenwert und auf dem Weg zum Skigebiet Las Leñas.",
+        "Das Haus heißt „Casa Peumayen“, hat 635 sq ft (59 m²) plus großen Patio und Pool und wirkt dadurch größer. Innerhalb des Country Clubs Pueblo Benegas gibt es ein Ziegen- und Schafskäseprojekt sowie ein Gourmetrestaurant mit eigener Küche. In der Nähe liegt eine große Lagune.",
+        "Die Küche hat Blick auf die Sierra Pintada, und der Pool liegt direkt am Patio.",
+        "„Der Club lädt Sie ein, seine verschiedenen Wege inmitten der Natur zu gehen, voller Chañar- und Aguaribay-Wälder, wo Sie Blicke auf die Berge und auf unsere schöne Lagune finden.",
+        "„Das Haus ist mit Jarillas, Chañares, Kakteen und Olivenbäumen verwoben; es erhebt sich zum Gebirge hin, aus Stein gebaut, in völliger Verbindung mit der Umgebung, ohne die wohnliche Wärme zu verlieren.",
+        "„Die Gegend ist umgeben von Ausflugszielen für Abenteuer und Sport und liegt nahe an vielen angesehenen Bodegas und Restaurants, wo Sie deren Weine und ausgezeichnete Gerichte genießen können.“"
+      ]
+    },
+    "small-vineyard-for-sale-in-mendoza-argentina": {
+      "title": "Kleiner Malbec-Weinberg auf 5 ha (12 acres) im Tourismusgebiet, mit Platz zum Bauen",
+      "kicker": "Rentabler Weinberg!",
+      "paragraphs": [
+        "Dieser Hobby-Weinberg liegt auf 12,3 acres (5 ha) in Cuadro Benegas, einer bei Touristen beliebten Gegend in San Rafael, Mendoza.",
+        "Ein ausgezeichneter Verwalter wohnt direkt neben der Liegenschaft und würde gern bei einem neuen Eigentümer bleiben.",
+        "Die Trauben wurden jährlich an einige der besten Bodegas der Gegend verkauft, darunter die Bodega Bianchi, die weltweit exportiert.",
+        "Der Jahresertrag reicht bis zu 15.000 Kilo, was fast 15.000 Flaschen Wein entspricht. Sie hätten außerdem die Möglichkeit, den Wein von einer örtlichen Bodega ausbauen zu lassen und ihn unter eigener Marke zu vertreiben, oder auf dem Gelände eine Boutique-Bodega zu errichten.",
+        "In 15 Jahren hat der Weinberg nie Verlust gemacht. Der Eigentümer lebt in Europa und hat alles problemlos aus der Ferne geführt.",
+        "Der Eigentümer sagt, in einem guten Jahr bleibe nach Kosten ein Gewinn von etwa US$3.400.",
+        "Die Ernte im März 2025 lag bei 10.540 Kilo Malbec-Trauben.",
+        "Die Finca liegt nicht weit von den Algodon Wine and Golf Estates im Millionenwert.",
+        "Die Liegenschaft ist von zwei Seiten über gute Straßen erreichbar. Strom, Wasser und Anschlüsse liegen an den Straßen. Die Bewässerung ist gut und ausreichend."
+      ]
+    },
+    "lovely-home-on-acreage-for-sale-near-san-rafael-mendoza": {
+      "title": "Schönes Wohnhaus auf gutem Land mit Olivenbäumen",
+      "kicker": "Eingezäuntes Landgrundstück mit Tor",
+      "paragraphs": [
+        "Diese Finca von 12,5 acres (5 ha) liegt etwa 25 Minuten vom Zentrum von San Rafael an einer asphaltierten Straße nahe einer öffentlichen Schule.",
+        "Dieses Haus mit 2 Schlafzimmern und 2½ Bädern wurde von einem früheren Bauunternehmer sehr gut errichtet, unter Mitwirkung eines Bauingenieurs, der hochwertige Materialien beschaffte. Herd und Kühlschrank sind enthalten, und es gibt Splitgeräte zum Kühlen und Heizen sowie einen Kamin.",
+        "Es stehen etwa 50 ausgewachsene Olivenbäume, und der Eigentümer verpachtet das Land für Hafer an einen Nachbarn, um Steuern und Bewässerungsgebühren zu decken, sodass die Liegenschaft kaum Unterhaltskosten hat. Der Vertrag läuft jährlich, ein neuer Eigentümer könnte also anbauen, was er möchte, etwa Weinberg, Oliven, Obstbäume oder einjähriges Gemüse.",
+        "Der Eigentümer verkauft wegen kürzlich aufgetretener gesundheitlicher Probleme und hat ein weiteres Haus in der Stadt, in das er umziehen würde.",
+        "Es gibt eine Garage mit Holzwerkstatt von 610 sq ft (60 m²) samt kleiner Werkstatt sowie einen offenen Schuppen für Feuerholz und anderes. Beide wurden im Stil des Hauses gebaut. Die Liegenschaft liegt in La Llave Vieja, östlich von San Rafael."
+      ]
+    },
+    "sanrafael-mendoza-bnb-for-sale": {
+      "title": "Herrschaftliches Haus mit 18 Zimmern für ein Bed & Breakfast in San Rafael",
+      "kicker": "Lage, Lage, Lage!",
+      "paragraphs": [
+        "Dieses schöne alte herrschaftliche Haus im Zentrum von San Rafael, Mendoza, liegt an der Plaza San Martín. Jeden Abend ist die zentrale Plaza ein Mittelpunkt des Lebens, an dem Touristen und Einheimische zur Fußgängerzone nahe diesem Haus strömen, um in den vielen Restaurants, Cafés, Bars und Kaffeehäusern der Gegend zu essen.",
+        "Sie besuchen Bekleidungsgeschäfte, Weinhandlungen, eine kleine Schokoladenmanufaktur und Touristenläden entlang der malerischen, von Bäumen gesäumten Straßen und Alleen nahe dem Kilometer Null.",
+        "7 SCHLAFZIMMER, 3 KÜCHEN, 6½ BÄDER, AUSSENPATIOS, BALKONE UND GARAGE",
+        "Das Haus hat insgesamt 5.380 sq ft überdachte Wohnfläche. Insgesamt 18 Räume, darunter 7 Schlafzimmer, 6½ Bäder, 3 Küchen (nur eine ausgestattet), 5 Wohn- oder Gesellschaftsräume, ein Waschraum, ein Wirtschaftsraum, eine Garage für ein Auto und zwei Patios (387 sq ft und 100 sq ft). Das Haus hat eine Zentralheizung mit italienischen Heizkörpern.",
+        "Fünf der Einheiten haben Bäder, drei davon Küchen. Das Haus kann geteilt werden, um Gewerbeflächen aufzunehmen oder Schlafzimmer zu ergänzen.",
+        "Vom Balkon im ersten Obergeschoss gibt es schöne Blicke auf die Plaza.",
+        "FOTOS (Dies sind keine vollständigen Aufnahmen des Hauses)"
+      ]
+    },
+    "conde": {
+      "title": "Finca mit 20 ha (50 acres), Weinberg, Traktor und Pick-up",
+      "kicker": "Das Haus wird vollständig möbliert übergeben!",
+      "paragraphs": [
+        "ENTHÄLT US$50.000 AN MOBILIAR, FAHRZEUGEN, WERKZEUG UND GERÄTEN!",
+        "Zu dieser Liegenschaft von 50 acres gehören ein möbliertes Wohnhaus, ein Pick-up Ford Ranger, ein Traktor mit Geräten und viele Extras!",
+        "Es gibt 25 acres Weintrauben unter Netzen (10 acres dreijähriger Malbec und 16 acres gemischte einfache Weintrauben).",
+        "Die übrigen 25 acres sind eben und bereit zum Pflügen und Bepflanzen – oder gutes Land für Pferde und Rinder.",
+        "Das Haus mit 1000 sq ft (93 m²) wurde 2022 saniert und wird vollständig möbliert übergeben, mit Betten und Möbeln in beiden Schlafzimmern, Kühlschrank, Herd, Gefriertruhe, Mikrowelle, Fernseher, Tischen und Möbeln sowie vielen Haushalts- und Küchenartikeln. Es gibt einen Solarwarmwasserbereiter und eine Waschmaschine.",
+        "Im Verkauf enthalten sind ein Pick-up Ford Ranger (XLT 3,0 Liter) und ein Traktor Deutz A46 mit Weinbergpflug, Scheibenegge, Rechen und einem Sprühgerät mit 3.000 Litern.",
+        "Ein Generator mit 5550 Watt ist enthalten, dazu ein Schleifer, Bohrmaschinen, eine Stichsäge, eine Kettensäge Stihl 361 und ein Freischneider Stihl 280, viele Handwerkzeuge und ein Refraktometer zur Messung des Zuckergehalts der Trauben.",
+        "Es gibt ein weiteres Haus, das der Eigentümer derzeit als Lager nutzt."
+      ]
+    },
+    "cattle-ranch-alfalfa-for-sale-in-argentina-500-acres": {
+      "title": "Rinder-Campo von 200 ha (500 acres) mit Eigentümerhaus und Luzernefeldern",
+      "paragraphs": [
+        "Dieses Rinder-Campo von 500 acres liegt etwa 25 Minuten südöstlich von San Rafael nahe dem Pueblo La Llave.",
+        "Insgesamt sind es 500 acres (200 ha); 250 acres (100 ha) sind geräumt und planiert, und 125 acres (50 ha) sind bepflanzt.",
+        "Für die gesamte Fläche bestehen im Grundbuch eingetragene Wasserrechte, dazu ein Bewässerungsbrunnen mit einer 100-PS-Elektropumpe, die den Einsatz eines hydraulischen Pivots erlaubt. Fördermenge 430.000 Liter/Stunde. Derzeit stehen nur 50 Rinder auf der Fläche, doch es gibt genug Luzerne, Sorghum und Ähnliches für 170 Tiere. Das ließe sich verdoppeln oder mehr, wenn die restliche Fläche in Produktion genommen würde. Es gibt Corrals, Verladerampen und Ähnliches. Ideal für ein Tierhaltungsprojekt, zudem liegt es an der Viehtriebstraße.",
+        "Es gibt ein schönes Eigentümerhaus mit Fliesenböden, 2 Schlafzimmern und einem Bad auf etwa 1.300 sq ft (121 m²), mit einem großen überdachten Außenpatio. Dazu kommen eine Scheune und Lagerflächen für Geräte. Ein separates Haus dient als Unterkunft für einen Mitarbeiter und ist derzeit von einem Arbeiter bewohnt.",
+        "GERÄTE (NICHT ALLE ABGEBILDET) KÖNNEN SEPARAT VERHANDELT WERDEN"
+      ]
+    },
+    "charming-vineyard-home-with-pool-for-sale-san-rafael-mendoza-argentina": {
+      "title": "Reizvolles Poolhaus im Weinberg mit Malbec und Obstanlage auf 13 ha (32 acres)",
+      "kicker": "Blick auf die Sierra Pintada",
+      "paragraphs": [
+        "Diese Finca von 32 acres (13 ha) liegt in Cuadro Benegas, etwa 20 Minuten von San Rafael. Sie hat über viele Jahre verlässlich Einnahmen gebracht und verfügt über ein zweistöckiges Eigentümerhaus mit großartigem Blick auf die Sierra Pintada.",
+        "Sie liegt eingebettet in eine Gemeinschaft von drei weiteren Häusern, die Auslandsargentinier besitzen, in einer äußerst begehrten Gegend, und ist sehr sicher. Das Haus hat einen Balkon mit Blick über den Weinberg und die Hügel.",
+        "Es gibt drei Schlafzimmer und zwei Bäder, Splitgeräte zum Heizen und Kühlen sowie einen „russischen Ofen“, der das Haus im Winter angenehm warm hält. Es gibt einen kleinen Pool, eine Überdachung für Fahrzeuge und zwei große Außenpatios mit Grillstellen und Gartenmöbeln.",
+        "Neben dem Malbec-Weinberg hat die Finca eine alte Pflaumenanlage und mehrere Olivenbäume, deren Oliven sie in einer örtlichen Ölmühle gegen Olivenöl tauschen. Früher hatten sie einen großen Garten mit reicher Ernte, darunter Mais, Tomaten, Kürbis, Melonen, Paprika usw.",
+        "Ein Traktor mit Geräten ist im Verkauf enthalten, möglicherweise auch ein Auto."
+      ]
+    },
+    "argentina-farm-for-sale-with-lovely-homes-barns-alfalfa-acreage": {
+      "title": "Finca mit 30 ha (75 acres), hübschem „Casa de Campo“-Haus, Weide, Rindercorral und Scheune von 10.000 sq ft",
+      "kicker": "2 Häuser und 12,5 acres Luzerne",
+      "paragraphs": [
+        "Diese Finca von 75 acres (30 ha) östlich von San Rafael hat ein schönes Haus mit 4 Schlafzimmern und 2 Bädern sowie ein Mitarbeiterhaus, dazu eine neue Industriescheune bzw. Lagerhalle von mehr als 10.000 sq ft, deren Bau in den USA etwa US$250.000 kosten würde. Sie wurde 2019 errichtet.",
+        "Auf der Liegenschaft steht außerdem eine alte, aufgegebene Bodega sowie eine frühere Anlage zum Trocknen und Verarbeiten von Obst mit Lagerhalle. Beide sind „Projekte“, wenn man sie einer Nutzung zuführen wollte; beide wurden mit neuer Elektrik ausgestattet, und Dreiphasenstrom liegt an.",
+        "Die Finca hat 12,5 acres Luzerne und weitere 12,5 acres planiert und pflanzfertig. Die Liegenschaft ist vollständig eingezäunt.",
+        "Die Liegenschaft hat außerdem neue Corrals mit Viehschleusen, angelegt mit einer Mast im Blick.",
+        "Bewässerungsbrunnen mit 12-Zoll-Rohr und 60-PS-Pumpe zur Bewässerung. – 5-Zoll-Brunnen für Trinkwasser guter Qualität. – Altes Haus (zusätzlich zu den beiden anderen), das sich sanieren ließe. – Dreiphasenstrom auf der Liegenschaft. – Ein Transformator mit 100 Kilowatt. – Eine gewerbliche elektronische Lkw-Waage (früher mechanisch), auf digital umgebaut. – Corral und neue Anlagen für die Kälberaufzucht."
+      ]
+    },
+    "mercedes": {
+      "title": "Finca mit 9,7 ha (24 acres), Poolhaus und 20 acres Weinberg",
+      "kicker": "Traumhafte Weinbergsliegenschaft!",
+      "paragraphs": [
+        "Diese Finca von 24 acres (9,7 ha) westlich von San Rafael hat ein schönes Wohnhaus, ein Gästehaus, einen Pool und 20 acres gut gepflegten Weinberg.",
+        "Sie liegt in ausgezeichneter ländlicher Lage, nahe am Flughafen, am Nevado Golf Course und an der Bodega Bianchi Champagne.",
+        "Es gibt einen Weinberg von 10 acres mit Semillon unter Netzen und weitere 10 acres mit Moscatel und Pedro Ximénez. Es stehen 100 Pflaumenbäume für Trockenpflaumen und verschiedene Obstbäume rund um das Haus, darunter mehrere Pfirsichsorten, Aprikosen, Kirschen, Mandeln, Kastanien und Walnüsse.",
+        "Das Haus hat 2 Schlafzimmer mit eigenem Bad, eine Wohnküche mit Essbereich und weitere schöne Details.",
+        "Der Swimmingpool hat Solarheizung, und das Haus verfügt außerdem über einen Transformator, der den Strom auf die in den USA üblichen 110 Volt umsetzt. Der Gartenbereich der Finca hat Zierpflanzen, Schattenbäume und ein Gewächshaus.",
+        "Es gibt einen zu einem Gästehaus umgebauten Schiffscontainer mit allen Anschlüssen.",
+        "Die Verkäufer verlangen US$250.000, mit der Auflage, dass alle Abschlusskosten von den Käufern getragen werden."
+      ]
+    },
+    "r-caida": {
+      "title": "Finca mit 6 ha (14 acres) und Ziegelhaus im Tourismusgebiet",
+      "paragraphs": [
+        "Diese Finca von 14,8 acres (6 ha) liegt in Rama Caída, einem Tourismusgebiet, in dem Wochenendhäuser und Touristenhütten gebaut werden. Sie liegt kurz abseits der Route nach Valle Grande (einer Art kleinem Grand Canyon), die von Bodegas, Restaurants und dem Río Atuel gesäumt ist, mit Rafting, Camping, Hotels, Reiten, einer Seilrutsche und mehr. Die Finca liegt nur wenige Minuten von San Rafael, ist also auch bequem zu Tankstellen, Supermärkten, Baumärkten und allem, was die Stadt bietet.",
+        "Die Liegenschaft hat 10 acres (4 ha) Land, früher Obstanlage, das gepflügt und pflanzfertig vorbereitet wurde. An das Ziegelhaus ist eine Scheune angebaut. Es gibt städtisches Wasser und Strom.",
+        "Es stehen viele hohe, alte Bäume und ein reizvoller Parkbereich rund um das Haus. Das brachliegende Land ist bereit, mit Gemüse, Reben, Obst oder Pferdeweide bestellt zu werden.",
+        "Für die gesamte Liegenschaft bestehen ausgezeichnete, im Grundbuch eingetragene Wasserrechte, und zwar in guter Menge."
+      ]
+    },
+    "farm-and-land-for-sale-in-argentina-with-orchard": {
+      "title": "Finca mit 9,7 ha (24 acres), Pflaumen und Pfirsichen",
+      "paragraphs": [
+        "Diese Finca von 9 ha (22 acres) an einer asphaltierten Straße kurz außerhalb von San Rafael hat 7 ha (17 acres) Pflaumen in gutem Ertrag. Sie hat außerdem Pfirsiche und einige Walnussbäume.",
+        "Auf der Liegenschaft steht ein Ziegelhaus in gutem Zustand, das sich leicht zu einem Eigentümerhaus sanieren ließe. Es hat eine Wohnküche mit Essbereich, 2 Schlafzimmer und einen großen Abstellbereich für ein Fahrzeug oder Landmaschinen.",
+        "Die Liegenschaft liegt an einer asphaltierten Straße, nur etwa 5 Minuten vom Flughafen San Rafael. Sie hat Strom und städtisches Wasser.",
+        "Die mit der Urkunde verbundenen Bewässerungsrechte liefern zudem reichlich Wasser, und die Eigentümer haben begonnen, einen Bereich der Liegenschaft für ein Rückhaltebecken auszuheben, das aus dem Kanalwasser der Finca gefüllt würde.",
+        "Die Liegenschaft hat nach Süden Blick auf die Sierra Pintada und guten Boden.",
+        "Es gibt in dieser Gegend keine andere Finca zu einem so niedrigen Preis."
+      ]
+    },
+    "farm-land-for-sale-in-mendoza-argentina-with-orchard": {
+      "title": "Finca mit 14 ha (34 acres) – Obstanlage und Walnüsse: REDUZIERT",
+      "paragraphs": [
+        "Diese Finca von 34 acres liegt in Cuadro Bombal nahe San Rafael am Ende einer Sackgasse.",
+        "Die Finca hat etwa 12 acres Pflaumenbäume, 5 acres Walnüsse sowie Pfirsiche und Nektarinen. Es stehen außerdem einige ausgewachsene Olivenbäume.",
+        "Es gibt ein altes Adobehaus mit Sanierungspotenzial, das wäre allerdings ein größeres Vorhaben. Ein Teil des Hauses ist gesichert, wird als Lager genutzt und hat Internet mit Kameras zur Sicherung.",
+        "Die Finca bezieht ihr Bewässerungswasser aus Kanälen, die entlang der Liegenschaft verlaufen, und hat zusätzlich einen neuen Brunnen, den sie zur Bewässerung nutzt.",
+        "Mindestens die Hälfte der Finca ist unbepflanzt und könnte als Weide für Pferde oder Rinder oder für andere Kulturen genutzt werden.",
+        "Es gibt eine schöne freie Fläche mit Blick auf die bunten Hügel, die einen guten Platz für ein neues Wohnhaus abgäbe."
+      ]
+    },
+    "sweet-home-on-rural-land-for-sale-in-mendoza-argentina": {
+      "title": "Reizendes ländliches Poolhaus auf einem hübschen, ruhigen und privaten Acre",
+      "paragraphs": [
+        "Dieses Haus mit 2 Schlafzimmern und 2 Bädern liegt auf einem Acre in Rama Caída, einem beliebten Tourismusgebiet kurz außerhalb der Stadt San Rafael in Mendoza, Argentinien.",
+        "Es hat 1.539 sq ft (143 m²) und verfügt über eine Wohnküche mit Essbereich, einen Waschraum und eine Galerie, die als Garage genutzt werden kann. Es hat einen Fiberglaspool von 10 x 20 Fuß und einen Außengrill. Das Haus wurde vor 15 Jahren gebaut.",
+        "Die Liegenschaft ist an das städtische Wasser und an Strom angeschlossen und hat einen schön gestalteten Park mit vielfältigen Pflanzen und Bäumen, dank einer Stunde Kanalbewässerung pro Woche und eines Brunnens, den sie zum Wässern nutzen.",
+        "Die Liegenschaft liegt etwa 15 Minuten vom Zentrum von San Rafael und rund 10 Minuten vom Stausee Valle Grande, wo man angeln, Boot fahren und zelten kann.",
+        "Foto des Hauses im Winter und eine Luftaufnahme"
+      ]
+    },
+    "vineyard-property-for-sale-in-argentina-with-orchard": {
+      "title": "Finca mit 14,6 ha (36 acres), Qualitätsweinberg und Pflaumenanlage",
+      "kicker": "Landmaschinen enthalten",
+      "paragraphs": [
+        "Diese Finca in Cuadro Benegas kurz außerhalb von San Rafael ist vollständig mit Malbec- und Chardonnay-Reben bepflanzt, dazu eine Anlage mit französischen D'Agen-Pflaumen für Trockenpflaumen.",
+        "Die Liegenschaft hat ein Haus für den Arbeiter und eine kleine Scheune von 400 sq ft (37 m²). Das Haus ist ein alter Adobebau mit zwei Schlafzimmern sowie Küche, Esszimmer und Bad.",
+        "Zu den Geräten gehören ein Traktor Massey Ferguson, eine Scheibenegge mit 14 Scheiben, ein Sprühgerät mit 600 Litern und ein weiteres mit 200 Litern.",
+        "Es gibt 3 ha (7,5 acres) Chardonnay im Vollertrag, 3,7 ha (9 acres) Malbec im Vollertrag und etwa 4 ha (11 acres) neu gepflanzten Malbec, der noch nicht trägt. Dazu kommen 3 ha (7 acres) Pflaumen, die im Schnitt 30.000 Kilo pro Jahr bringen. Der Chardonnay liefert im Schnitt etwa 20.000 kg pro Jahr, der Malbec etwa 30.000 kg pro Jahr."
+      ]
+    },
+    "beautiful-house-on-real-estate-property-in-mendoza-argentina": {
+      "title": "Schönes Poolhaus auf einem halben Acre in der Tourismuszone",
+      "kicker": "Derzeit als Ferienvermietung betrieben!",
+      "paragraphs": [
+        "Dieses schöne Haus auf einem halben Acre (2.000 m²) in Pueblo Benegas bei San Rafael wird derzeit als Ferienvermietung betrieben und erhält Spitzenbewertungen.",
+        "Es gibt zwei Schlafzimmer und ein Bad, mit viel Licht und großen Fenstern, die spektakuläre Ausblicke bieten. Ein herrlicher Pool liegt direkt am Patio, der einen eingebauten Grill für schöne Asados hat.",
+        "Die Möbel sind enthalten, bis hin zu Teller und Geschirr, sodass Sie wirklich ein reizvolles Haus haben, in das Sie heute einziehen können!",
+        "Das Haus liegt geschützt und privat. Es ist etwa eine halbe Meile von einer Hauptstraße entfernt. Pueblo Benegas liegt etwa eine Meile von der Golf- und Weinanlage Algodon im Millionenwert, und mehrere sehr gute Restaurants sind in der Nähe. Es sind 20 Minuten bis ins Zentrum von San Rafael, gute Einkaufsmöglichkeiten liegen deutlich näher."
+      ]
+    },
+    "english-style-home-on-12-acres-for-sale-mendoza": {
+      "title": "Gartengestaltetes Poolhaus im englischen Stil auf 5 ha (12 acres)",
+      "kicker": "Landwirtschaftliches Potenzial im Tourismusgebiet",
+      "paragraphs": [
+        "Dieses Haus liegt in Rama Caída, etwa 15 Minuten vom Zentrum der Stadt San Rafael.",
+        "Es liegt an einer asphaltierten Straße mit allen Anschlüssen und umfasst 12 acres gutes Land, geeignet für Weinberg, einjähriges Gemüse und Obst oder zur Nutzung als Pferdeweide.",
+        "Das Haus hat 2.150 sq ft (200 m²), eine Küche, einen Waschraum, ein Esszimmer mit Holzofen, ein Wohnzimmer, 3 Schlafzimmer, ein Hauptbad und eine Dienstbotenunterkunft. Es gibt städtisches Wasser, Bewässerungsrechte für die Finca, Strom und Erdgasanschluss.",
+        "Die Rasen- und Gartenfläche rund um das Haus umfasst mehr als drei Viertel Acre, mit Bäumen von über 80 Jahren. Die Garage für Werkzeug und Ähnliches hat etwa 650 sq ft (60 m²)."
+      ]
+    },
+    "ranch-land-for-sale-in-argentina-with-mineral-springs": {
+      "title": "Mineralquellen-Oase in der Wüste, Campo von 890 ha (2.200 acres) im Mikroklima: US$2 Millionen, verhandelbar",
+      "kicker": "Möglicher Betrieb für Mineralwasser in Flaschen",
+      "paragraphs": [
+        "Campo Los Patos umfasst 904 ha (2.232 acres) in Punta del Agua, einer grünen Oase in der Wüste auf einer Höhe von etwa 1.640 Fuß, mit aufsteigenden Mineralquellen.",
+        "Die Verkäufer geben an, eine chemische Analyse des Wassers der Mineralquellen vorliegen zu haben; Qualität und Eigenschaften eignen sich sehr gut zur Abfüllung.",
+        "Das Land ist über unbefestigte Wege zwischen den Hügeln kurz abseits der Ruta 190 erreichbar und unerschlossen.",
+        "Es liegt nahe dem Cerro Nevado, der 12.500 Fuß hoch ist und die Gegend vor Wind und Stürmen schützt. Dadurch gibt es in Punta del Agua nur etwa zwei Wochen im Jahr ohne Sonnenschein und ein angenehmeres Klima als in den umliegenden Gebieten."
+      ]
+    },
+    "1000-plus-acres-for-sale-in-argentina-campo": {
+      "title": "Campo von 10.000 ha (25.000 acres) an asphaltierter Landstraße mit 5 Windpumpen und Strom",
+      "kicker": "Mineralwasser über Leitung!",
+      "paragraphs": [
+        "Diese Liegenschaft umfasst etwa 10.000 ha (25.000 acres) an der Nordostecke von Ruta 143 und Ruta 90. Der Preis liegt bei US$160 pro Hektar.",
+        "Sie hat fünf Windpumpen zur Wasserförderung sowie sowohl normalen als auch dreiphasigen Strom an der Straße, einer asphaltierten Landstraße.",
+        "Die gesamte Liegenschaft ist eingezäunt, und es gibt zwei reparaturbedürftige Mitarbeiterhäuser.",
+        "An der Ecke der Liegenschaft besteht außerdem Zugang zu Mineralwasser, das aus Punta del Agua über eine Leitung kommt."
+      ]
+    },
+    "afalfa-farm-horse-cattle-ranch-for-sale-mendoza-argentina": {
+      "title": "Schöne Finca von 63 ha (155 acres) mit Luzerne für Pferde, Rinder und Kulturen: US$600.000 (verhandelbar)",
+      "kicker": "Eigentümerhaus mit Weinberg und Obstgarten",
+      "paragraphs": [
+        "Dies ist eine Finca von 155 acres (63 ha), etwa 30 Minuten von San Rafael in Las Malvinas, einer für Reihenkulturen, Luzerne und Rinder bekannten Gegend.",
+        "Die Liegenschaft hat ein Mitarbeiterhaus und ein Eigentümerhaus von etwa 900 sq ft (84 m²) mit 2 Schlafzimmern und einem Bad, dazu einen Patio und einen gemauerten Außengrill.",
+        "Es gibt einen kleinen Obstgarten mit verschiedenen Bäumen, darunter Walnüsse, Mandeln, Aprikosen und Pfirsiche. Sie haben einen kleinen Weinberg. Der Boden ist geschätzt für Futterpflanzen wie Luzerne sowie für Kartoffeln, Knoblauch, Zwiebeln und ähnliche Kulturen.",
+        "Fast die gesamte Liegenschaft ist mit Luzerne bestellt, ausgenommen die Bereiche um die Häuser, und es gibt zwei ausgehobene Rückhaltebecken (derzeit trocken und ungenutzt, weil das vorhandene Wasser mehr als ausreicht)."
+      ]
+    },
+    "ranch-land-for-sale-in-argentina-for-agriculture": {
+      "title": "Campo von 345 ha (850 acres) für Rinder, Landwirtschaft oder Entwicklung",
+      "kicker": "An Asphalt gelegen!",
+      "paragraphs": [
+        "Diese Liegenschaft umfasst etwa 345 ha (850 acres) an der Ruta 146, nur 15 bis 20 Minuten außerhalb der Stadt.",
+        "Das Land hat Wasserrechte für 120 acres (48,9 ha) und wäre für Landwirtschaft, Rinderhaltung und Landentwicklung geeignet."
+      ]
+    },
+    "property-for-sale-in-mendoza-argentina-with-pool-home-and-olive-farm": {
+      "title": "Schönes Wohnhaus auf 27 ha (66 acres) mit Tourismuseinnahmen und Olivenhain",
+      "kicker": "Großartiger Blick auf die Sierra Pintada!",
+      "paragraphs": [
+        "Dieses reizvolle, vollständig möblierte Anwesen auf 66 acres wurde sowohl als Privatwohnsitz als auch als Tourismusliegenschaft in Cuadro Benegas betrieben, einem beliebten Urlaubsgebiet. Das Haus hat 5.500 sq ft (510 m²) mit 5 Schlafzimmern (mit eigenem Bad …"
+      ]
+    },
+    "gorgeous-vineyard-sale-alvear-mendoza-argentina": {
+      "title": "Schöne Finca von 40 ha (100 acres) mit 2 Häusern und Weinberg in General Alvear: US$400.000, verhandelbar",
+      "kicker": "US$200.000 über dem Angebotspreis geschätzt!",
+      "paragraphs": [
+        "Diese schöne Finca von 40 ha (100 acres) mit zwei Häusern hat 30 ha (75 acres) Qualitätsweintrauben, kurz außerhalb von General Alvear.",
+        "Die Trauben sind zu 75 % Syrah und zu 25 % Malbec. Die Weinberge werden per Tropfbewässerung versorgt und sind mit Hagelschutznetzen überspannt.",
+        "Die Finca hat einen Bewässerungsbrunnen und ein schönes Rückhaltebecken mit einem Fassungsvermögen von 10 Millionen Litern (2,6 Millionen Gallonen).",
+        "General Alvear ist eine Stadt mit etwa 30.000 Einwohnern, 90 km (55 Meilen) südöstlich von San Rafael."
+      ]
+    },
+    "72": {
+      "title": "400 acres (162 ha) mit Wohnhaus und großem landwirtschaftlichem Potenzial",
+      "kicker": "Viel Potenzial!",
+      "paragraphs": [
+        "Diese Finca hat ein sanierungsbedürftiges Wohnhaus und brachliegendes Land, das bewirtschaftet oder für Pferde, Rinder und anderes Vieh genutzt werden kann. Es ist geeignet für Reben, Obstanlagen, Oliven, Reihenkulturen oder Luzerne. Rund um das Haus stehen Pfirsiche, Birnen, Pflaumen, Mandeln und Feigen.",
+        "An der Vorderseite der Liegenschaft stehen außerdem viele Bäume, es gibt ein weiteres kleines Haus für einen Arbeiter und Kanäle entlang der Fläche zur Bewässerung.",
+        "Die Fotos des Hauses stammen aus der Zeit vor dem letzten Verkauf. So sieht das Gebäude heute nicht mehr aus. Es braucht jetzt eine ordentliche Sanierung, ließe sich aber wahrscheinlich wieder in diesen Zustand bringen."
+      ]
+    },
+    "lush-working-farm-in-production-for-sale-san-rafael-mendoza-argentina": {
+      "title": "Üppige Finca von 36,5 ha (90 acres) mit Mais, Tomaten und Luzerne, mit Rindercorral",
+      "kicker": "Viel Wasser!",
+      "paragraphs": [
+        "Dies ist eine Finca von 90 acres (36,5 ha), etwa 35 Minuten von San Rafael in Las Malvinas, einer für Reihenkulturen und Luzerne bekannten Gegend, die derzeit die stärkste Rinderentwicklung im Bezirk aufweist.",
+        "Es gibt ein gut instand gehaltenes Mitarbeiterhaus, eine Scheune, eine Viehschleuse, Wassertränken und eine Verladerampe für Vieh. Dazu kommen Koppeln zur Unterteilung von Vieh- und Kulturflächen mit Elektrozäunen. Die Umzäunung ist in gutem Zustand. Es gibt Corrals und Hühnerstallungen. Ein Rückhaltebecken zur Bewässerung ist vorhanden, wird derzeit aber nicht genutzt, weil das Kanalwasser ausreicht.",
+        "Die Finca ist an Trinkwasser und Strom angeschlossen."
+      ]
+    },
+    "level-farmland-with-great-view-for-sale-in-mendoza-argentina": {
+      "title": "22 ha (54 acres) erstklassiges planiertes Ackerland mit großartigem Blick",
+      "kicker": "Gutes Wasser! Potenzial als Bauplatz",
+      "paragraphs": [
+        "Diese Finca von 22 ha (54 acres) liegt verkehrsgünstig nur 8 Meilen vom Stadtzentrum und hat sehr schöne Blicke auf die bunten Hügel der Sierra Pintada.",
+        "Lage und Aussicht machen diese Finca zum perfekten Platz für ein Wohnhaus oder Touristenhütten. Sie liegt an einer asphaltierten Straße in einer Gegend, in der Wochenendhäuser und Hütten gebaut werden.",
+        "Der Boden ist erstklassiges Ackerland, gelegen in Rama Caída, einer Gegend, die sich für viele Kulturen, Obst, Reben oder Nüsse gut eignet.",
+        "Das Land wurde früher mit Oregano und Gewürzkräutern bewirtschaftet, liegt aber seit etwa 5 Jahren brach.",
+        "Es ist im Besitz einer Gesellschaft, die sich problemlos auf einen neuen Käufer übertragen lässt – oder es wird ohne sie verkauft."
+      ]
+    },
+    "campocoroneles": {
+      "title": "50 acres (20 ha) unberührtes Land mit Blick auf die Vorkordilleren",
+      "kicker": "Höhe 2.785 Fuß",
+      "paragraphs": [
+        "Diese Liegenschaft besteht aus 50 eingezäunten Acres unerschlossenen Campos im Abschnitt Los Coroneles von Cuadro Benegas.",
+        "Auf dem Land wachsen einheimische Pflanzen und Bäume, darunter Pappeln, Feigen und weitere Arten. Das Land hat im Grundbuch eingetragene Wasserrechte für 12,5 acres (5 ha) und wird über interne Kanäle versorgt.",
+        "Die Liegenschaft liegt 21,7 km (13 Meilen) vom Zentrum von San Rafael. 14,4 km führen über Asphalt, die restlichen 7,3 km über unbefestigte Straßen in gutem Zustand."
+      ]
+    },
+    "valle-de-uco-boutique-winery-and-vineyard-for-sale-argentina": {
+      "title": "Boutique-Bodega mit einem der besten Weine der Welt!: US$1,5 Millionen",
+      "kicker": "Spektakulärer Andenblick!",
+      "paragraphs": [
+        "Diese moderne Boutique-Bodega mit eigenem Weinberg exportiert nach Europa und wurde von einem angesehenen Weinkritiker dafür ausgezeichnet, einige der besten Weine der Welt zu erzeugen – im besten Weinbaugebiet Mendozas."
+      ]
+    },
+    "luxury-boutique-hotel-olive-factory-restaurant-farm-for-sale-mendoza-argentina": {
+      "title": "Luxus-Boutiquehotel, Olivenölbetrieb, Olivenhaine und Restaurant",
+      "paragraphs": [
+        "Diese außerordentlich vielseitige Ertragsliegenschaft umfasst ein Luxus-Boutiquehotel, Olivenhaine, eine handwerkliche Olivenölproduktion und ein kleines Restaurant mit Innen- und Außenplätzen, das derzeit verpachtet ist. Sie liegt auf 32 acres in einem beliebten Tourismusgebiet an der Skiroute nach Las Leñas außerhalb von San Rafael, Mendoza, eingebettet gegenüber den Algodon Golf and Wine Estates im Millionenwert.",
+        "Das Hotel hat eine Gästebewertung von 9,8 Sternen und umfasst mehr als 6.000 sq ft mit sechs fein ausgestatteten Zimmern.",
+        "Über den Wohnräumen des Hotels liegt ein großer Dachpatio mit Blick über die Olivenhaine und einem schönen Ausblick auf die Sierra Pintada. Auch vom Pool aus hat man einen guten Blick auf die Haine und die Sierra Pintada."
+      ]
+    },
+    "nice-pool-home-on-30-acres-for-sale-in-mendoza-argentina": {
+      "title": "Schönes Poolhaus mit bewaldetem Park auf 12 ha (30 acres)",
+      "kicker": "Bewässerungsbrunnen, 25 acres pflanzfertig!",
+      "paragraphs": [
+        "Diese Finca von 12 ha (30 acres) liegt etwa 20 Minuten vom Zentrum von San Rafael, eine Meile abseits einer asphaltierten Straße.",
+        "Das Haus hat einen Pool, und rund um das Gebäude liegt ein Parkbereich mit einem Wäldchen von etwa 200 hohen Eukalyptusbäumen.",
+        "Mindestens 25 acres sind pflanzfertig. Vor Jahren stand hier ein Weinberg im Besitz einer bekannten Winzerfamilie, die die Trauben für ihre Bodega erntete.",
+        "Viel Ruhe, wenige Nachbarn und ein angenehmer Ort zum Leben, so wie er ist – oder für Kulturen wie einjähriges Gemüse, Weinberg, Obst oder Olivenbäume.",
+        "Es stehen einige große, ausgewachsene Aprikosenbäume und ein paar weitere Obstbäume für den Eigenbedarf."
+      ]
+    },
+    "cheap-cabernet-vineyard-farm-for-sale-in-san-rafael-mendoza-argentina": {
+      "title": "Finca mit 10 ha (25 acres), Cabernet für Qualitätsweine und Tafeltrauben",
+      "paragraphs": [
+        "Diese Finca von 25 acres (10 ha) in Las Paredes hat 8,5 acres Cabernet Sauvignon unter Netzen sowie weitere 3,4 acres Tafeltrauben ohne Netze. Sie liegt in der erstklassigen Weinbergszone 1 für Qualitätsweine, weniger als zwei Meilen von dort, wo die Bodega Bianchi ihre spektakuläre Kellerei und ihre Weinberge im Millionenwert hat.",
+        "Der Weinberg ist zu einem Preis angesetzt, der unter den reinen Anlagekosten liegt – und danach kämen fünf Jahre Pflege und Aufwand bis zum ersten Jahr mit einer ordentlichen Ernte.",
+        "Der Preis von US$68.000 enthält die meisten Abschlusskosten, das ist also etwa der geschätzte Gesamtbetrag, den der Käufer zahlen muss."
+      ]
+    }
+  }
+}

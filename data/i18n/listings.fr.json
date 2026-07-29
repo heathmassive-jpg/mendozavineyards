@@ -1,0 +1,951 @@
+{
+  "_note": "French translations of the property descriptions, index-aligned with the English `paragraphs` in listings.json. Formal 'vous'. Figures are preserved exactly — where the English gives both acres and hectares, both are kept; where it gives only acres, the hectare equivalent is added in brackets, because a French buyer does not think in acres. French number convention (1 234,5 with a no-break space). Rural vocabulary: finca, campo, irrigation, droits d'eau, luzerne, puits, éolienne, quincho — Argentine terms kept where they name the actual thing and glossed on first use. Reviewed-by: PENDING — a native French speaker should read this before launch.",
+  "_verify": "py tools/tests/test_listing_translations.py fr",
+  "_corrections": [
+    "[FIXED IN ENGLISH SOURCE 2026-07-29] gorgeous-vineyard[2] 'well and and a'; 72[2] 'does not looks'; nice-pool-home[0] 'from the the center', [1] 'is a a park area' and 'eucalytus'->'eucalyptus', [3] missing comma in 'annual vegetables vineyard'; cheap-cabernet[2] 'is the roughly the estimated'.",
+    "🔴 OPEN FOR HEATH/BYRON: property-for-sale-in-mendoza-argentina-with-pool-home-and-olive-farm has a SINGLE paragraph that is truncated mid-sentence in the source — it ends '5 bedrooms (en-suite...'. The rest of the description is missing from listings.json entirely. Translated as-is including the ellipsis; the English needs the missing text recovered."
+  ],
+  "listings": {
+    "valle-de-uco-mendoza-fine-wine-vineyard-for-sale-with-winery-operation": {
+      "title": "Vignoble premium pour grands vins avec installation de vinification, Valle de Uco, Mendoza",
+      "kicker": "Domaine de 45,7 ha et vin primé",
+      "paragraphs": [
+        "Ce domaine viticole admirablement entretenu se situe dans le superbe Valle de Uco, sur la Ruta 89, à Gualtallary, au cœur de Mendoza, mondialement réputée pour ses vins d'exception.",
+        "La propriété possède un vignoble prospère, conduit dans des conditions idéales avec des cépages prestigieux qui donnent des vins de grande qualité. Au-delà de son potentiel viticole, le domaine offre, dans un cadre idyllique, une vue à couper le souffle sur la majestueuse cordillère des Andes.",
+        "Le propriétaire actuel vend une partie des raisins pour couvrir les frais d'exploitation et fait vinifier une autre partie en vin premium de haut de gamme dans une bodega réputée de Mendoza.",
+        "Le vignoble dispose d'une équipe formée, prête à rester en place. Si les nouveaux acquéreurs souhaitent produire leur propre vin, les propriétaires actuels aideraient en proposant des prestations de vinification et pourraient être intéressés par l'achat de raisins du vignoble à l'avenir, en complément de leur activité de vente de vin. Si au contraire les nouveaux propriétaires veulent prendre une autre direction, les propriétaires actuels peuvent les conseiller sur les bodegas capables d'assurer la vinification et faire des recommandations en ce sens.",
+        "Dans la bodega où le vin est actuellement élaboré se trouvent des cuves appartenant au domaine, qui peuvent également être acquises séparément afin de poursuivre la production.",
+        "Le vignoble compte 13 cépages et associe des noms emblématiques comme le malbec, le cabernet sauvignon et le chardonnay à d'autres plus rares comme le viognier, le petit verdot, le gewurztraminer et la roussanne – d'où des vins complexes qui expriment le terroir remarquable de la région. Surface plantée : 30,0 ha (74,13 acres)",
+        "Cabernet sauvignon – 6,5 ha (16 acres) ; malbec – 8,75 ha (21,62 acres) ; sémillon – 0,5 ha (1,24 acres) ; sauvignon blanc – 0,5 ha (1,24 acres) ; gewurztraminer – 1 ha (2,47 acres) ; syrah – 1 ha (2,47 acres) ; petit verdot – 1 ha (2,47 acres) ; merlot – 1 ha (2,47 acres) ; viognier – 1,75 ha (4,32 acres) ; pinot noir – 2 ha (4,94 acres) ; roussanne et grenache – 0,5 ha (1,24 acres) ; chardonnay – 5,5 ha (13,59 acres)",
+        "Voici des photos d'une partie du matériel de vinification, qui peut être acquis séparément si vous le souhaitez",
+        "Rénovée en 2023, 100 m² de surface habitable. Chauffe-eau solaire. Construite sur une parcelle clôturée de 850 m² pour l'intimité et la sécurité, avec espace barbecue, four extérieur et pergola.",
+        "200 m² (2 152 sq ft). Rénovée en 2023. Comprend deux salles de bains et un petit logement pour le personnel.",
+        "Deux réservoirs (8 millions de litres de capacité) construits en 2023. Puits rénové en 2024, avec les caractéristiques suivantes : – diamètre : 12 pouces – débit : 222 m³/h (sans pression), 204 m³/h (à 4,5 kg de pression) – puissance du moteur : 175 CV – armoire électrique – l'ensemble du vignoble est équipé d'un système de goutte-à-goutte moderne",
+        "70 % des piquets du vignoble ont été récemment remplacés. Goutte-à-goutte. Filets anti-grêle sur la plus grande partie du vignoble. Structure robuste et bien entretenue.",
+        "36 panneaux photovoltaïques (600 Wc chacun, AMERISOLAR AS-8M120-HC-600W) – un onduleur solaire triphasé de 40 kW (GROWATT MID40KTL3-X) – structures support en aluminium et fondation – installation électrique complète – extensible à 162 panneaux pour alimenter tout le domaine",
+        "Deux réservoirs d'une capacité de 8 millions de litres, raccordables au système d'irrigation par pompe",
+        "Tracteur Roland (60 CV, 4WD 4x4), année 2023. Débroussailleuse. 2 cultivateurs interceps. Remorque-citerne à un essieu. Remorque à deux essieux avec ridelles. Remorque à un essieu. Pulvérisateur (2 000 litres de capacité), année 2023. Chisel. Herse à disques. Sous-soleuse.",
+        "Le domaine est entièrement paysagé avec des arbres indigènes et fruitiers, dont 80 oliviers adultes qui permettent la production d'huile d'olive et soignent l'aspect des lieux, ce qui renforce la biodiversité et la valeur écologique.",
+        "INVENTAIRE DES PLANTATIONS ORNEMENTALES, INDIGÈNES ET FRUITIÈRES",
+        "20 cyprès de Leyland (Cupressus leylandii), 25 épinettes bleues (Picea pungens *Glauca*), 150 nandinas (Nandina domestica), 150 lins de Nouvelle-Zélande (Phormium rubra), 50 espuma de leche (plante ornementale locale), 55 acacias dorés (Acacia frisia), 55 acacias rouges (Acacia casquerouge), 90 frênes d'Amérique (Fraxinus americana), 80 frênes rouges (Fraxinus spp.), 20 frênes dorés (Fraxinus spp.), 13 catalpas (Catalpa spp.), 80 pruniers à feuilles pourpres (Prunus cerasifera), 30 érables argentés (Acer saccharinum), 10 érables trifides (Acer buergerianum) et 60 mûriers hybrides (Morus spp.)",
+        "20 cerisiers, 20 noyers, 60 pêchers, 30 abricotiers, 40 pommiers, 20 poiriers, 30 pruniers, 20 figuiers noirs, 5 figuiers blancs, 232 arbustes à petits fruits variés et 80 oliviers",
+        "150 peupliers (Populus spp.), 80 saules (Salix spp.), 30 iris d'Allemagne (Iris germanica), 1 250 lavandes de France et 1 000 rosiers",
+        "Le domaine comprend des plans d'architecte détaillés et les permis de construire pour : – une bodega avec ses installations d'exploitation – un espace touristique avec restaurant",
+        "Ce projet visionnaire ouvre un potentiel considérable, idéal pour les amateurs de vin comme pour les investisseurs en quête d'une occasion unique.",
+        "RÉCOMPENSES ET NOTES DES VINS ISSUS DE CE VIGNOBLE",
+        "Malbec Gran Reserva – 94 points : Gilbert & Gaillard ; 91 points : Vinous ; 91 points : Wine Enthusiast",
+        "Our Blend – 93 points : Gilbert & Gaillard ; 90 points : Wine Enthusiast ; 91-93 points : Vinous",
+        "Malbec Reserva – 93 points : Gilbert & Gaillard ; 90 points : Wine Enthusiast ; 90 points : Vinous",
+        "Cabernet Sauvignon Reserva – 91 points : Gilbert & Gaillard ; 90 points : Wine Enthusiast",
+        "Viognier – 90 points : Gilbert & Gaillard ; 92 points : Vinous ; 90 points : Wine Enthusiast",
+        "Sauvignon Blanc – 90 points : Vinous ; 90 points : Wine Enthusiast",
+        "Leur malbec rosé a été retenu dans le Premium Rosé Report 2023 de l'IWSC – Club Oenologique et noté 91 points. Il a été jugé parmi 223 autres rosés premium du monde entier et fut l'un des deux seuls vins argentins retenus.",
+        "1. Emplacement stratégique – la première région viticole de Mendoza",
+        "Situé à Gualtallary, sous-région prestigieuse du Valle de Uco, ce vignoble partage son terroir avec des producteurs de renommée internationale comme Salentein et Rutini. La terre y est rare et très recherchée. Investir maintenant, c'est prendre position dans une micro-région dont la valeur monte rapidement.",
+        "2. Pleinement opérationnel, avec un potentiel d'extension clés en main",
+        "Avec 30 hectares déjà plantés, deux réservoirs, l'énergie solaire et les permis délivrés pour une bodega et un espace touristique, le domaine est prêt à se développer. Les bases sont posées : il n'y a pas à repartir de zéro.",
+        "3. Potentiel de revenus diversifié. Au-delà de la production de vin, ce domaine offre",
+        "Des revenus touristiques grâce au restaurant et au centre d'accueil prévus. – Des exports de vin à forte valeur, appuyés sur la diversité des cépages déjà en place. – La production d'huile d'olive à partir de 80 oliviers adultes. – La possibilité d'un éco-lodge ou d'un projet d'agrotourisme sur la surface non aménagée.",
+        "Équipée de l'énergie solaire, du goutte-à-goutte et d'une structure de vignoble récemment modernisée (70 % des piquets renouvelés), la propriété assure durablement l'efficacité de l'exploitation et le respect de l'environnement – essentiel pour des consommateurs et des investisseurs attentifs.",
+        "Les acquéreurs peuvent produire leur propre vin sous leur marque, et les propriétaires assureront une vinification sous licence, facturée au kilo de raisin et conduite selon les spécifications du client (degré d'alcool, assemblages, élevage en bois et vieillissement, etc.).",
+        "Une fois le vin prêt en vrac, l'acquéreur peut participer à l'achat des bouteilles et des autres fournitures pour étiqueter, boucher, embouteiller et conditionner le produit, les frais étant partagés. Cela permet d'obtenir de meilleurs prix auprès des fournisseurs ; une fois embouteillé, le vin peut être conservé dans un entrepôt à température contrôlée ou expédié directement aux acheteurs et aux distributeurs.",
+        "6. Un prix attractif au regard des autres régions viticoles du monde",
+        "Comparée à la Napa Valley ou à la Toscane, Mendoza offre une valeur foncière exceptionnelle et un climat constant. Ce vignoble réunit les conditions de vinification européennes pour une fraction du coût, avec un meilleur accès à l'eau et peu de contraintes réglementaires.",
+        "Ce vignoble de Gualtallary est une occasion d'investissement rare dans l'une des régions viticoles les plus prisées de Mendoza. Avec un accès direct à la Ruta 89, il est idéalement situé pour attirer les œnotouristes et les amateurs passionnés",
+        "Un terroir et un climat exceptionnels garantissent la production de vins premium. – L'infrastructure rénovée (vignoble, entrepôt, maison) soutient une exploitation efficace. – Arbres indigènes, arbres fruitiers et oliviers créent un cadre harmonieux et durable. – L'énergie solaire et les réservoirs traduisent une approche moderne et respectueuse de l'environnement. – Un projet de bodega et d'espace touristique est déjà approuvé pour le site, plans et permis compris, ce qui offre une opportunité de développement clés en main."
+      ]
+    },
+    "real-estate-for-sale-in-argentina-with-vineyard-on-3-farms-reduced": {
+      "title": "Vignoble de premier ordre – plus de 40 ha (100+ acres) dont 30 ha (75 acres) de raisins premium",
+      "kicker": "Les propriétaires ont investi US$1,5 million !",
+      "paragraphs": [
+        "Il s'agit d'une exploitation viticole en activité, composée de 3 propriétés distinctes dans le secteur de Las Paredes, à San Rafael. Au total plus de 40 ha (100+ acres), dont 30 ha (75 acres) de vignes de grande qualité en plein rendement (50 % de malbec, avec sauvignon blanc, cabernet sauvignon, pinot noir, cabernet franc, syrah et un peu de torrontés).",
+        "Plus de 4 ha (10+ acres) de terrain sont également disponibles pour de nouvelles plantations, ainsi qu'environ 6 ha (15+ acres) comprenant deux maisons d'employés sur des parcelles distinctes, des hangars pour le matériel et les fournitures, des dépendances, des chemins, des oliviers et des arbres fruitiers.",
+        "La propriété comprend un réservoir de 1 ha (2,5 acres) avec un système de goutte-à-goutte pour 22 ha (55 acres).",
+        "La production est d'environ 230 000 à 290 000 kilos de raisins, vendus chaque année à différentes bodegas.",
+        "Toutes les vignes sont protégées par des filets anti-grêle.",
+        "Ces dernières années, la bodega Bianchi – l'une des toutes premières d'Argentine – s'est engagée par contrat à acheter une grande partie de la récolte. Bianchi est très sélective dans ses achats de raisin et n'achète en général que les raisins de la plus haute qualité de la région.",
+        "Les propriétés comptent également environ 150 oliviers. Plus de 100 d'entre eux ont 8 ans et sont en production, mais ils ont été durement touchés par la grêle il y a quatre ans et se remettent encore.",
+        "Le prix comprend un tracteur, une moto ainsi que divers outils et matériels, avec l'ensemble des fournitures présentes.",
+        "Les propriétaires sont prêts à vendre après plus de 10 ans de travail de mise en valeur et plus de US$1 500 000 investis, pour des raisons de santé et en raison de l'âge avancé de certains associés. Ils pourraient accepter de vendre les propriétés séparément plutôt que toutes ensemble.",
+        "(PLUS DE DÉTAILS DONNÉS PAR LES PROPRIÉTAIRES SOUS LES PHOTOS)",
+        "PLUS DE DÉTAILS SUR LES TROIS EXPLOITATIONS, DANS LES MOTS DES PROPRIÉTAIRES",
+        "\"Il s'agit d'une parcelle de 6 ha (14,8 acres) située sur la Calle Jensen à San Rafael, non loin de la route principale, de l'aéroport et de la bodega Bianchi (coordonnées Google Maps -34.602871, -68.414740). Elle se trouve en face des vignobles de Mumm, dans un très beau secteur de vignes et de maisons.",
+        "\"La Angela est plantée pour moitié environ en syrah et pour moitié en malbec. Ces vignes ont été plantées à l'origine par un cadre de Mumm comme vignoble personnel. Nous la possédons depuis 11 ans. Les vignes ont 18 ans et sont de grande qualité. La parcelle est irriguée par submersion depuis un canal qui longe l'avant de la propriété sur la Calle Jensen. Nous avons amélioré le système d'irrigation au fil des ans. La propriété dispose de droits d'eau de canal attitrés, suffisants pour les 6 ha de vignes.",
+        "\"Le reste du terrain comprend une maison d'employé et une zone de stockage dans un bâtiment de plain-pied, avec un garage séparé et un château d'eau, ainsi qu'un four à pain et divers aménagements. Ce secteur compte plusieurs arbres fruitiers et à fruits secs, récoltés chaque année, ainsi qu'un potager. La propriété est entièrement clôturée et très bien entretenue.",
+        "\"Chaque année, nous vendons sans difficulté le malbec de grande qualité de cette parcelle, principalement à la bodega Bianchi. La syrah est un peu passée de mode en ce moment et sert surtout aux assemblages ; quand nous ne parvenons pas à vendre le raisin, nous le faisons souvent transformer en moût à la bodega Giaroli et nous vendons le moût aux bodegas au prix du marché plus tard dans l'année.\"",
+        "\"Il s'agit d'une propriété de 30 ha (74,13 acres), à l'origine des pâturages, que nous avons mise en valeur et plantée au cours des 12 dernières années. Elle se situe dans le secteur de Las Paredes, au nord de la ville, à environ 20 minutes du centre (coordonnées Google Maps -34.535589, -68.378554). Comme vous pouvez le voir, elle se trouve dans une zone comptant de nombreux vignobles et vergers, même si la carte Google semble assez ancienne.",
+        "\"Au fil des ans, nous avons planté différents cépages, avec environ 50 % de malbec et, en moindre proportion, du pinot noir, du sauvignon blanc, du cabernet sauvignon, du cabernet franc et du torrontés. Les plants les plus anciens ont 12 ans (malbec) et les plus jeunes (6 ans) sont le torrontés et le cabernet franc. Toutes les vignes sont en plein rendement. Sur les 30 ha, environ 75 % sont en vignes, le reste étant constitué de chemins intérieurs, du réservoir et d'oliviers.",
+        "\"Nous avons ajouté sur cette propriété un réservoir de 1 ha et un système de goutte-à-goutte. Deux pompes italiennes en état de marche servent à ce système, abritées dans un bâtiment distinct à côté du réservoir, avec une ligne électrique dédiée. Nous avons creusé un fossé du canal jusqu'au réservoir, qui contient environ 2 semaines de réserve d'eau. La propriété dispose de droits d'eau de canal attitrés pour l'ensemble des 30 ha.",
+        "\"La propriété compte également environ 80 oliviers en production, âgés d'environ 12 ans, ainsi qu'environ 50 autres plantés il y a environ 3 ans, encore loin de produire.",
+        "\"Les raisins de cette propriété sont considérés comme de bonne qualité, sans toutefois valoir ceux de La Angela. Nous n'avons aucune difficulté à vendre l'essentiel de la récolte chaque année, principalement à Bianchi et Mumm, même s'il nous faut parfois faire transformer une partie du raisin en moût à la bodega Giaroli, selon les besoins des acheteurs. Nous vendons le moût sans problème chaque année.\"",
+        "\"Il s'agit d'une propriété de 5 ha (12,3 acres) située à une seule parcelle à l'est de La Paca (coordonnées Google Maps -34.529392, -68.375445). Elle comprend environ 4 ha de terrain nivelé mais non planté, le reste étant occupé par un grand bâtiment et une aire de stationnement. Ce grand bâtiment de plain-pied abrite un logement d'employé, un garage pour tracteurs, un bureau et divers locaux de stockage pour l'outillage et les fournitures destinés à La Paca.\"",
+        "\"Outre les 3 propriétés, nous disposons d'un tracteur d'occasion, d'un scooter et de divers outils et fournitures qui seraient inclus dans la vente. Selon la période de l'année, nous avons aussi du vin en cuve chez Giaroli, qui pourrait être inclus s'il n'est pas vendu avant. Notre responsable et nos 3 employés à temps plein accepteraient de rester en poste pour qui souhaiterait acheter les propriétés.\"",
+        "Malbec – 99 808 kg (2021) – 106 632 kg (2022) ; pinot noir – 27 460 kg (2021) – 38 720 kg (2022) ; sauvignon blanc – 42 880 kg (2021) – 56 004 kg (2022) ; cabernet sauvignon – 3 670 kg (2021) – 2 970 kg (2022) ; cabernet franc – 15 871 kg (2021) – 26 700 kg (2022) ; torrontés – 30 005 kg (2021) – 35 020 kg (2022) ; syrah – 23 740 kg (2021) – 24 040 kg (2022)",
+        "2018 : 288 714 kilos ; 2019 : 231 085 kilos ; 2020 : 290 086 kilos ; 2021 : 243 164 kilos"
+      ]
+    },
+    "valle-de-uco-vineyard-wine-exports-hotel-project-for-sale-mendoza-argentina": {
+      "title": "Valle de Uco ! Domaine viticole exceptionnel avec exports de vins primés et projet de resort de luxe",
+      "kicker": "Trois vignobles au total",
+      "paragraphs": [
+        "Cette société est une véritable exploitation clés en main. Elle travaille avec une société de gestion viticole compétente de Mendoza qui conduit les vignobles et l'ensemble des opérations, y compris la vente, la logistique et l'export. Depuis plus de dix ans, les deux entreprises ont mis au point ensemble une stratégie rentable pour élaborer, promouvoir et vendre des vins de boutique de qualité issus des vignobles de la société.",
+        "Afin de maîtriser la qualité du vin, seuls les raisins issus des trois vignobles sont utilisés. L'âge des vignes va de 15 à 75 ans. Les surfaces réunies portent du malbec, du cabernet sauvignon, du cabernet franc, de la syrah, du petit verdot et du carménère. Selon l'emplacement, le vignoble dispose d'un puits et d'un goutte-à-goutte, ou de l'eau venue des Andes par le réseau de canaux. Les tracteurs de la société sont abrités dans le hangar de stockage, avec le camion et les autres matériels utilisés dans les vignes.",
+        "Environ 40 ha (près de 98 acres) sont plantés en vignes, mais la majeure partie des raisins est vendue à des acheteurs locaux : la production de vin pourrait donc être fortement augmentée et dégager davantage de recettes avec plus de commercialisation et de distribution.",
+        "Les vins de la société sont commercialisés sous 2 marques différentes et proposent au marché 6 vins distincts. Au fil des ans, ils ont reçu de nombreuses distinctions de critiques comme Parker, Suckling, Tanzer, Wine Enthusiast, Tastings, Wine Spectator, Guía Descorchados et bien d'autres.",
+        "Les propriétaires préparent un projet de resort viticole de luxe conçu par un architecte réputé de Mendoza, niché dans le vignoble de Vistaflores avec des vues spectaculaires sur les Andes. (Photos ci-dessous)",
+        "Entièrement réalisé, le coût de construction s'élève à environ USD 1,5 million. Les propriétaires travaillent actuellement à l'obtention du permis, avec un financement avantageux du gouvernement de Mendoza.",
+        "Les vins de la société ont très bien réussi en concours. Aux États-Unis, ils ont été distingués au Houston Rodeo Wine Competition et au New Orleans International Wines Competition, remportant respectivement des boucles de ceinture d'or et d'argent et des prix Gold et Best in Class. En Europe, ils ont reçu des distinctions des Harpers Wine Stars à Londres et des médailles de bronze à Bordeaux. Lors de concours à Hong Kong, ils ont obtenu des médailles d'argent et de bronze.",
+        "Selon le temps, important ou réduit, qu'un propriétaire souhaite consacrer à ce projet, il peut fixer lui-même le rythme. Les étapes auxquelles participer sont nombreuses : travailler avec les agronomes à la conduite des vignes, assister aux fêtes des vendanges, collaborer avec les vinificateurs au choix des assemblages, représenter la société lors de salons internationaux comme Vinexpo et ProWein, ou travailler avec les distributeurs de la société dans le monde entier pour présenter et vendre le vin.",
+        "Voici le resort de luxe proposé, tel que l'a dessiné l'architecte",
+        "Table de tri : de retour à la bodega, on remarque que l'égrappage et l'effeuillage se font à la main et non à la machine. Cette sélection soigneuse des raisins qui entrent dans les cuves garantit la netteté et la qualité du vin, pour un produit final exceptionnel. Seuls les vignerons de haut niveau font cet effort supplémentaire.",
+        "Vues splendides sur les Andes et rosiers. Les photos montrent des rosiers plantés à côté des vignes. Les meilleurs vignobles plantent souvent des rosiers, car ils avertissent de l'arrivée des pucerons ou de l'oïdium. Ces ravageurs et maladies apparaissent d'abord sur les rosiers, ce qui indique aux ouvriers qu'il faut traiter les vignes avec un produit homologué en agriculture biologique.",
+        "Taille : en hiver, les ouvriers accrochent leurs vestes aux piquets du vignoble pendant qu'ils taillent les vignes. Une bonne taille est un art, qui doit être conduit par de vrais professionnels, sans quoi la récolte et la qualité du raisin en souffrent.",
+        "Photos des maisons des ouvriers. La première est un plan rapproché. Les autres maisons se voient au loin, en hiver.",
+        "Voici quelques critiques et notes de vin signées par de grands critiques internationaux (traduites de l'anglais)",
+        "FAMILY SELECTION (96 points) « Un assemblage rouge de style ancien monde merveilleusement complexe, avec une grande profondeur et un bel équilibre. » – Tastings (Beverage Testing Institute)",
+        "RESERVE MALBEC (92 points) « Des arômes parfumés de chêne grillé, de minéraux terreux, d'épices asiatiques, de cuir et de cerise noire conduisent à un vin à la texture velouté, succulent et bien proportionné, qui s'ouvre dans le verre pour révéler un excellent volume et une belle longueur. » – Robert Parker Wine Advocate",
+        "RESERVE CABERNET FRANC (92 points) « Mûres, mûres de mûrier, prunes, avec beaucoup d'épices à pâtisserie et de vanille. Corps plein, tanins juteux, acidité vibrante et finale franche. Montre de la clarté et de la tension. » – James Suckling, critique de vin américain",
+        "MALBEC VALLEY (93 points) « Robe noir violacé profond. Arômes et saveurs vifs de cerises épicées et de tarte aux fruits rouges, avec un corps satiné, vif, sec tout en restant fruité, moyen à plein, et une finale chaleureuse, charmeuse, de longueur moyenne, sur des impressions de crème vanillée et de betterave rôtie, avec des tanins mâchus et un boisé léger. Un compagnon de table délicieux et savoureux. » – Tastings (Beverage Testing Institute)",
+        "TRES FINCAS BLEND (92 points) « Arômes et saveurs riches de tarte aux myrtilles à la mode et de pommes épicées. Corps moyen à plein et finale chaleureuse, intéressante, de longueur moyenne, sur des impressions de crème vanillée et de légumes-racines savoureux, avec des tanins mâchus et un boisé léger. Un rouge vibrant et gourmand, qui accompagnera très bien des plats généreux. » – Tastings (Beverage Testing Institute)",
+        "Cliquez ci-dessous pour accéder au THE VISTA FLORES ESTATE WINE PROJECT et obtenir plus d'informations",
+        "Cliquez ici pour accéder au Vista Flores Wine Project"
+      ]
+    },
+    "castro": {
+      "title": "Finca de 5,9 ha (14,6 acres) avec maison agréable, verger et vignoble",
+      "kicker": "Prix vient d'être réduit de US$50 000 pour une vente rapide",
+      "paragraphs": [
+        "Cette finca de 14,6 acres (5,9 ha) à Cañada Seca, près de San Rafael, est l'occasion idéale pour qui souhaite vivre à la campagne tout en restant proche des commerces et des services, dans un cadre champêtre idyllique, avec l'eau et l'électricité municipales.",
+        "La maison partiellement meublée convient parfaitement à une famille avec enfants, dans un secteur recherché et calme au cœur de la région viticole et touristique argentine (San Rafael figure régulièrement parmi les 4 à 5 premières destinations de vacances du pays). Elle se trouve à environ 350 m de 2 petits commerces offrant l'essentiel et d'un arrêt de bus au même angle de rue, à environ 1 km du centre de santé local et de 2 écoles primaires, et à environ 10 minutes de plusieurs supermarchés, boulangeries, boucheries, marchands de fruits et légumes, 2 lycées, coiffeurs, 2 autres centres de santé, vétérinaires, services, etc.",
+        "La propriété se trouve dans une voie sans issue et se divise en deux parties : la parcelle avec la maison familiale est entièrement clôturée et fermée par des portails verrouillables ; le verger dispose également de portails verrouillables et d'un grillage sur tout le périmètre. Tous les papiers, actes et titres sont en ordre, toutes les taxes et redevances sont à jour, la propriété est libre de dettes.",
+        "Les impôts annuels sont extrêmement faibles du fait de la situation rurale.",
+        "La propriété dispose de droits d'eau complets et définitifs du service provincial de l'irrigation, et elle est équipée pour une irrigation autonome et simple par le réseau de canaux existant.",
+        "On y trouve 3 variétés de prunes, ainsi que des abricots, des coings, des olives (pour l'huile et la table) et un petit vignoble de bonarda (barbera) de très bonne qualité. Il y a également un corral de 35 m x 7 m avec une vaste écurie couverte, adaptée aux chevaux ou à d'autres animaux. Une zone actuellement inutilisée permettrait de construire des cabañas ou de planter d'autres cultures.",
+        "Le mobilier visible sur les photos n'est pas inclus en totalité.",
+        "(PLUS DE DÉTAILS SUR LA MAISON SOUS LES PHOTOS)",
+        "Entourée d'arbres adultes qui donnent une ombre bienvenue en été, dont plusieurs mûriers, néfliers du Japon, figuiers, grenadiers, oliviers et pêchers. Une véranda couverte en L à l'avant, avec un barbecue traditionnel appelé « churrasquera ».",
+        "Depuis la véranda, on entre dans un vaste séjour-salle à manger dont les portes doubles ouvrent sur le patio arrière. La pièce est équipée d'un climatiseur réversible.",
+        "La cuisine est entièrement équipée, avec une cheminée à bois et une porte latérale donnant sur la véranda.",
+        "Une salle de bains complète dispose de sanitaires et de robinetteries neufs. Il y a un cellier avec de nombreuses étagères. La chambre avant possède un dressing. La bibliothèque peut aisément être transformée en troisième chambre. Le couloir menant à la chambre principale sert actuellement de bureau. La chambre principale dispose de sa propre salle de bains complète, avec baignoire à pieds de lion et douche, d'un dressing, d'un grand poêle à bois et d'un climatiseur mobile.",
+        "À l'arrière, un escalier mène à une terrasse en toiture de 25 m² offrant une vue à 360 degrés. Depuis la véranda, on accède à une buanderie équipée d'un lave-linge, de nombreuses étagères, d'un bac à laver et d'un congélateur. Le garage accolé de 43 m² est spacieux, avec un grand établi et des étagères où sont rangés les outils de jardin et de ferme.",
+        "* 4 ventilateurs de plafond * 2 portes-moustiquaires * toutes les fenêtres équipées de moustiquaires * barreaux aux fenêtres et aux portes doubles * four à pain et à pizza extérieur traditionnel * 2 réservoirs d'eau en toiture * 2 chauffe-eau électriques, tous deux neufs * 2 fosses septiques, dont une à biodigesteur * 3 poulaillers bien construits * bûcher * toiture refaite il y a 4 ans * tour Internet privée (28 m de hauteur) * antenne DirecTV * système d'alarme avec surveillance par téléphone mobile"
+      ]
+    },
+    "read": {
+      "title": "Réduit de US$1 million ! Maison de luxe sur un domaine de 86,7 ha (210 acres) avec verger et vignoble",
+      "paragraphs": [
+        "Cette finca de 86,7 ha (210 acres), juste à l'ouest de San Rafael, possède une belle maison entourée de vignes, et plus d'un tiers de la surface est en production.",
+        "Proposée à l'origine à US$1,5 million, elle est ramenée par les propriétaires à US$500 000 pour une vente rapide.",
+        "Elle dispose d'une tour Internet qui offre une connexion remarquablement puissante grâce à une longue antenne aérienne. Le domaine comprend trois maisons pour les ouvriers et deux grands bâtiments de stockage abritant le matériel agricole.",
+        "La production comprend : – 15 ha de pruniers (27 acres) – 7 ha de vignes pour raisins secs (17 acres) – 1700 noyers (soit l'équivalent de 22 acres) – 25 oliviers adultes, des coings et des abricots",
+        "Les raisins destinés au séchage sont des sultanines blanches sans pépins (connues aux États-Unis sous le nom de Thompson Seedless) et se vendent bien plus cher que les autres raisins secs. L'ensemble de la culture est sous filets anti-grêle, en combinant conduite en parral et en espalier. Ils sont vendus sous contrat à un excellent prix, récolte comprise. Ils donnent habituellement environ 15 000 kilos par hectare (100 000 kg au total).",
+        "Les prunes sont de la variété française d'Agen, la prune à pruneaux la plus recherchée en Amérique du Sud. L'exploitation consacre 1,5 ha (3,7 acres) aux claies de séchage, car le revenu est nettement supérieur si les fruits sont vendus prêts en pruneaux plutôt que frais, au moment de la récolte, aux différents sécheurs de la région. La récolte annuelle de prunes a atteint jusqu'à 200 000 kg.",
+        "La récolte de coings est en moyenne de 4 000 kg par an ; celle des abricots et des olives reste limitée.",
+        "Les noyers seront à l'avenir la principale source de revenu de la finca. Ils ont été plantés il y a environ 8 ans et atteignent leur plein rendement entre 8 et 10 ans. Cette saison devrait donner une récolte significative.",
+        "Les rendements en fruits et fruits secs des deux dernières années ont été fortement affectés par le gel.",
+        "La maison – construite sur mesure par un architecte local de renom – compte 2 chambres avec salle de bains privative, une cuisine-salle à manger et d'autres agréments, dont une buanderie entièrement équipée accessible depuis la cuisine et 2 garages. Les deux garages peuvent être transformés en chambres si on le souhaite.",
+        "La maison est livrée entièrement meublée, avec un mobilier ancien et haut de gamme, de toute première qualité. La vente comprend même les œuvres accrochées aux murs.",
+        "Le séjour est habillé d'un beau sol en travertin et les chambres d'un très joli parquet en bois massif. La surface habitable totale dépasse 375 m² (4 000 sq ft), garages intégrés compris. La maison a été construite en 2009.",
+        "La maison est climatisée et les propriétaires ont dépensé près de US$30 000 pour amener l'eau municipale jusqu'à la finca. La propriété est raccordée au courant triphasé.",
+        "Le domaine est très préservé et sûr, tout en se trouvant à seulement 12 minutes en voiture de l'aéroport de San Rafael par de très bonnes routes.",
+        "La maison dispose d'un système d'alarme, en plus des gardiens présents sur place. Les propriétaires indiquent que, outre la surveillance du domaine, les ouvriers sont excellents et expérimentés et seraient heureux de rester avec un nouveau propriétaire.",
+        "Les cultures fruitières sont irriguées grâce à des droits d'eau de canal rattachés au titre, depuis le Río Diamante. La propriété dispose de 34 heures de droits d'eau définitifs, ce qui lui permet d'irriguer l'ensemble de la surface par submersion. Les redevances d'irrigation pour 2022 se sont élevées à environ US$1 000.",
+        "La vente comprend le tracteur et ses outils, ainsi que divers autres matériels utilisés sur la finca."
+      ]
+    },
+    "finca-m": {
+      "title": "Vignoble bien entretenu à fort rendement, avec pruniers, sur 26 ha (64 acres)",
+      "kicker": "Réduit de US$25 000 !",
+      "paragraphs": [
+        "(Note : proposée à l'origine à US$135 000, cette finca a été ramenée à un prix de US$110 000)",
+        "La finca comprend une maison d'ouvrier en briques d'environ 1 000 sq ft, avec une toiture en zinc, utilisée ces derniers temps par des membres de la famille pour des séjours de vacances.",
+        "Des droits d'eau sont rattachés au titre pour l'ensemble des 26 ha. Cette eau parvient à la finca par le réseau de canaux d'irrigation de la région, alimenté par la fonte des neiges des Andes et régulé par une série de barrages.",
+        "Il y a 8,9 ha (22 acres) de vignes et 2 ha (5 acres) de pruniers. 4,9 ha (12 acres) ont été nivelés et semés en luzerne, mais devront peut-être être ressemés, la luzerne devant être renouvelée au bout de 5 ans environ. Environ 10,1 ha (25 acres) sont en friche, anciennement en pâture, nivelés et également prêts à planter.",
+        "2 ha (5 acres) de bonarda (cépage de qualité de classe B) sous filets anti-grêle, conduits en espalier (espaldero), avec un rendement annuel moyen d'environ 35 000 kilos.",
+        "2 ha (5 acres) de pinot blanc (chenin) pour vin blanc ou effervescent, sous filets, conduits en espalier, avec un rendement annuel moyen de 30 000 kilos. (Note : les raisins pour effervescents se vendent mieux depuis peu, ces cépages étant rares pour diverses raisons.",
+        "2,8 ha (7 acres) de vignoble conduit en parral, cépages mêlés (muscatel, pedro ximénez, cereza et criolla), pour vin de table courant, moût, raisin de table ou raisins secs. Ce secteur donne en moyenne 80 000 kilos par an des cépages cités.",
+        "2 ha (5 acres) de vignoble en cépages mêlés conduits en espalier (muscatel et pedro ximénez), pour vin blanc de table ou rosé, avec une récolte annuelle moyenne de 40 000 kilos.",
+        "2 ha (5 acres) de prunes d'Agen destinées au séchage en pruneaux, avec une récolte annuelle de 40 000 kilos. Ces pruniers ne sont pas encore en plein rendement et devraient atteindre 50 000 kilos par an dans les années à venir.",
+        "10,1 ha (25 acres) de terrain anciennement en pâture, nivelé et propre aux cultures habituelles de la région.",
+        "4,9 ha (12 acres) anciennement en luzerne, à ressemer ou à consacrer à une autre culture.",
+        "« Cette propriété a été acquise par notre famille dans les années 1970 dans son intégralité (26 ha), à l'état de terre vierge non cultivée. Elle a été conçue et plantée par ses propriétaires, qui ont défriché et nivelé le sol et l'ont divisé en secteurs adaptés à la culture de la vigne et des arbres fruitiers.",
+        "« La finca était à l'origine plantée pour 50 % en fruits, comme les pêches et les poires, et pour 50 % en vignes. Au fil des ans, les propriétaires ont travaillé à maintenir la qualité et les rendements et ont consacré une part croissante de la surface au raisin. Aujourd'hui, plus de la moitié de la surface cultivée est constituée de jeunes plants en plein rendement.",
+        "« La finca se situe dans la province de Mendoza, à San Rafael, district de Monte Comán, à Colonia Gelman, près de la route nationale 146. Ce secteur est marqué par de fortes amplitudes thermiques, avec des journées chaudes et des nuits fraîches, et offre un excellent climat pour des raisins d'une grande concentration et aux tanins bien affirmés – de très bonnes conditions pour la vinification. Les hivers sont froids, avec de fortes gelées, et il neige parfois.",
+        "« Colonia Gelman est bordée par deux rivières, le Río Diamante et le Río Atuel. L'eau d'irrigation de canal de cette finca est prélevée dans le Río Atuel. »"
+      ]
+    },
+    "valle-de-uco-top-organic-andes-vineyard-wine-estate-for-sale-argentina": {
+      "title": "Vignoble bio de rêve pour grands vins avec vue saisissante dans le Valle de Uco",
+      "kicker": "L'emplacement, l'emplacement, l'emplacement !",
+      "paragraphs": [
+        "La Finca La Tranquila est un domaine viticole biologique discrètement situé au cœur du Valle de Uco, à quelques minutes de Vista Flores, à Tunuyán, Mendoza. Le secteur est reconnu à l'international pour la production de raisins de grande qualité et compte parmi les terroirs les plus recherchés d'Argentine.",
+        "Les cépages comprennent le malbec, le cabernet franc, le pinot noir, le petit verdot et le cabernet sauvignon.",
+        "Cette année, les raisins de pinot noir ont été achetés par Chandon pour un vin de méthode champenoise. Ces dernières années, l'essentiel de la récolte a été sélectionné par Domaine Bousquet, première bodega biologique d'Argentine. Les années précédentes, des raisins ont également été fournis à Viña Cobos, la bodega fondée par le célèbre vinificateur international Paul Hobbs.",
+        "La demande touristique augmente à Mendoza pour des séjours en hôtel de luxe dans les vignobles et les bodegas. Cet emplacement à Vistaflores offre les plus belles vues sur les Andes et se prête admirablement à ce niveau de tourisme ; pourtant, l'offre est presque inexistante dans le secteur, et la demande reste donc insatisfaite. Les vignes et les vues de ce domaine sont exactement ce que cherchent les visiteurs souhaitant séjourner dans un vignoble.",
+        "Au coucher du soleil, les Andes s'illuminent derrière le vignoble et créent une atmosphère d'une sérénité et d'une intimité uniques.",
+        "Plans d'architecte pour la future maison et l'entrée",
+        "Lit de rivière asséché et terres de campo pour construire et se détendre",
+        "Le domaine totalise 33 ha (81 acres), dont 16 ha (40 acres) de raisins de qualité. 6 autres hectares (16 acres) sont nivelés et bien adaptés à davantage de vignes, d'oliviers, d'arbres à fruits secs ou de verger.",
+        "Le vignoble est planté principalement en malbec (78,25 %), complété par du cabernet franc (12,25 %), du pinot noir (7 %), du petit verdot (1,5 %) et du cabernet sauvignon (1 %). La production actuelle est placée auprès de grandes bodegas de Mendoza, ce qui témoigne d'une qualité constante et d'une conduite professionnelle du vignoble.",
+        "Le vignoble est certifié biologique par LETIS, société argentine qui agrée les vignobles bio selon les normes nationales et internationales de qualité et de durabilité. L'exploitation ne serait pas tenue de rester bio, et la production augmenterait alors, mais la certification lui donne une niche intéressante sur le marché, et les raisins bio se vendent en général plus cher que les conventionnels.",
+        "L'irrigation se fait par un système de goutte-à-goutte sous pression, appuyé par une retenue d'eau pittoresque, et la propriété dispose de droits d'irrigation de canal complets pour 22 ha (54 acres).",
+        "Au-delà de ses fondements agricoles, la propriété comprend des espaces extérieurs choisis, aménagés pour des réunions privées et des réceptions informelles, ainsi que des chemins et des espaces ouverts qui mettent en valeur le paysage naturel environnant. 16 acres de terrain ouvert et de bois pourraient servir à des projets de construction ou aux loisirs.",
+        "Le domaine se prête bien à un projet de faible densité et de haute qualité associant vin, gastronomie et hospitalité discrète.",
+        "La propriété offre des vues dégagées sur la cordillère des Andes, ce qui donne un fort sentiment d'appartenance au lieu et protège durablement le paysage. L'eau d'irrigation provient de la pure fonte des neiges andines.",
+        "Le domaine jouit d'une intimité exceptionnelle, naturellement protégé par les propriétés rurales voisines, ce qui garantit un cadre calme et sans vis-à-vis – un trait que l'on retrouve dans son nom, Finca La Tranquila."
+      ]
+    },
+    "boutique-winery-and-vineyard-for-sale-in-argentina": {
+      "title": "11 ha (28 acres) de vignes et de verger avec vinification de boutique",
+      "kicker": "Maison et 2 hangars inclus !",
+      "paragraphs": [
+        "Cette finca de 11 ha (28 acres) avec maison compte près de 6 ha (15 acres) de vignes et 2 ha (5 acres) de pruniers sous filets. Les cépages comprennent le bonarda, le torrontés riojano, le malbec et le cabernet franc. La plupart sont sous filets. Les prunes sont des prunes d'Agen destinées au séchage.",
+        "La maison de 1 720 sq ft (160 m²) dispose également d'un grand patio extérieur couvert, de trois chambres et d'une salle de bains. Il y a deux autres bâtiments, hangar et local technique, en très bon état : l'un de 516 sq ft (48 m²), l'autre de 688 sq ft (64 m²).",
+        "La finca a encore produit du vin en 2019, mais a cessé pendant la pandémie. La capacité est de 5 000 litres, soit environ 6 500 bouteilles. Elle peut être augmentée avec des cuves supplémentaires.",
+        "La bodega possède une licence complète de vinification – et non une licence de vin de ménage – ce qui signifie que le vin peut être étiqueté par cépage (et pas seulement en rouge ou blanc, comme avec une licence de vin de ménage) et vendu sur le marché intérieur ou exporté. La vente en Argentine serait probablement le meilleur modèle ici.",
+        "La vente comprend les étiquettes déposées de la marque Rausch, ce qui évite beaucoup de frais, de démarches et de temps. Du matériel supplémentaire peut être nécessaire, à louer ou à acquérir, pour poursuivre l'activité. Les nouveaux propriétaires devraient faire appel à un œnologue local pour suivre l'exploitation à temps partiel ou selon les besoins.",
+        "Sur les dernières photos, en bas, on voit qu'il faut faucher les herbes, enlever quelques encombrants et faire un nettoyage de base. Cela nuit à la beauté de la propriété, et donc à sa valeur.",
+        "Cela se corrige facilement, et la propriété devient un joli petit bijou avec environ deux semaines de travail.",
+        "Nettoyer, repeindre et faire ce genre de travaux augmenterait la valeur, de façon prudente, d'au moins US$20 000 à US$30 000, voire davantage, pour un coût très faible.",
+        "(PLUS D'INFORMATIONS SUR LES VIGNOBLES SOUS LES PHOTOS)",
+        "Secteur de la finca à nettoyer pour en augmenter la valeur",
+        "3 ha de torrontés riojano et de bonarda : cette partie de la finca produit 85 000 kilos de raisin. 67 000 kilos sont du bonarda et 18 000 du torrontés blanc. Les vignes ont 20 ans. Il y a 125 rangs de 105 mètres de long, espacés de 2,20 mètres. 90 rangs sont en bonarda et 35 en torrontés. Ils sont couverts de filets.",
+        "1,5 ha de bonarda : ces vignes ont six ans et produisent 25 000 kilos de raisin. 52 rangs de 113 mètres de long sont plantés à 2,20 mètres d'écart. Ils sont couverts de filets.",
+        "Malbec jeune : il s'agit d'une plantation de malbec de trois ans, qui n'est pas encore en production.",
+        "Cabernet franc jeune : environ un cinquième d'hectare de cabernet franc âgé d'un an seulement, pas encore en production. Il y a 15 rangs de 65 mètres de long, espacés de 2,20 mètres.",
+        "2 ha de prunes d'Agen. Ce verger produit 65 000 kilos de prunes destinées au séchage. Il compte 24 rangs de 165 mètres de long, espacés de 5 mètres. Le verger est couvert de filets."
+      ]
+    },
+    "boutique-tourism-winery-vineyard-property-for-sale-in-argentina": {
+      "title": "Bodega de boutique avec vignoble, verger, maison avec piscine et bon chiffre d'affaires",
+      "kicker": "Capacité de 30 000 bouteilles par an !",
+      "paragraphs": [
+        "Cette bodega, située dans la zone touristique de Cuadro Benegas, se trouve à environ 7 miles (11 km) de San Rafael, Mendoza.",
+        "Elle occupe 4,5 ha (11 acres) et compte 2 ha (5 acres) de malbec de qualité ainsi que 1,5 ha (3,7 acres) de pruniers. Le tout est sous filets de protection.",
+        "La propriété compte aussi quelques figuiers, noyers, cognassiers, amandiers, cerisiers et pêchers.",
+        "Il y a une maison avec piscine et 3 chambres, de 1 550 sq ft (144 m²), avec 1 salle de bains, des espaces de stockage et un garage d'environ 430 sq ft (40 m²).",
+        "La bodega dispose de cuves, du matériel pour presser le raisin et d'une ligne d'embouteillage pouvant produire 2 500 bouteilles par jour.",
+        "Il y a une salle de dégustation avec espace d'accueil, autorisée pour 20 visiteurs à la fois, ainsi qu'un chai où se font également des dégustations.",
+        "Ils sont autorisés à produire environ 30 000 bouteilles par an. Une partie du vin sera cédée avec la vente, selon le stock au moment de la transaction. Des panneaux solaires fournissent l'électricité de la bodega.",
+        "Les propriétaires organisent des dégustations pour les touristes sous différentes formes, certaines avec déjeuner (la plus demandée) ; bien qu'ils disposent d'une licence d'export, les visites absorbent aujourd'hui presque toute la production, de sorte qu'ils n'ont pas besoin de vendre en gros ni de distribuer.",
+        "Ils produisent également des confitures et des gelées issues de la finca, des liqueurs de vin et quelques produits artisanaux de voisins, pour compléter les ventes.",
+        "Les déjeuners sont entièrement composés de produits et de fromages locaux, et il n'est pas rare que les visiteurs restent des heures à profiter de la table et à acheter des produits à emporter. Des agences de voyages amènent régulièrement des clients, si bien que leur effort de communication reste minime.",
+        "Les propriétaires sont un couple qui élabore lui-même les produits, presse le raisin, embouteille et étiquette le vin. Le vinificateur qui supervise l'élaboration est un œnologue diplômé, comme l'exigent les règles de l'institut du vin, et peut poursuivre ce rôle avec de nouveaux propriétaires.",
+        "Les propriétaires actuels aideront aussi à la transition, en transmettant aux acquéreurs ce qu'ils doivent savoir pour que la reprise se fasse sans heurt et que les ventes se poursuivent normalement.",
+        "Les dégustations et les visites continuent d'augmenter à mesure que davantage d'agences amènent du monde à la bodega ; ils ont récemment accueilli un groupe de journalistes de Buenos Aires avec déjeuner et dégustation, ce qui continue de générer de la publicité gratuite (chaque journaliste a payé sa prestation, si bien que même cela a rapporté).",
+        "C'est une activité très concrète, qui ne conviendrait probablement pas à quelqu'un souhaitant la diriger à distance sans jamais venir à San Rafael. Il faudrait être dans le pays pendant la période de végétation et pendant la vinification pour suivre et piloter les choses, ainsi qu'à divers moments où le vignoble demande de l'attention."
+      ]
+    },
+    "ranch-for-cattle-agriculture-home-with-view-for-sale-mendoza-argentina": {
+      "title": "Campo de 100 ha (250 acres) pour bovins ou culture, avec verger de coings et maison du propriétaire",
+      "kicker": "Vue sur les Andes !",
+      "paragraphs": [
+        "Cette finca de 100 ha (250 acres) se situe à Colonia Colomer, à l'est de San Rafael, et couvre un kilomètre carré.",
+        "Elle comprend une maison de propriétaire avec 3 chambres et 2 salles de bains, une très grande cuisine-salle à manger d'environ 500 sq ft (46 m²), une buanderie, une grande entrée et une pièce séparée pouvant devenir un bureau. Il y a un vaste patio extérieur et un garage accolé avec espace pour le matériel, en plus d'un hangar.",
+        "Il y a deux puits d'irrigation : un puits de six pouces avec réservoir pour l'arrosage du jardin et pour les bovins, chevaux ou autre bétail, à 23 mètres de profondeur. Le second est un puits foré de 12 pouces à 50 mètres de profondeur. Il n'y a ni moteur ni armoire électrique, mais les propriétaires ont fait établir un devis au début de l'année pour équiper ce puits d'une pompe, d'un nouveau câblage et de 100 panneaux solaires, pour un montant d'environ US$50 000 – de quoi irriguer 40 ha (100 acres) en goutte-à-goutte, pour de l'ail, des tomates, des oignons, etc.",
+        "Actuellement, ils irriguent avec 20 heures d'eau de canal par semaine, ce qui suffit pour les 21 ha (51,8 acres) nivelés ou précédemment cultivés.",
+        "En réalité, 100 acres (40 ha) de la propriété sont nivelés et cultivables, et 125 acres (50 ha) sont du campo où les bovins peuvent pâturer librement.",
+        "Il y a un verger de coings bien entretenu de 10 acres (4 ha) (variété Champion pour le fruit de table), et par le passé environ 40 acres (16 ha) étaient plantés en tomates, maïs, luzerne, etc. (Voir photos)",
+        "Les coings sont assurés contre la grêle et le gel, si bien que même lors d'une mauvaise année ils peuvent recevoir une indemnité (US$2 200 dans leur cas si le dommage est estimé à 100 %), avec en plus des réductions d'impôt foncier et de redevances d'irrigation l'année suivante. Ils ont une formule d'assurance de base à US$140 par an, mais d'autres formules existent.",
+        "Les anciens propriétaires possédaient une chaîne de supermarchés et exploitaient sur la finca un parc d'engraissement bovin pour la production de viande. Ils gardaient en permanence 500 bœufs dans les corrals et faisaient pâturer 100 bœufs dans les champs avec des clôtures électriques. À l'époque, ils achetaient les 500 têtes pour l'engraissement à environ 100 kilos, puis les engraissaient jusqu'à 300 ou 400 kilos sur une période de 6 à 8 mois avant l'abattage pour la vente dans leurs magasins. Dès l'abattage, ils faisaient entrer de nouvelles têtes, de sorte que le parc restait toujours plein.",
+        "À cette époque, ils cultivaient environ 75 acres (30 ha) de luzerne sur la propriété, produisant entre 1 500 et 2 000 balles de foin par an, et 25 acres (10 ha) d'avoine. Ils complétaient la ration avec du maïs acheté."
+      ]
+    },
+    "olive-factory": {
+      "title": "Huilerie d'olive de boutique sur une finca de 8 ha (20 acres) avec cabañas touristiques et vergers",
+      "kicker": "La finca produit aussi des cosmétiques naturels !",
+      "paragraphs": [
+        "Cette belle finca se trouve à environ 15 minutes de San Rafael, mais à l'écart de la route principale : l'accès se fait par un chemin de campagne et non par une route asphaltée.",
+        "Le couple assure aujourd'hui la production avec peu de main-d'œuvre extérieure.",
+        "Il y a trois cabañas touristiques avec barbecues pour les asados et une piscine, exploitées en été et occupées environ 90 jours par an, ce qui pourrait augmenter avec de la publicité. Elles se louent actuellement autour de US$65 la nuit. Deux sont des cabañas d'une chambre (500 sq ft / 46 m²) pouvant accueillir 3 personnes, la troisième est une cabaña de 2 chambres (550 sq ft / 51 m²) avec de la place pour 5 personnes.",
+        "La finca dispose d'un ancien bâtiment en adobe joliment réhabilité en atelier de production d'huile d'olive artisanale et d'autres produits naturels. Ils ont un catalogue de 29 pages et un site internet en cours de refonte.",
+        "Écrivez-nous pour recevoir le catalogue ; sur demande, nous pouvons fournir des informations plus détaillées sur la finca et l'activité.",
+        "Leur matériel peut presser 9 à 10 litres d'huile par heure et ils produisent actuellement environ 2 000 litres d'huile d'olive de première qualité, extraite à froid, vendue au détail autour de USD $17 la bouteille. La quantité pressée pourrait être un peu augmentée, mais une hausse importante exigerait d'investir dans des presses supplémentaires.",
+        "Aujourd'hui, tous les produits sont vendus en Argentine, mais l'export serait possible pour qui a l'expérience ou les contacts nécessaires. Les propriétaires n'ont pas exploré cette voie, mais ont déjà eu l'occasion de se développer au Chili et au Paraguay avec la ligne de cosmétiques.",
+        "Les produits sont entièrement naturels, sans produits chimiques, et comprennent",
+        "huile d'olive vierge extra extraite à froid – huiles d'olive aromatisées au chimichurri, au romarin, au citron, au basilic, etc. – huile de noix – huile de noyau d'abricot – huile de fleur de pavot – huile d'amande – huile d'églantier – miel – sauce tomate – vinaigres aromatisés – crèmes hydratantes à l'huile d'olive, à l'huile de noyau d'abricot, etc. – baume à lèvres – shampooing contre la chute des cheveux – soin de la peau – protection solaire – déodorant naturel – savon à l'huile d'olive – huiles essentielles pour la peau à base d'olive, de noyau d'abricot, de prune, etc. – dentifrice naturel – crème anti-inflammatoire naturelle – répulsif à insectes naturel – huile pour bébé – huile de lavande",
+        "La finca possède une oliveraie, un verger d'abricotiers, un verger de pruniers, des cognassiers, quelques noyers et un vignoble de malbec qui donne plus de 250 bouteilles de vin pour la consommation personnelle et qui sert aussi dans les produits artisanaux qu'ils vendent.",
+        "CLIQUEZ ICI POUR VOIR UNE VIDÉO DU DOMAINE PRISE PAR DRONE",
+        "ATELIER DE BOUTIQUE POUR L'HUILE D'OLIVE, LES CONSERVES, LES HUILES ESSENTIELLES ET LES COSMÉTIQUES NATURELS",
+        "QUELQUES-UNS DES PRODUITS VENDUS À LA FINCA (écrivez-nous pour le catalogue)"
+      ]
+    },
+    "argentina-farm-for-sale-on-river-with-view-of-the-andes": {
+      "title": "De l'eau, de l'eau, de l'eau ! Finca rentable en bord de rivière avec vue sur les Andes et sources minérales",
+      "kicker": "Potentiel touristique – Valle de Uco !",
+      "paragraphs": [
+        "En 20 ans de vente de propriétés à Mendoza, je n'ai jamais vu une finca avec autant d'eau. L'eau est de l'or à Mendoza, et cette finca remarquablement rentable est une rareté. Une partie de la surface est plantée en ail.",
+        "Le terrain n'est pas isolé. Il se trouve à seulement 5 kilomètres du centre de Tunuyán et à 2 kilomètres de la célèbre Ruta 40, la route des vins que l'on retrouve sur les chapeaux, les T-shirts et les souvenirs vendus dans les boutiques touristiques.",
+        "La propriété est bordée au nord par le Río Tunuyán et, à l'est comme au sud, par le large ruisseau d'eau claire appelé Arroyo San Carlos.",
+        "L'irrigation par canal est très bonne pour les cultures, et la propriété possède en outre une source minérale enregistrée qui coule en permanence, 24 h/24 et 7 j/7. Les propriétaires ont fait réaliser une analyse montrant que l'eau est de bonne qualité minérale et pourrait être embouteillée comme eau de source.",
+        "Actuellement, 10 ha (25 acres) sont en production d'ail. Les propriétaires louent cette surface à des producteurs d'ail pour US$1 500 par hectare et par an – soit un total de US$15 000 par an. Le contrat est reconduit d'année en année.",
+        "Ils ont prévu de niveler 10 ha (25 acres) supplémentaires pour les louer également, ce qui doublerait les revenus locatifs. La fertilité du sol est très bonne et d'autres légumes annuels réussiraient aussi sur ce terrain.",
+        "Ils prévoient également d'aménager une grande retenue d'eau, un peu plus grande qu'une piscine olympique, pour faciliter encore l'irrigation.",
+        "La propriété offre de belles vues sur la rivière, sur l'Arroyo San Carlos et sur la cordillère des Andes. Un joli promontoire surplombe la rivière et serait un endroit magnifique pour construire une ou deux maisons, des cabañas touristiques, etc.",
+        "De grands et beaux peupliers ont été plantés le long des canaux, et les propriétaires ont également planté de jeunes arbres qui poussent vite.",
+        "Une partie du terrain est en flore naturelle et les propriétaires actuels ne prévoient pas de tout labourer, mais d'en conserver une part à l'état naturel avec des plantes indigènes. Des loutres d'eau douce vivent dans les ruisseaux et diverses espèces de poissons dans la rivière. Sur la propriété même, on trouve des renards, des lièvres, des oiseaux indigènes et d'autres animaux sauvages. De grands hiboux nichent dans les falaises qui surplombent la rivière.",
+        "NOTE PERSONNELLE : j'ai parcouru cette propriété à pied et en voiture pendant quelques heures avec les propriétaires et j'ai été frappé par sa beauté, son potentiel et son eau.",
+        "Source minérale permanente et l'un des canaux d'irrigation"
+      ]
+    },
+    "forested-tourism-finca-with-home-cabins-vineyard-pool-for-sale-argentina": {
+      "title": "Belle finca touristique boisée avec cabañas, piscine et vignoble",
+      "kicker": "Sur une route asphaltée !",
+      "paragraphs": [
+        "Cette pittoresque propriété touristique d'un peu plus de 2,5 ha (6 acres) se trouve sur une route asphaltée tranquille, à environ 15 minutes de San Rafael, à Cuadro Benegas, une zone touristique.",
+        "Les impôts fonciers sont faibles et s'élèvent actuellement à moins de US$11 par mois (USD $126 par an).",
+        "La maison principale, à deux niveaux, fait environ 2 200 sq ft (204 m²), avec une chambre d'hôtes à l'étage disposant d'une salle de bains et d'une entrée privée, et trois chambres avec salle de bains au rez-de-chaussée.",
+        "Il y a trois cabañas locatives spacieuses, chacune pouvant accueillir cinq personnes, ainsi que deux garages et un barbecue extérieur pour les hôtes.",
+        "Les principales périodes de location sont la saison touristique d'été, en particulier janvier et février, où les tarifs sont de US$60 par jour pour deux personnes, US$80 pour trois personnes et US$100 pour une occupation de quatre ou cinq personnes. Des séjours ponctuels ont lieu les autres mois, notamment en juillet pendant les vacances d'hiver et la saison de ski, où le tarif est de US$30 par personne et par cabaña. Les revenus tournent autour de US$14 400 par an, d'après leur comptabilité.",
+        "En pleine exploitation, avec le chauffage en hiver et la climatisation en été, les charges s'élèvent à environ US$172 par mois lorsque les locations sont complètes et US$14 par mois pour l'eau, mais ces coûts ne sont engagés que lorsque des hôtes payants sont présents, pas chaque mois.",
+        "Ils emploient également un jardinier à temps partiel pour l'entretien des extérieurs, rémunéré US$85 par mois.",
+        "Le petit vignoble compte 13 rangs de malbec et deux rangs de raisin de table sans pépins. Il peut donner environ 500 bouteilles de vin ; cette année, une bodega de boutique locale a vinifié pour eux.",
+        "Il y a huit très grands oliviers adultes qui donnent des olives pour l'huile, dont l'un est de la variété criollo, utilisable comme olive de table.",
+        "Le terrain compte des arbres fruitiers variés, dont des abricotiers, des pommiers et des figuiers, ainsi qu'un petit verger d'environ 30 pruniers. Ils ont aussi quelques carrés de framboisiers ici et là.",
+        "Les plantations ornementales comprennent de spectaculaires grands chênes, des eucalyptus, des cèdres et des arabias. Beaucoup de rosiers (100 supplémentaires plantés cette année), ainsi que du jasmin et diverses plantes ornementales qui couvrent le jardin principal.",
+        "Des panneaux solaires couvrent environ 20 pour cent des besoins en électricité de la propriété et pourraient être étendus si on le souhaite. Ils servent aux pompes et au filtre de la piscine, l'excédent restant disponible pour d'autres usages sur la propriété."
+      ]
+    },
+    "winery-vineyard-tourism-project-for-sale-in-ran-rafael-argentina": {
+      "title": "Bodega de boutique, vignoble et projet touristique avec restaurant sur 91 ha (225 acres)",
+      "kicker": "Comprend un joli lac de 2,4 ha (6 acres) !",
+      "paragraphs": [
+        "Cette propriété spectaculaire à Cuadro Benegas, à l'extérieur de San Rafael, Mendoza, se trouve en face des Algodon Golf and Wine Estates, un ensemble de plusieurs millions de dollars que ce même promoteur a également réalisé.",
+        "Il vend le projet au sein d'un domaine pittoresque comprenant des vignes et un verger avec un lac de 6 acres, un restaurant et une bodega de boutique entièrement neuve, qui sera probablement achevée au moment où vous lirez ces lignes. Un hôtel pourrait également être construit sur le site si on le souhaite.",
+        "LE LONG DE LA ROUTE 144, SUR LE CHEMIN DE LA STATION DE SKI",
+        "La propriété présente 3200 pieds de façade le long de la Ruta 144, la route qui relie San Rafael à Malargüe et à la station de ski de Las Leñas.",
+        "L'infrastructure comprend le courant triphasé et le goutte-à-goutte des vignes pour l'arrosage et la fertilisation. Le lac dispose d'un ponton et fait 12 pieds de profondeur.",
+        "De la place et de l'eau en abondance pour beaucoup plus de vignes, d'oliviers ou de verger si on le souhaite.",
+        "2 ha (5 acres) de malbec cot ont été plantés en 2017.",
+        "1,5 ha (3,7 acres) de malbec, cabernet franc, bonarda, chardonnay et syrah ont également été plantés en 2018.",
+        "2,5 ha (6 acres) ont été plantés en 2019 en malbec, chardonnay, cabernet franc, merlot et bonarda.",
+        "Il y a 2,5 ha (6 acres) de grands abricotiers adultes et divers arbres fruitiers : prunier, pêcher, pommier, poirier, cerisier, amandier, etc.",
+        "Il y a un restaurant au toit de chaume de 1880 sq ft, avec sol en pierre, cuisine et sanitaires.",
+        "Une nouvelle bodega est en construction et sera achevée d'un jour à l'autre. Elle totalise 2 700 sq ft (250 m²), dont deux chais de 387 sq ft (36 m²) chacun et une salle de dégustation de 775 sq ft (72 m²) avec une belle vue sur le lac. La bodega comprend une mezzanine de 345 sq ft (32 m²) pour le laboratoire et les bureaux. Deux blocs sanitaires et vestiaires sont en cours de construction pour les employés et les visiteurs, séparés de la bodega.",
+        "Il y a un entrepôt et un bureau de travail de 540 sq ft avec salle d'eau.",
+        "Une maison de gardien comprend un séjour-salle à manger-cuisine avec cheminée, 2 chambres et 1 salle de bains.",
+        "La propriété possède un bon sol et se situe sur des terres hautes, dans un secteur qui produit d'excellents vins, alimentée par des canaux qui apportent l'eau de fonte des neiges des Andes, avec vue sur les collines colorées de la Sierra Pintada.",
+        "Plan de division du site (montrant comment le terrain peut être découpé en parcelles de 12,5 acres si l'acquéreur souhaite y intégrer un projet résidentiel)"
+      ]
+    },
+    "home-with-guesthouse-on-farm-land-in-mendoza-argentina": {
+      "title": "Maison de jardin et maison d'hôtes sur une finca de 11 ha (27 acres)",
+      "kicker": "Belle finca proche de la ville",
+      "paragraphs": [
+        "Cette finca de 11 ha (27 acres) se trouve à environ 15 minutes (12 km) de San Rafael. Elle comprend une jolie maison de 2 chambres et 1 salle de bains, ainsi qu'une maison d'hôtes de 2 chambres, dans un beau cadre de jardin.",
+        "C'est un emplacement calme à la campagne, à l'écart d'une route principale, avec un accès par un joli chemin de jardin qui garantit l'intimité. De beaux arbres, des fleurs et des arbustes entourent la maison.",
+        "Il y a au moins 8 ha (20 acres) qui pourraient accueillir presque toutes les cultures habituelles du secteur : verger, vignoble, oliviers, luzerne, noyers ou légumes annuels.",
+        "La finca est proche de Valle Grande, où l'on trouve de nombreuses activités comme le rafting, l'équitation ou la navigation. La propriété est également proche de plusieurs bodegas.",
+        "Ce terrain offre aussi un potentiel de revenus touristiques, par exemple des cabañas locatives ou un autre aménagement.",
+        "La propriété dispose de tous les réseaux : électricité, gaz naturel, internet haut débit et eau publique.",
+        "* Maison principale repeinte à l'extérieur et à l'intérieur * cabaña repeinte à l'extérieur * façade du galpón repeinte * nouvelle clôture industrielle avec portails à l'avant * sol de garage bétonné et béton autour de la cabaña * électricité neuve dans la maison principale * électricité neuve dans la cabaña * électricité neuve dans le galpón * nouveau sol LVP dans le séjour et les chambres de la maison principale * climatisation pour le séjour et les chambres de la maison principale * climatiseur pour la cabaña * nouvel appareil de chauffage pour la maison principale * nouvelle table de cuisson pour la maison principale * nouveau carrelage dans toute la salle de bains, nouvelle douche et robinetterie de lavabo * nouveau carrelage dans la salle de bains de la maison principale et nouvelle robinetterie de douche * WC neuf dans la cabaña * plomberie et conduite de gaz récentes dans la cabaña * nouveau chauffe-eau dans la maison principale * nouveau chauffe-eau dans la cabaña * éclairage nocturne ajouté autour des 3 bâtiments * toit de la cabaña repeint * nouveau miroir dans la salle de bains de la maison principale * nouveau miroir dans la salle de bains de la cabaña * nouvelles conduites d'irrigation à l'extérieur * nouveau gravier sur l'allée extérieure * nouveaux barreaux (rejas) aux fenêtres de la cabaña * nouveau carrelage dans la salle de bains de la cabaña * nouvelle robinetterie de cuisine dans la maison principale * poignées neuves à toutes les portes de la maison principale et nouvelles poignées de cuisine * Durlock dans toutes les pièces de la maison principale * cheminée de la maison principale réparée et remise à neuf"
+      ]
+    },
+    "historic-rural-estate-home-property-for-sale-in-mendoza-argentina-reduced": {
+      "title": "Beau domaine historique avec piscine, maison et maisons d'hôtes",
+      "kicker": "Prix vient d'être réduit de US$250 000 !",
+      "paragraphs": [
+        "Cette demeure de domaine de 3,2 ha (8 acres) était à l'origine la maison de campagne du colonel Campos, du 7e régiment de cavalerie argentin, qui la fit construire il y a plus de 120 ans. La rue suivante porte son nom en son honneur.",
+        "Le prix vient d'être réduit de US$200 000 (25 %) pour une vente rapide.",
+        "La partie centrale de la maison a des murs en adobe, et le beau parquet d'origine met en valeur le caractère du bâtiment principal, tout comme les hautes portes d'origine, taillées sur mesure comme on le faisait il y a un siècle.",
+        "La maison fait 324,5 m² (3 492 sq ft), auxquels s'ajoutent deux grandes galeries couvertes le long de la maison, totalisant 136,75 m² (1 470 sq ft).",
+        "La maison compte 4 chambres au total. Deux d'entre elles ont une salle de bains privative, les deux autres servent actuellement de salle de sport, de bureau, etc. Il y a une salle à manger, un salon, une cuisine, une bibliothèque et un vestiaire avec douche.",
+        "Les impôts fonciers ne s'élèvent aujourd'hui qu'à US$175 par an. Et la propriété offre un potentiel de revenus important grâce à la location du salon, de la maison d'hôtes, des terrains et de l'aire de camping.",
+        "VOIR SOUS LES PHOTOS UNE DESCRIPTION COMPLÈTE ET DÉTAILLÉE DE TOUTES CES BELLES CARACTÉRISTIQUES, DANS LES MOTS DES PROPRIÉTAIRES !",
+        "Comprend une grande parrilla et un four à pain et à pizza près de la maison.",
+        "Dispose d'une grande cuisine avec coin petit-déjeuner, équipée d'un split pour le chauffage et la climatisation. On y trouve aussi une belle cocina económica en état de marche, un fourneau à bois traditionnel.",
+        "La salle à manger a de hauts plafonds et les parquets d'origine.",
+        "La bibliothèque a également un haut plafond et le parquet d'origine. Elle peut être transformée en une chambre double supplémentaire avec salle de bains partagée.",
+        "Un long espace de vie en galerie avec grande cheminée ouverte, séparé par une arche pour créer un second salon. Les deux espaces disposent de chauffages au gaz.",
+        "2 chambres doubles avec salle de bains privative, toutes deux avec chauffage au gaz. La chambre principale possède une cheminée ouverte et un dressing.",
+        "2 chambres supplémentaires. L'une donne sur une pièce qui pourrait devenir une autre salle de bains privative avec dressing. Elle dispose aussi d'un chauffage au gaz et d'un poêle à bois en fonte.",
+        "En savoir plus sur cette propriété – informations détaillées des propriétaires"
+      ]
+    },
+    "new-home-with-agricultural-land-for-sale-mendoza-agentina": {
+      "title": "Maison neuve sur 11 ha (28 acres) de terres agricoles avec belle vue, 6 semaines avant achèvement",
+      "kicker": "Belle vue depuis le balcon !",
+      "paragraphs": [
+        "Cette finca de 11 ha (28 acres) se situe à Las Malvinas, près de San Rafael, Mendoza.",
+        "L'achèvement de la maison demandera six semaines, et le processus prévoit de valider chaque vendredi les travaux réalisés.",
+        "L'achèvement de la maison est déjà payé. Un carrelage haut de gamme est déjà posé, mais les nouveaux propriétaires pourront choisir les couleurs de peinture, à l'intérieur comme à l'extérieur, que l'entrepreneur appliquera selon leurs souhaits.",
+        "La maison fait environ 185 m² (1935 sq ft), auxquels s'ajoutent 28,28 m² semi-couverts et une terraza de 16 m².",
+        "La maison de 1 niveau et demi comprend deux chambres au rez-de-chaussée avec une salle de bains, et à l'étage une chambre ou un atelier (le propriétaire est artiste et souhaitait un atelier avec vue). Il y a un garage intérieur avec le même carrelage que dans le reste de la maison. Elle devait être leur maison de rêve, mais de graves problèmes de santé les ont contraints à retourner aux États-Unis.",
+        "Les seuls éléments restant à acheter sont un chauffe-eau, une pompe pour le réservoir de stockage et un évier (parce qu'il existe différents styles et différentes marques).",
+        "L'eau arrive à la maison, de même que l'électricité neuve.",
+        "Les meubles de cuisine ont été fabriqués sur mesure et sont entreposés, avec des fenêtres à cadre aluminium haute résistance et des portes en bois, ainsi que quelques appareils.",
+        "La propriété compte de nombreux arbres adultes, en particulier à l'avant, où se trouve un parc boisé. On y trouve des abricotiers, des asperges sauvages, un cerisier, des grenadiers, quelques oliviers, deux ou trois pêchers, des pruniers sauvages et quelques vieilles vignes.",
+        "La propriété dispose de droits d'irrigation complets, avec un canal d'irrigation sur un côté et, en plus, un canal interne qui traverse le terrain (voir photos).",
+        "Il y a sur la propriété une vieille maison qui devrait être démolie ou transformée en autre chose. L'ancien bâtiment n'est actuellement raccordé ni à l'eau ni à l'électricité.",
+        "Vues intérieures de la maison (photos de cuisine et fenêtres fournies par le constructeur – pas encore installées)"
+      ]
+    },
+    "malbec-vineyard-on-good-land-for-sale-in-mendoza-argentina": {
+      "title": "17 ha (42 acres) de malbec sur une finca de 20 ha (50 acres) avec maison",
+      "paragraphs": [
+        "Cette finca de 20 ha (50 acres) compte 17 ha (42 acres) de malbec de qualité, à Calle Larga, près de San Rafael.",
+        "Les vignes ont entre 8 et 10 ans et sont donc toutes en plein rendement. Le propriétaire les vend actuellement à la coopérative vinicole Sierra Pintada.",
+        "Des droits d'eau inscrits au titre couvrent l'ensemble de la surface, via les canaux voisins, et un puits d'irrigation profond équipé d'une pompe électrique garantit qu'il ne manque jamais d'eau.",
+        "L'ensemble du vignoble est irrigué au goutte-à-goutte, ce qui réduit les coûts d'entretien et économise l'eau. Le vignoble est également couvert de filets anti-grêle.",
+        "Planter le vignoble, creuser une retenue d'eau et un puits d'irrigation, installer un goutte-à-goutte automatisé et raccorder le triphasé coûterait plus de US$375 000 – et cela en supposant les 20 ha (50 acres) de terrain gratuits. Il faudrait ensuite compter environ six années de salaires et de frais d'entretien avant la première récolte pleine.",
+        "Le propriétaire indique que les frais d'entretien s'élèvent aujourd'hui à environ US$1 000 par mois, soit US$12 000 par an. Aux prix actuels, il lui faut donc environ 30 000 kilos de récolte pour équilibrer. Une bonne année, la finca livre plus de 200 000 kilos.",
+        "Lors de la saison 2022-23, un fort gel a touché presque tous les vignobles de Mendoza et d'autres provinces. La plupart des exploitations ont perdu jusqu'à 80 pour cent de leur récolte normale et certaines tout. 2023-2024 a été une année de reprise, si bien que la dernière récolte de ce vignoble a été d'environ 80 000 kilos au lieu des plus de 200 000 kilos attendus. Elle a néanmoins dégagé un bon flux de trésorerie positif.",
+        "Il y a également une maison avec garage et hangar accolés à l'arrière pour l'outillage, ainsi qu'un barbecue extérieur en briques – le tout construit en 2011. La maison seule fait 700 sq ft (65 m²), est raccordée à l'eau municipale et n'est pas occupée actuellement. C'est une construction en briques, qui pourrait être agrandie.",
+        "Un vieux tracteur Deutz est inclus, largement suffisant pour le travail."
+      ]
+    },
+    "lasparedes": {
+      "title": "Prix réduit de US$60 000 ! 15 ha (37 acres) avec vignoble, maison, tourisme et vente de vin bio",
+      "kicker": "Vente de vin sur place et en ligne",
+      "paragraphs": [
+        "Cette finca de 15 ha à Las Paredes compte 8 acres (3,2 ha) de raisins de qualité – pour moitié cabernet sauvignon et pour moitié bonarda – ainsi que 1 acre de jeunes noyers âgés de 5 à 7 ans. C'est une propriété viticole de zone 1 au sol excellent, et les raisins sont protégés par des filets coûteux. La finca compte aussi environ 40 jeunes oliviers.",
+        "Le vignoble produit des vins biologiques commercialisés sous le label Halito. On y trouve un cabernet sauvignon et un pet nat bonarda.",
+        "Les pet-nats appartiennent à la catégorie des vins effervescents naturels, élaborés avec peu ou pas d'intervention, ce qui leur donne souvent cette couleur trouble et ce goût moins filtré que beaucoup apprécient.",
+        "Leur pet nat bonarda est décrit comme un « vin très léger et frais, très fruité, avec une touche festive et de fines bulles ».",
+        "Le cabernet sauvignon est décrit comme « une expression sauvage d'un vin jeune, à boire sans élevage sous bois, aromatique au nez, intense et équilibré en bouche ».",
+        "La maison du propriétaire est construite dans le style « casa de campo », avec poutres apparentes, appareils neufs, 3 chambres, une grande salle de bains, un salon, une cuisine et un poêle à bois. Elle dispose de l'eau de ville, de l'électricité et d'un accès Internet. Il y a un hangar d'environ 650 sq ft (60 m²), et de grands arbres d'ombrage et de jolies plantations autour de la maison rendent l'ensemble très agréable.",
+        "Les propriétaires l'utilisent comme site touristique et accueillent des hôtes, ce qui procure un revenu complémentaire.",
+        "Il y a 7,5 acres (3 ha) de terre en friche, nivelée et prête à planter. S'y ajoutent 15 acres (6 ha) de vignes communes abandonnées, dont la structure est encore en place et qui pourraient être arrachées et replantées.",
+        "La finca dispose d'excellents droits d'eau et reçoit la première irrigation des canaux en béton qui alimentent le secteur."
+      ]
+    },
+    "orchard-olives-property-for-sale-in-mendoza-argentina": {
+      "title": "Finca d'oliviers et de pruniers bien entretenue, 12 ha (29 acres)",
+      "kicker": "Les vendeurs acceptent le bitcoin !",
+      "paragraphs": [
+        "Cette finca de 12 ha (29,5 acres) comprend une maison d'ouvrier avec hangar, et le matériel est inclus.",
+        "Elle compte 4 ha (10 acres) de prunes d'Agen (pour les pruneaux) qui ont donné environ 100 000 kilos (240 000 livres) en 2024, mais les conditions climatiques ont conduit à une mauvaise année en 2025, avec seulement 25 % de ces volumes. L'administrateur actuel indique toutefois que les arbres se présentent bien cette année, ce qui laisse espérer une excellente récolte si tout tient.",
+        "Il y a 8 ha (près de 20 acres) d'oliviers adultes qui donnaient en moyenne 80 000 kilos (176 000 livres) d'olives les années précédentes, mais qui ont également souffert en 2024 et 2025. Là encore, l'administrateur indique que la floraison est superbe cette année, ce qui laisse aussi espérer une excellente récolte cette saison si tout tient.",
+        "Les variétés d'olive sont l'arbequina et la frantoio, destinées à l'huile. 80 000 kilos donneraient environ 16 000 litres d'huile. Pour donner une idée, cela équivaudrait à environ 33 800 bouteilles d'huile d'olive de 16 onces. Il faudra encore quelques mois avant de pouvoir établir des estimations fiables, mais les perspectives sont pour l'instant favorables.",
+        "La finca est en bon état, bien entretenue, avec des arbres sains.",
+        "La propriété dispose de droits d'eau complets inscrits au titre, suffisants pour les cultures actuellement plantées.",
+        "Un tracteur John Deere 2030 est inclus, avec des outils et un pulvérisateur traîné de 500 litres pour le tracteur. C'est un vieux tracteur, mais il a été rénové et fait parfaitement le travail.",
+        "La finca se trouve sur une route principale et à quelques minutes de la ville de San Rafael.",
+        "CLAIES DE SÉCHAGE : c'est là que les prunes fraîches sont disposées dans des cageots en bois sur le grillage et séchées au soleil.",
+        "CE PANNEAU AU BORD DE LA ROUTE ANNONCE DE L'HUILE D'OLIVE À VENDRE"
+      ]
+    },
+    "algarrobal": {
+      "title": "Finca de 30 ha (74 acres), dont 28 ha (70 acres) de vignes, 2 maisons, etc.",
+      "paragraphs": [
+        "Le propriétaire indique qu'il est prêt à accepter US$90 000 d'apport et à financer le solde de US$90 000 en 20 mensualités de US$4 500 chacune. DESCRIPTION",
+        "Cette finca se compose de 30 ha (74 acres) en trois parcelles distinctes au titre, à Algarrobal, à environ 20 minutes de San Rafael.",
+        "* Bonarda rouge (8 ans) – 37 acres * bonarda rouge (3 ans) – 13 acres * torrontés blanc (4 ans) – 20 acres",
+        "La récolte 2021 a atteint 350 000 kilos de raisin. La finca emploie deux ouvriers. Le propriétaire indique que l'un d'eux est extrêmement compétent et travaille sur l'exploitation depuis 20 ans.",
+        "La propriété est entièrement clôturée et compte deux maisons raccordées à l'électricité et à l'eau municipale. L'une est une maison d'ouvriers, l'autre une maison de propriétaire avec barbecue extérieur et espace de parc. Il y a également 2 hangars à toiture métallique, sols en béton et portes métalliques.",
+        "TRACTEUR ET OUTILS D'UNE VALEUR DE PLUSIEURS MILLIERS INCLUS",
+        "Les deux tracteurs inclus dans la vente sont un Universal (année 2000) en très bon état et un tracteur de vigne Fiat 400 (1974) en bon état. Les outils comprennent un pulvérisateur Puenche modèle 2000 d'une capacité de 1 000 litres.",
+        "Les outils comprennent également une herse à disques neuve de 16 disques à commande à distance, une herse à disques hydraulique de 14 disques, une charrue de vigne à 6 socs, une trancheuse, un chisel à 5 dents et une remorque à quatre roues.",
+        "Il y a de nombreux outils à main, 3 pulvérisateurs à dos, une débroussailleuse, des scies, etc.",
+        "La finca dispose de droits d'eau suffisants pour l'ensemble de la surface plantée.",
+        "La finca est membre de la coopérative vinicole Goudge pour l'élaboration et la vente du vin issu de l'exploitation. Cette adhésion sera transférée au nouveau propriétaire."
+      ]
+    },
+    "award-winning-winery-for-sale-in-mendoza-argentina": {
+      "title": "Bodega primée sur 15 ha (36 acres) avec vignoble de qualité",
+      "kicker": "Deux maisons et une piscine !",
+      "paragraphs": [
+        "Le domaine compte un peu moins de 15 acres (6 ha) de raisins de qualité, dont du malbec, du cabernet sauvignon, du cabernet franc et du bonarda.",
+        "La capacité de production est actuellement de 85 000 litres, soit 113 000 bouteilles (750 ml).",
+        "La bodega a été construite en 2008 et le matériel est en grande partie neuf. Elle ne produit que des vins haut de gamme, principalement destinés à l'export.",
+        "La bodega a remporté les distinctions suivantes au New York International Wine Competition",
+        "Double or : 2013 Artina Gran Reserve – Or : 2014 von Auring Gran Reserve – Argent : 2015 YIYBOS Estate Syrah – Bodega argentine de l'année pour l'élevage en barrique",
+        "Malbec, 2 ha (4,94 acres) – cabernet sauvignon, 2,5 ha (6,17 acres) – bonarda, 1 ha (2,47 acres) – cabernet franc, 0,5 ha (1,23 acres)",
+        "La bodega de 3 164 sq ft (21 x 14 mètres) dispose de trois cuves en inox (deux de 13 000 litres et une de 1 000 litres) et de sept cuves en fibre de verre totalisant 54 500 litres. Le matériel comprend un érafloir-fouloir, une table de tri, une pompe à marc, une pompe centrifuge, un pressoir hydraulique vertical et un système de refroidissement. Un laboratoire est rattaché à la bodega. Il n'y a pas de ligne d'embouteillage industrielle : ils font appel à un embouteilleur mobile en cas de besoin.",
+        "Maison principale : (1 290 sq ft – 120 m²) Maison entièrement meublée, très lumineuse, avec une grande cuisine ouverte sur le séjour. Installée parmi des arbres luxuriants et des vignes, elle offre une atmosphère paisible.",
+        "Deuxième maison : (1 290 sq ft – 120 m²) Une maison indépendante, claire et aérée, de 2 chambres, avec un grand séjour, parfaite pour des employés ou pour la famille et les amis.",
+        "Quincho : à côté de la piscine, il comprend une salle d'eau et peut servir de maison d'hôtes.",
+        "CLIQUEZ CI-DESSOUS POUR LA VIDÉO DU VIGNOBLE ET DE LA BODEGA PRISE PAR DRONE",
+        "Distinctions du New York International Wine Competition"
+      ]
+    },
+    "winery-vineyard-b-b-property-for-sale-in-argentina": {
+      "title": "Bodega avec vignoble et/ou bed & breakfast rentable : à partir de",
+      "kicker": "Belle opportunité de trésorerie !",
+      "paragraphs": [
+        "Cette vente porte sur deux propriétés voisines distinctes, qui peuvent être acquises séparément ou ensemble.",
+        "Il s'agit d'une propriété touristique de type bed and breakfast avec logement de propriétaire, exploitée 6 mois par an par des propriétaires qui ne résident en Argentine que six mois.",
+        "C'est une excellente affaire, et les propriétaires vivent très bien de ces revenus. Il y a trois unités qui se louent autour de US$150 la nuit, et les propriétaires indiquent un taux d'occupation d'environ 85 % du 15 octobre au 15 mai. Quatre-vingt-dix pour cent des hôtes sont des clients fidèles.",
+        "Le jardin est charmant et paisible : les hôtes y profitent de la piscine ou y font des asados. La propriété compte divers arbres fruitiers et sa surface totale est d'environ 2½ acres (1 ha).",
+        "Le bâtiment d'exploitation abritant les appartements touristiques a plus de 100 ans. Les propriétaires actuels ont restauré ce bâtiment historique et l'ont décoré de beaux meubles anciens et d'autres attentions particulières, que vous découvrirez en visitant le domaine.",
+        "La propriété voisine comprend 3 ha (7 acres) de vignoble de malbec, soit environ 8000 à 10 000 pieds de vigne.",
+        "La bodega est une installation de 1000 sq ft (93 m²), entièrement équipée, qui produit 15 000 bouteilles de vin par an à partir de la récolte du vignoble. Le propriétaire indique réaliser environ US$75 000 de ventes de vin par an, à US$5 ou US$6 la bouteille ici en Argentine.",
+        "La vente comprend également un appartement (66 sq ft) qu'il construit au-dessus de la bodega et qui offrira une vue spectaculaire sur la Sierra Pintada, au sud. (VOIR LA DERNIÈRE PHOTO CI-DESSOUS POUR L'AVANCEMENT)",
+        "Voici le nouvel appartement en construction sur la propriété, au-dessus de la bodega."
+      ]
+    },
+    "vineyard-and-wine-company-for-sale-in-mendoza-argentina": {
+      "title": "Société vinicole avec 28 ha (69 acres) de malbec et de cabernet sur une finca de 49 ha (121 acres)",
+      "kicker": "La finca a 2 puits et une retenue d'eau !",
+      "paragraphs": [
+        "Cette finca de 49 ha (121 acres) à La Resolana borde une route asphaltée, à environ 16 miles du centre de San Rafael, à Colonia Elena, Mendoza.",
+        "Il y a 28 ha (69 acres) de raisins de qualité sous filets",
+        "11 ha (27 acres) de malbec – 11 ha (27 acres) de cabernet sauvignon – 6 ha (15 acres) de bonarda",
+        "La finca dispose de droits d'eau de canal pour l'ensemble de la propriété et de deux puits d'irrigation avec une grande retenue d'eau. Un puits peut pomper 150 000 litres d'eau par heure et l'autre 280 000 litres à 60 mètres de profondeur avec une pompe immergée.",
+        "Quinze hectares (37 acres) sont équipés de piquets et de fils (voir photos) pour des filets hauts et peuvent accueillir davantage de vignes, un verger, des oliviers, des pistachiers ou des légumes annuels. Dix autres hectares (25 acres) sont en friche.",
+        "La finca élève également 15 000 jeunes plants de vigne, pour pouvoir les planter en remplacement quand c'est nécessaire.",
+        "Les propriétaires commercialisent le raisin des trois façons suivantes",
+        "1) Ils transforment le raisin en vin sous le label « La Resolana » et le vendent sur le marché intérieur, à des cavistes notamment.",
+        "L'an dernier, ils ont produit 60 000 bouteilles pour la vente et la distribution.",
+        "2) Une partie du raisin est vinifiée pour la vente en vrac.",
+        "3) Ils vendent aussi une partie du raisin à des bodegas locales, afin de disposer de liquidités pour les frais courants.",
+        "Il y a une maison d'ouvrier qui pourrait être réhabilitée en maison de propriétaire, un hangar et deux tracteurs avec leur matériel (voir photos)."
+      ]
+    },
+    "cabernet-vineyard-on-paved-road-for-sale-in-argentina": {
+      "title": "Vignoble de cabernet sauvignon avec maison et piscine sur une finca de 19 ha (48 acres)",
+      "paragraphs": [
+        "Cette finca de 48 acres (19 ha) compte 7 ha (17 acres) de vignes, dont 5,5 ha (13,5 acres) de cabernet sauvignon et 1,5 ha (3,5 acres) de cépages courants muscatel et cereza.",
+        "Les vignes ont donné en moyenne 61 000 kilos par an au cours des dix dernières années. Cette année, il y a toutefois eu des dégâts de gel, mais ils ont pu les limiter à environ 50 pour cent grâce à la lutte antigel.",
+        "Il y a 100 cognassiers, particulièrement chargés cette année, qui ont donné 10 500 kilos de fruits l'an dernier.",
+        "On compte aussi environ 15 grands oliviers adultes qui ont donné 295 kilos d'olives cette année, que les propriétaires ont échangées à l'huilerie Yacanelo contre 38 litres d'huile (l'équivalent de 80 bouteilles de 16 onces).",
+        "Dix hectares (25 acres) de terrain restent non cultivés.",
+        "La maison a un intérieur bien entretenu et comprend 2 chambres et 1 salle de bains sur environ 1 000 sq ft (93 m²). Elle est raccordée à l'eau de ville et dispose d'une bonne installation électrique. Une piscine se trouve à côté de la maison et, du côté de la piscine, une treille donne chaque année une belle récolte de raisin de table.",
+        "Un garage-hangar relativement récent fait un peu plus de 1 000 sq ft (32 x 32 pieds) et peut également servir d'atelier.",
+        "La finca dispose de droits d'irrigation depuis les canaux situés devant l'exploitation, ainsi que d'un puits d'irrigation profond de 62 mètres avec une pompe immergée placée à 25 mètres de profondeur."
+      ]
+    },
+    "garden-property-tourism-home-with-pool-for-sale-mendoza-argentina": {
+      "title": "Superbe propriété de jardin clos de murs avec maison et piscine sur près d'un acre, entièrement meublée",
+      "kicker": "Prix vient de baisser !",
+      "paragraphs": [
+        "Cette pittoresque propriété de jardin clos de murs fait un peu moins d'un acre et elle est extrêmement bien entretenue. Elle se trouve à environ 15 minutes de San Rafael, dans une zone touristique très recherchée appelée Rama Caída.",
+        "La maison réaménagée compte 3 chambres, 2 salles de bains, un séjour séparé et une pièce ouverte cuisine-séjour-salle à manger. La maison fait 1 100 sq ft (102 m²) avec un patio de 160 sq ft. Il y a aussi une tour pour Internet. À l'arrière de la propriété se trouve un garage-atelier raccordé à l'électricité et à l'eau (705 sq ft), qui pourrait être transformé en une agréable maison d'hôtes.",
+        "Le magnifique parc est superbement aménagé et compte une grande variété d'arbres, de fleurs et d'arbustes qui entourent une grande piscine avec patio. On y trouve du romarin, de la lavande, des cèdres, des sapins, un magnolia, des cyprès, des pins et des rince-bouteilles rouges, entre autres.",
+        "Certains des grands arbres du parc ont été plantés en 1926. Les arbres fruitiers comprennent des figuiers, un cerisier, des poiriers, des grenadiers, des abricotiers et une douzaine d'oliviers adultes, dont les olives peuvent être récoltées pour la table ou échangées contre de l'huile dans l'une des huileries locales.",
+        "Il y a de petits commerces, des boutiques et des épiceries dans le secteur, tandis que les commerces de la ville, les magasins de bricolage, les banques et les restaurants sont à 15 minutes, dans la belle San Rafael bordée d'arbres.",
+        "Les propriétaires ont vécu leur rêve ici pendant les mois d'été, et souvent plus longtemps, depuis 2008. Ils sont aujourd'hui plus âgés, ont profité de leur aventure argentine et retournent définitivement au Canada pour raisons de santé.",
+        "Garage à l'arrière, transformable en maison d'hôtes"
+      ]
+    },
+    "peach-farm-with-two-homes-for-sale-in-mendoza-argentina": {
+      "title": "10 ha (25 acres) avec verger de pêchers, terres libres et deux maisons",
+      "kicker": "À six miles de la ville, sur route asphaltée",
+      "paragraphs": [
+        "Cette finca de 10 ha (25 acres) est très bien desservie, à seulement 6 miles du centre-ville, sur une route asphaltée avec tous les réseaux et environ 600 pieds de façade sur route.",
+        "Trois acres portent un verger de pêchers, en grande partie sous filets, et le verger est en très bon état. La récolte de janvier 2025 a été de 40 000 kilos (88 000 livres).",
+        "La finca compte environ 25 oliviers qui donnent en moyenne 2 500 kilos par an. Le propriétaire les échange contre de l'huile à l'huilerie locale Yancanelo.",
+        "La vente comprend le tracteur et tout le matériel nécessaire. Un voisin exploite le verger de pêchers en échange d'un pourcentage de la récolte.",
+        "Il y a 5 ha (12½ acres) qui pourraient accueillir d'autres cultures. Auparavant, le propriétaire y faisait des cultures en rangs et des légumes.",
+        "Le propriétaire vit sur la côte atlantique de l'Argentine et, lorsqu'il est sur place, il séjourne avec sa femme dans la petite maison d'hôtes.",
+        "La maison principale est louée jusqu'en juin 2025. Elle compte 2 chambres, 2 salles de bains et une grande véranda couverte avec patio. Elle a des plafonds en bois, des sols en grès cérame, etc. Je n'ai pas de photos car elle est actuellement occupée.",
+        "Un hangar de 12 x 8 mètres (1 000 sq ft) est accolé à la maison principale.",
+        "La finca compte aussi quelques vignes, pêchers et nectariniers pour la consommation personnelle. Tout cela est très beau.",
+        "MAISON PRINCIPALE (quelques photos seulement, la maison étant actuellement occupée)",
+        "VUE SUR LES TERRES EN FRICHE (remarquez les oliviers sur le côté)"
+      ]
+    },
+    "farm-property-for-sale-in-argentina-with-spectacular-view": {
+      "title": "Finca de 17 ha (42 acres) avec vignoble de malbec et vues spectaculaires",
+      "paragraphs": [
+        "Cette belle finca de 17 ha (42 acres) compte 5 ha (12,5 acres) de vignoble de malbec sous filets, avec goutte-à-goutte.",
+        "Les vues sur la Sierra Pintada sont spectaculaires – et toutes différentes selon l'endroit où l'on se tient.",
+        "Une partie du terrain est labourée et prête à recevoir de la luzerne ou une autre culture. La propriété comprend également une maison d'ouvrier et une petite retenue d'eau pour gérer le goutte-à-goutte.",
+        "Il y a aussi de nombreux oliviers anciens et pleinement adultes – environ 50 – capables de donner chacun de très grandes quantités d'olives par récolte.",
+        "Le terrain se situe dans une zone touristique importante, à environ un mile des Algodon golf and wine estates, un ensemble de plusieurs millions de dollars. Les vues depuis cette propriété sont toutefois supérieures.",
+        "Il y a deux bâtiments sur la propriété. L'un est un vieux hangar en adobe de plus de 100 ans. Il a été en partie conservé et renforcé.",
+        "Le second bâtiment est une maison en briques partiellement rénovée et renforcée, mais non achevée.",
+        "Le vendeur possède également 165 ha (407 acres) supplémentaires, contigus à cette propriété, qu'il vendra pour US$350 000 de plus.",
+        "Il s'agit surtout de terres d'élevage, mais elles comprennent 20 ha (50 acres) avec droits d'eau et des plantations d'oliviers et d'abricotiers, une maison, des hangars et des retenues d'eau totalisant 5 000 mètres cubes (soit à peu près l'équivalent de deux piscines olympiques de 6 pieds de profondeur)."
+      ]
+    },
+    "pichana": {
+      "title": "Verger de pruniers de 10,5 ha (25 acres) avec maison et merlot",
+      "paragraphs": [
+        "Cette finca de 25,9 acres (10,5 ha), juste au sud-est de San Rafael, compte 22 acres de pruniers (9 ha) en plein rendement, ainsi que 3 acres (1,2 ha) de merlot de qualité et quelques abricotiers.",
+        "Elle dispose également d'une installation de séchage des fruits, avec des claies pour le séchage au soleil, un four à bois pour le séchage au four et un atelier de conservation des fruits.",
+        "L'installation de séchage permet de maximiser la marge, puisque les fruits secs peuvent être vendus quand les prix du marché sont les meilleurs, alors que les fruits frais concurrencent ceux de toutes les autres exploitations pendant les mêmes semaines de récolte, ce qui fait baisser les prix.",
+        "L'exploitation pourrait aussi prendre en charge les fruits d'autres fermes pour augmenter ses bénéfices, et même produire des tomates séchées au soleil, par exemple.",
+        "Le verger peut donner en moyenne 150 000 kilos par an, selon l'administrateur.",
+        "La propriété compte une maison en briques bien construite d'environ 750 sq ft (70 m²), qui pourrait être joliment rénovée et agrandie à peu de frais.",
+        "La propriété dispose de droits d'eau complets rattachés au titre, ainsi que de l'eau de ville et de l'électricité. Le courant triphasé industriel est présent sur place.",
+        "Vous voyez ici l'aire de séchage, où les claies sont posées sur le grillage pour faire sécher au soleil les prunes et les abricots",
+        "Ces photos montrent le séchoir chauffé au bois, les claies de séchage en bois et la chambre de soufrage pour la conservation des fruits",
+        "Canaux d'irrigation et autres vues : (les canaux étaient à sec pour nettoyage au moment des photos.)"
+      ]
+    },
+    "large-ranch-alfalfa-range-land-for-sale-in-mendoza-argentina": {
+      "title": "Campo de 1 900 ha (4 690 acres) pour luzerne, bovins et plus",
+      "kicker": "US$845 par hectare !",
+      "paragraphs": [
+        "Ce campo avec des surfaces en luzerne se trouve à 20 miles (32 km) de la ville de San Rafael, dans le secteur de Resolana, avec un accès asphalté.",
+        "Le total est de 4 690 acres (1900 ha), dont 865 acres (350 ha) cultivables, le reste étant du campo naturel. Ce campo pourrait être mis en culture par défrichage et nivellement.",
+        "Depuis ses débuts, la propriété est exploitée en pâture et en fourrage pour le bétail.",
+        "Les 865 acres sont divisés en parcelles de 15 à 25 acres (6 à 10 ha), ce qui facilite la répartition du bétail et la rotation des fourrages.",
+        "Cette surface dispose d'un système d'eau adapté qui permet d'irriguer efficacement les parcelles et rend la rotation du bétail compatible avec la rotation de l'irrigation.",
+        "La partie de campo brut de l'exploitation sert actuellement à l'élevage et à l'engraissement du bétail.",
+        "Le terrain pourrait accueillir d'autres types de cultures, comme la vigne, un verger ou des cultures en rangs, mais cela pourrait exiger des puits d'irrigation supplémentaires – et les exigerait à coup sûr si les surfaces non aménagées étaient défrichées.",
+        "Il y a un forage pour l'eau souterraine avec une retenue (qui devrait aujourd'hui être nettoyée et approfondie), permettant de stocker 30 millions de litres. La propriété dispose de droits d'irrigation de canal pour 100 acres, si bien qu'ils utilisent l'eau du canal en plus de celle du puits."
+      ]
+    },
+    "lacorreina": {
+      "title": "13 ha (31 acres) avec vue sur la Sierra Pintada et beaucoup d'eau",
+      "kicker": "PRIX RÉDUIT ! BELLE VUE !",
+      "paragraphs": [
+        "Beaucoup d'eau d'irrigation inscrite au titre (20 heures) sur cette belle finca du secteur de La Correina, à San Rafael, Mendoza.",
+        "Cette finca se trouve sur route asphaltée, à 15 minutes en voiture de la ville de San Rafael et à 15 minutes de la destination très touristique de Valle Grande – ce qui ouvre toutes sortes de perspectives touristiques en plus de la production agricole, de l'équitation, etc.",
+        "Il y a une maison d'ouvrier sur la propriété et les propriétaires réalisent actuellement quelques améliorations.",
+        "La finca est raccordée à l'électricité, et l'on y trouve une maison d'ouvrier occupée, en mauvais état, avec un petit hangar.",
+        "Le grand atout ici, c'est le terrain – 13 hectares –, le bon sol, le climat et la surface nivelée, parfaite pour toutes sortes de projets. Le terrain convient à la vigne, au verger, aux oliviers, à la luzerne, aux noyers, aux figuiers, aux légumes annuels, etc.",
+        "L'occupant actuel de la finca estime que le meilleur usage pour un futur acquéreur serait de planter là où se trouvent aujourd'hui les arbres, dans la partie avant droite. Une nouvelle maison pourrait être construite derrière, avec des arbres brise-vue pour séparer la maison des ouvriers. Le reste de la surface leur semble bien adapté aux bovins, puisqu'il y a un point d'eau et que la zone est enclose.",
+        "Les vendeurs sont « crypto-friendly » et ouverts également à un paiement reçu aux États-Unis."
+      ]
+    },
+    "top-winery-for-sale-in-mendoza-argentina": {
+      "title": "Bodega premium primée avec restaurant",
+      "kicker": "Vin n° 2 au monde !",
+      "paragraphs": [
+        "Cette belle bodega moderne aux racines historiques se situe dans un secteur de grandes maisons viticoles, près de la ville de Mendoza.",
+        "Elle dispose d'un équipement et d'installations complets de vinification, avec matériel de réfrigération, cuves en inox, laboratoire, deux bascules pour peser le raisin et les camions, une salle de dégustation et un restaurant avec tables et chaises, presque achevé et prêt à recevoir des convives.",
+        "La bodega a produit au fil des ans des vins primés lors de concours internationaux et vinifie également pour le compte de certaines des meilleures maisons d'Argentine.",
+        "L'Association mondiale des écrivains et journalistes du vin a classé le malbec Bicentenario de cette bodega au 2e rang des vins du monde pour l'année 2013. Chaque année, la WAWWJ établit ce classement à partir de 80 concours internationaux dans le monde entier.",
+        "La bodega ne possède pas ses propres vignes, mais dispose d'un contrat de 10 ans avec un vignoble exceptionnel du Valle de Uco qui lui fournit des raisins de qualité de tout premier ordre. Ce contrat est transférable au nouveau propriétaire.",
+        "Les cuves comprennent actuellement 64 500 litres en inox et 476 000 litres en cuves époxy. Le chai à barriques compte 70 barriques et peut en accueillir 90 autres, ce qui porterait la capacité d'élevage sous bois à 36 000 litres.",
+        "DES INFORMATIONS PLUS COMPLÈTES SONT DISPONIBLES SUR DEMANDE"
+      ]
+    },
+    "c-jensen": {
+      "title": "Vignoble de malbec avec ancienne maison coloniale et piscine",
+      "kicker": "10 ha (25 acres) : excellent potentiel touristique !",
+      "paragraphs": [
+        "Ce vignoble de malbec avec son ancienne maison coloniale et sa piscine se trouve tout près du Nevado Golf Club, de la bodega Mumm, de la bodega Bianchi, de l'aéroport et d'autres grandes étapes touristiques. Un bon prix dans ce secteur, avec un tel potentiel de revenus agricoles et touristiques. Le hangar en briques peut être transformé en bodega de boutique, il reste de la place pour davantage de cultures, et des cabañas touristiques peuvent être construites sur place à très faible coût.",
+        "Cette finca de 10 ha compte 3,5 ha (8,5 acres) de malbec sous filets, une maison coloniale de style anglais de 380 m² (environ 4 000 sq ft, vérandas comprises), ainsi qu'une maison d'ouvrier et un hangar d'environ 100 m² (1070 sq ft). Il y a un joli parc avec de très grands arbres adultes, et le reste de la surface est en friche, propre à davantage de vigne, à un verger, à de la luzerne ou à du pâturage pour chevaux.",
+        "La propriété compte aussi au moins deux douzaines de grands oliviers adultes, qui peuvent fournir des olives de table ou être échangés à l'huilerie située à quelques kilomètres contre de nombreux litres d'huile d'olive. Il y a également des noyers et des figuiers sur la finca. D'excellents droits d'eau inscrits au titre couvrent l'ensemble de la propriété, et en bonne quantité.",
+        "Hangar en briques de 1 070 sq ft – ou future bodega de boutique"
+      ]
+    },
+    "ranch-land-for-sale-in-argentina-with-home-and-alfalfa": {
+      "title": "Campo de 220 ha (540 acres) avec maison du propriétaire et luzerne. Entièrement clôturé, avec beaucoup de bonne eau",
+      "paragraphs": [
+        "Cet extraordinaire campo de 540 acres (220 ha), juste à l'est de San Rafael, est entièrement fermé par une clôture haute résistance à 7 fils et divisé en trois secteurs avec les portails correspondants.",
+        "La propriété comprend une maison principale avec parc et piscine (à réparer), une galerie, une churrasquería en briques, un four à pizza et à pain extérieur en briques d'adobe, etc. Il y a également une ancienne maison à restaurer, avec un hangar.",
+        "La propriété dispose de canaux de drainage naturels avec de l'eau toute l'année. Il y a aussi quelques puits sur le terrain, dont un est actuellement en service.",
+        "Cent acres (40 ha) ont été cultivés en luzerne et en légumes annuels. Des rangées de peupliers et d'eucalyptus bordent les canaux. Une grande partie de l'exploitation est encore une terre vierge, et il y a un peu de forêt indigène.",
+        "Située à environ 20 minutes de San Rafael et à quelques minutes du petit bourg de Goudge, la propriété compte aussi une école publique accessible à pied.",
+        "La propriété offre un bon potentiel pour les chevaux ou pour un élevage bovin. Le sol est très bon et le terrain pourrait accueillir d'autres cultures habituelles du secteur.",
+        "NOTE : beaucoup des photos ci-dessous ont été prises en hiver ou après labour, si bien que l'on ne voit pas les pâturages verts qui sont là aujourd'hui."
+      ]
+    },
+    "well-kept-fine-wine-vineyard-for-sale-in-mendoza": {
+      "title": "Vignoble de qualité bien entretenu avec piscine et cabaña, très bien situé",
+      "kicker": "Tracteur et outils inclus",
+      "paragraphs": [
+        "Ce vignoble bien entretenu, qui produit des raisins de qualité, bénéficie d'un excellent emplacement à l'entrée de San Rafael, sur la route qui traverse le désert depuis la ville de Mendoza.",
+        "Il y a 13,8 acres (5,6 ha) de vignes sous filets, dont 5 ha de malbec et 8,8 acres de merlot. Auparavant, la bodega Valentin Bianchi (la plus connue de San Rafael) achetait des raisins de ce vignoble pour son merlot haut de gamme « Particular », qui a reçu d'excellentes critiques.",
+        "La cabaña, qui a servi de maison et de location touristique, fait 485 sq ft (45 m²), plus un grand patio extérieur couvert. Elle comprend une chambre, une salle de bains et une cuisine ouverte sur la salle à manger. Elle est aussi équipée d'une alarme.",
+        "La piscine mesure 16 x 8 pieds et dispose d'une pompe et d'un filtre.",
+        "La finca compte plusieurs arbres fruitiers, en particulier des abricotiers, des noyers, des oliviers et des pêchers.",
+        "HANGAR ET TRACTEUR Le hangar de la propriété est très bien construit, d'une surface de 600 sq ft (56 m²), et comprend un ancien tracteur de vigne Fiat 400, un pulvérisateur de 1 000 litres et une charrue à 16 disques. Le hangar est également équipé d'une alarme. L'irrigation se fait par canal, et la propriété dispose de droits d'irrigation complets rattachés au titre pour l'ensemble de la surface.",
+        "La finca est raccordée à l'électricité et à l'eau municipale."
+      ]
+    },
+    "cute-home-in-rural-campo-development-for-sale-in-mendoza-argentina": {
+      "title": "Jolie maison avec piscine et 1 chambre dans un domaine de campo",
+      "paragraphs": [
+        "Cette charmante maison de 1 chambre se trouve dans un lotissement rural de style campo rustique, proche de la nature, à Pueblo Benegas, à l'extérieur de San Rafael, Mendoza. Elle est située à proximité des Algodon Golf and Wine Estates, un ensemble de plusieurs millions de dollars, et sur la route de la station de ski de Las Leñas.",
+        "Appelée « Casa Peumayen », la maison fait 635 sq ft (59 m²), plus un grand patio et une piscine, ce qui la fait paraître plus grande. Au sein du country club de Pueblo Benegas, on trouve un projet de fromage de chèvre et de brebis ainsi qu'un restaurant gastronomique de cuisine d'auteur. Une grande lagune se trouve à proximité.",
+        "La cuisine offre une vue sur la Sierra Pintada et la piscine se trouve juste à côté du patio.",
+        "« Le club vous invite à parcourir ses différents sentiers au milieu d'une nature pleine de forêts de chañar et d'aguaribay, où vous découvrirez des vues sur la montagne et sur notre belle lagune.",
+        "« La maison est entrelacée de jarillas, de chañares, de cactus et d'oliviers ; elle s'élève face à la montagne, bâtie en pierre, en totale communion avec l'environnement, sans rien perdre de sa chaleur domestique.",
+        "« Le secteur est entouré d'attractions touristiques pour l'aventure et le sport, et se trouve près de nombreuses bodegas et restaurants réputés où vous pourrez déguster leurs vins et leurs plats exquis. »"
+      ]
+    },
+    "small-vineyard-for-sale-in-mendoza-argentina": {
+      "title": "Petit vignoble de malbec sur 5 ha (12 acres) en zone touristique, avec place pour construire",
+      "kicker": "Vignoble rentable !",
+      "paragraphs": [
+        "Ce vignoble de loisir se trouve sur 12,3 acres (5 ha) à Cuadro Benegas, un secteur apprécié des touristes à San Rafael, Mendoza.",
+        "Un excellent gardien habite juste à côté de la propriété et souhaiterait rester avec un nouveau propriétaire.",
+        "Les raisins ont été vendus chaque année à certaines des meilleures bodegas du secteur, dont la bodega Bianchi, qui exporte dans le monde entier.",
+        "Le rendement annuel atteint jusqu'à 15 000 kilos, soit presque 15 000 bouteilles de vin. Vous auriez aussi la possibilité de faire vinifier le vin par une bodega locale et de le commercialiser sous votre propre marque, ou de construire une bodega de boutique sur place.",
+        "En 15 ans, le vignoble n'a jamais perdu d'argent. Le propriétaire vit en Europe et a tout géré à distance sans difficulté.",
+        "Le propriétaire indique qu'une bonne année, après charges, le bénéfice est d'environ US$3 400.",
+        "La récolte de mars 2025 a été de 10 540 kilos de malbec.",
+        "La finca n'est pas loin du domaine viticole et golfique Algodon, un ensemble de plusieurs millions de dollars.",
+        "La propriété est accessible par de bonnes routes sur deux côtés. Électricité, eau et réseaux sont disponibles en bord de route. L'irrigation est bonne et suffisante."
+      ]
+    },
+    "lovely-home-on-acreage-for-sale-near-san-rafael-mendoza": {
+      "title": "Belle maison sur bon terrain avec oliviers",
+      "kicker": "Terrain rural clôturé avec portail",
+      "paragraphs": [
+        "Cette finca de 12,5 acres (5 ha) se trouve à environ 25 minutes du centre de San Rafael, sur une route asphaltée, près d'une école publique.",
+        "Cette maison de 2 chambres et 2 salles de bains et demie a été très bien construite par un ancien entrepreneur, avec le concours d'un ingénieur civil qui a choisi des matériaux de premier choix. Une cuisinière et un réfrigérateur sont inclus, et la maison est équipée de splits pour la climatisation et le chauffage, en plus d'une cheminée.",
+        "Il y a environ 50 oliviers adultes, et le propriétaire loue le terrain à un voisin pour de l'avoine afin de couvrir les impôts et les redevances d'irrigation, de sorte que la propriété a très peu de frais d'entretien. Le contrat est annuel : un nouveau propriétaire pourrait donc planter ce qu'il souhaite, par exemple de la vigne, des oliviers, des arbres fruitiers ou des légumes annuels.",
+        "Le propriétaire vend en raison de problèmes de santé récents et possède une autre maison en ville où il s'installerait.",
+        "Il y a un garage avec atelier de menuiserie de 610 sq ft (60 m²) comprenant un petit atelier, ainsi qu'un abri ouvert pour le bois de chauffage et divers objets. Les deux ont été construits dans le style de la maison. L'ensemble se trouve à La Llave Vieja, à l'est de San Rafael."
+      ]
+    },
+    "sanrafael-mendoza-bnb-for-sale": {
+      "title": "Demeure de maître de 18 pièces pour bed & breakfast à San Rafael",
+      "kicker": "L'emplacement, l'emplacement, l'emplacement !",
+      "paragraphs": [
+        "Cette belle demeure de maître ancienne, en centre-ville de San Rafael, Mendoza, se trouve sur la Plaza San Martín. Chaque soir, la place centrale est un lieu très animé où touristes et habitants affluent vers la zone piétonne voisine pour dîner dans les nombreux restaurants, cafés, bars et salons de thé du quartier.",
+        "Ils fréquentent les boutiques de vêtements, les cavistes, une petite fabrique de chocolat et les boutiques de souvenirs le long des rues et avenues pittoresques bordées d'arbres, près du Kilomètre Zéro.",
+        "7 CHAMBRES, 3 CUISINES, 6 SALLES DE BAINS ET DEMIE, PATIOS EXTÉRIEURS, BALCONS ET GARAGE",
+        "La maison offre au total 5 380 sq ft de surface habitable sous toit. En tout 18 pièces, dont 7 chambres, 6 salles de bains et demie, 3 cuisines (une seule équipée), 5 salons ou pièces de réception, une buanderie, un local technique, un garage pour une voiture et deux patios (387 sq ft et 100 sq ft). La maison dispose d'un chauffage central avec radiateurs italiens.",
+        "Cinq des unités ont une salle de bains et trois d'entre elles une cuisine. La maison peut être divisée pour accueillir des locaux commerciaux ou ajouter des chambres.",
+        "Le balcon du premier étage offre de belles vues sur la place.",
+        "PHOTOS (ces photos ne montrent pas l'ensemble de la maison)"
+      ]
+    },
+    "conde": {
+      "title": "Finca de 20 ha (50 acres) avec vignoble, tracteur et pick-up",
+      "kicker": "La maison est livrée entièrement meublée !",
+      "paragraphs": [
+        "COMPREND US$50 000 DE MOBILIER, VÉHICULES, OUTILS ET MATÉRIEL !",
+        "Cette propriété de 50 acres comprend une maison meublée, un pick-up Ford Ranger, un tracteur avec ses outils et de nombreux extras !",
+        "Il y a 25 acres de vignes sous filets (10 acres de malbec de 3 ans et 16 acres de cépages courants mêlés).",
+        "Les 25 acres restants sont plats et prêts à être labourés et plantés, ou constituent un excellent terrain pour chevaux et bovins.",
+        "La maison de 1000 sq ft (93 m²) a été rénovée en 2022 et est livrée entièrement meublée, avec lits et mobilier dans les deux chambres, réfrigérateur, cuisinière, congélateur, micro-ondes, télévision, tables et meubles, ainsi que de nombreux articles de maison et de cuisine. Il y a un chauffe-eau solaire et un lave-linge.",
+        "La vente comprend un pick-up Ford Ranger (XLT 3,0 litres) et un tracteur Deutz A46 avec charrue de vigne, disques, râteau et un pulvérisateur de 3 000 litres.",
+        "Un groupe électrogène de 5550 watts est inclus, avec une ponceuse, des perceuses, une scie sauteuse, une tronçonneuse Stihl 361 et une débroussailleuse Stihl 280, de nombreux outils à main et un réfractomètre pour mesurer la teneur en sucre du raisin.",
+        "Il y a une maison supplémentaire que le propriétaire utilise actuellement comme dépôt."
+      ]
+    },
+    "charming-vineyard-home-with-pool-for-sale-san-rafael-mendoza-argentina": {
+      "title": "Charmante maison de vignoble avec piscine, malbec et verger sur 13 ha (32 acres)",
+      "kicker": "Vue sur la Sierra Pintada",
+      "paragraphs": [
+        "Cette finca de 32 acres (13 ha) se situe à Cuadro Benegas, à environ 20 minutes de San Rafael. Elle dégage des revenus réguliers depuis de nombreuses années et comprend une maison de propriétaire à deux niveaux avec une belle vue sur la Sierra Pintada.",
+        "Elle est nichée au sein d'un ensemble de trois autres maisons appartenant à des expatriés, dans un secteur extrêmement recherché, et elle est très sûre. La maison possède un balcon qui donne sur le vignoble et sur les collines.",
+        "Il y a trois chambres et deux salles de bains, des splits pour le chauffage et la climatisation, ainsi qu'un « poêle russe » qui garde la maison bien chaude en hiver. Il y a une petite piscine, un abri pour les véhicules et deux grands patios extérieurs avec barbecues et mobilier de jardin.",
+        "Outre le vignoble de malbec, la finca compte un vieux verger de pruniers et plusieurs oliviers dont les olives sont échangées contre de l'huile dans une huilerie locale. Par le passé, ils avaient un grand potager très productif, avec du maïs, des tomates, des courges, des melons, des poivrons, etc.",
+        "Un tracteur avec son matériel est inclus dans la vente, et peut-être aussi une automobile."
+      ]
+    },
+    "argentina-farm-for-sale-with-lovely-homes-barns-alfalfa-acreage": {
+      "title": "Finca de 30 ha (75 acres) avec jolie maison « casa de campo », pâture, corral à bovins et hangar de 10 000 sq ft",
+      "kicker": "2 maisons et 12,5 acres de luzerne",
+      "paragraphs": [
+        "Cette finca de 75 acres (30 ha), juste à l'est de San Rafael, comprend une belle maison de 4 chambres et 2 salles de bains, une maison d'ouvrier, ainsi qu'un hangar industriel neuf de plus de 10 000 sq ft dont la construction coûterait environ US$250 000 aux États-Unis. Il a été bâti en 2019.",
+        "Sur la propriété se trouvent également une ancienne bodega abandonnée et une ancienne installation de séchage et de transformation des fruits avec son entrepôt. Les deux sont des « projets » si l'on veut leur redonner un usage ; les deux ont été remis à niveau électriquement et le triphasé est présent.",
+        "La finca compte 12,5 acres de luzerne et 12,5 acres supplémentaires nivelés et prêts à planter. La propriété est entièrement clôturée.",
+        "La propriété dispose aussi de corrals neufs équipés de couloirs de contention, pensés pour un parc d'engraissement.",
+        "Puits d'irrigation avec tube de 12 pouces et pompe de 60 ch pour l'irrigation. – Puits de 5 pouces pour une eau de boisson de bonne qualité. – Ancienne maison (en plus des deux autres) qui pourrait être restaurée. – Courant triphasé sur la propriété. – Un transformateur de 100 kilowatts. – Une bascule électronique commerciale pour camions (autrefois mécanique), convertie en numérique. – Corral et installations neuves pour l'élevage des veaux."
+      ]
+    },
+    "cattle-ranch-alfalfa-for-sale-in-argentina-500-acres": {
+      "title": "Campo d'élevage de 200 ha (500 acres) avec maison du propriétaire et champs de luzerne",
+      "paragraphs": [
+        "Ce campo d'élevage de 500 acres se trouve à environ 25 minutes au sud-est de San Rafael, près du pueblo de La Llave.",
+        "Il totalise 500 acres (200 ha) ; 250 acres (100 ha) sont défrichés et nivelés, et 125 acres (50 ha) sont plantés.",
+        "Droits d'eau inscrits au titre pour l'ensemble de la surface, plus un puits d'irrigation avec une pompe électrique de 100 ch permettant l'usage d'un pivot hydraulique. Débit de 430 000 litres/heure. Il n'y a actuellement que 50 têtes de bétail sur la propriété, mais elle offre assez de luzerne, de sorgho, etc., pour 170 têtes. On pourrait doubler ce chiffre ou plus en mettant le reste de la surface en production. Il y a des corrals, des couloirs de chargement, etc. Idéal pour un projet d'élevage, et situé sur la route du bétail.",
+        "Il y a une belle maison de propriétaire avec sols carrelés, 2 chambres et une salle de bains sur environ 1 300 sq ft (121 m²), avec un grand patio extérieur couvert. On trouve aussi un hangar et des espaces de stockage pour le matériel. Une maison séparée sert de logement à un employé et est actuellement occupée par un ouvrier.",
+        "LE MATÉRIEL (PAS ENTIÈREMENT PHOTOGRAPHIÉ) PEUT ÊTRE NÉGOCIÉ SÉPARÉMENT"
+      ]
+    },
+    "mercedes": {
+      "title": "Finca de 9,7 ha (24 acres) avec maison et piscine et 20 acres de vignes",
+      "kicker": "Superbe propriété viticole !",
+      "paragraphs": [
+        "Cette finca de 24 acres (9,7 ha), juste à l'ouest de San Rafael, comprend une belle maison, une maison d'hôtes, une piscine et 20 acres de vignoble bien entretenu.",
+        "Elle se situe dans un excellent cadre rural, près de l'aéroport, du Nevado golf course et de la bodega Bianchi Champagne.",
+        "Il y a un vignoble de 10 acres de sémillon sous filets et 10 autres acres de moscatel et de pedro jiménez. On compte 100 pruniers pour les pruneaux et divers arbres fruitiers autour de la maison, dont plusieurs variétés de pêchers, des abricotiers, des cerisiers, des amandiers, des châtaigniers et des noyers.",
+        "La maison compte 2 chambres avec salle de bains privative, une cuisine-salle à manger et d'autres agréments.",
+        "La piscine est chauffée par l'énergie solaire, et la maison dispose également d'un transformateur qui convertit le courant en 110 volts comme aux États-Unis. Le jardin de la finca comprend des plantes ornementales, des arbres d'ombrage et une serre.",
+        "Il y a un conteneur maritime aménagé avec tous les réseaux, qui sert de maison d'hôtes.",
+        "Les vendeurs demandent US$250 000, avec la condition que tous les frais de clôture soient à la charge des acquéreurs."
+      ]
+    },
+    "r-caida": {
+      "title": "Finca de 6 ha (14 acres) avec maison en briques en zone touristique",
+      "paragraphs": [
+        "Cette finca de 14,8 acres (6 ha) se trouve à Rama Caída, une zone touristique où l'on construit des maisons de week-end et des cabañas. Elle est située juste à l'écart de la route de Valle Grande (une sorte de petit Grand Canyon), jalonnée de bodegas, de restaurants et longée par le Río Atuel, avec rafting, camping, hôtels, équitation, tyrolienne, etc. La finca se trouve à quelques minutes seulement de San Rafael, ce qui la place aussi à proximité des stations-service, supermarchés, magasins de bricolage et de tout ce que la ville offre.",
+        "La propriété compte 10 acres (4 ha) de terrain anciennement en verger, labouré et préparé, prêt à planter. Un hangar est accolé à la maison en briques. Il y a l'eau de ville et l'électricité.",
+        "On y trouve de nombreux grands arbres adultes et un joli parc entourant la maison. La terre en friche est prête à être labourée et plantée en légumes, en vigne, en verger ou en pâture pour chevaux.",
+        "D'excellents droits d'eau inscrits au titre couvrent l'ensemble de la propriété, et en bonne quantité."
+      ]
+    },
+    "farm-and-land-for-sale-in-argentina-with-orchard": {
+      "title": "Finca de 9,7 ha (24 acres) en pruniers et pêchers",
+      "paragraphs": [
+        "Cette finca de 9 ha (22 acres), sur une route asphaltée juste à l'extérieur de San Rafael, compte 7 ha (17 acres) de pruniers en bon rendement. Elle a également des pêchers et quelques noyers.",
+        "Il y a sur la propriété une maison en briques en bon état, facilement rénovable pour servir de maison de propriétaire. Elle comprend une cuisine-salle à manger, 2 chambres et un grand espace de stockage pour un véhicule ou du matériel agricole.",
+        "La propriété se trouve sur une route asphaltée, à environ 5 minutes de l'aéroport de San Rafael. Elle est raccordée à l'électricité et à l'eau municipale.",
+        "Les droits d'irrigation rattachés au titre fournissent également de l'eau en abondance, et les propriétaires ont commencé à creuser une zone de la propriété pour une retenue d'eau qui serait alimentée par l'eau du canal desservant la finca.",
+        "La propriété offre une vue au sud sur la Sierra Pintada et possède un bon sol.",
+        "Aucune autre finca n'est proposée à un prix aussi bas dans ce secteur."
+      ]
+    },
+    "farm-land-for-sale-in-mendoza-argentina-with-orchard": {
+      "title": "Finca de 14 ha (34 acres) – verger et noyers : PRIX RÉDUIT",
+      "paragraphs": [
+        "Cette finca de 34 acres se trouve à Cuadro Bombal, près de San Rafael, au bout d'une voie sans issue.",
+        "La finca compte environ 12 acres de pruniers, 5 acres de noyers, ainsi que des pêchers et des nectariniers. Il y a également quelques oliviers adultes.",
+        "Il y a une vieille maison en adobe qui pourrait être rénovée, mais ce serait un chantier important. Une partie de la maison est sécurisée et sert de dépôt ; elle dispose d'Internet et de caméras de surveillance.",
+        "La finca tire son eau d'irrigation des canaux qui longent la propriété et dispose aussi d'un puits neuf qu'ils utilisent pour l'irrigation.",
+        "Au moins la moitié de la finca n'est pas plantée : elle pourrait être mise en pâture pour chevaux ou bovins, ou recevoir d'autres cultures.",
+        "Il y a une belle zone dégagée avec vue sur les collines colorées, qui ferait un bon emplacement pour construire une maison neuve."
+      ]
+    },
+    "sweet-home-on-rural-land-for-sale-in-mendoza-argentina": {
+      "title": "Charmante maison rurale avec piscine sur un acre joli, calme et privé",
+      "paragraphs": [
+        "Cette maison de 2 chambres et 2 salles de bains se trouve sur un acre à Rama Caída, une zone touristique appréciée juste à l'extérieur de la ville de San Rafael, à Mendoza, en Argentine.",
+        "Elle fait 1 539 sq ft (143 m²) et comprend une cuisine-salle à manger, une buanderie et une galerie utilisable comme garage. Elle dispose d'une piscine en fibre de verre de 10 x 20 pieds et d'un barbecue extérieur. La maison a été construite il y a 15 ans.",
+        "La propriété est raccordée à l'eau municipale et à l'électricité, et possède un parc joliment aménagé avec des plantes et des arbres variés, grâce à une heure par semaine de droits d'irrigation de canal et à un puits utilisé pour l'arrosage.",
+        "La propriété se trouve à environ 15 minutes du centre de San Rafael et à environ 10 minutes du barrage de Valle Grande, où l'on peut pêcher, naviguer et camper.",
+        "Photo de la maison en hiver et vue aérienne"
+      ]
+    },
+    "vineyard-property-for-sale-in-argentina-with-orchard": {
+      "title": "Finca de 14,6 ha (36 acres) avec vignoble de qualité et verger de pruniers",
+      "kicker": "Matériel agricole inclus",
+      "paragraphs": [
+        "Cette finca de Cuadro Benegas, juste à l'extérieur de San Rafael, est entièrement plantée en malbec et en chardonnay, avec en plus un verger de prunes françaises d'Agen destinées aux pruneaux.",
+        "La propriété comprend une maison pour l'ouvrier et un petit hangar de 400 sq ft (37 m²). La maison est une ancienne construction en adobe avec deux chambres, une cuisine, une salle à manger et une salle de bains.",
+        "Le matériel comprend un tracteur Massey Ferguson, une herse à 14 disques, un pulvérisateur de 600 litres et un autre de 200 litres.",
+        "Il y a 3 ha (7,5 acres) de chardonnay en plein rendement, 3,7 ha (9 acres) de malbec en plein rendement et environ 4 ha (11 acres) de malbec récemment planté, qui ne produit pas encore. S'y ajoutent 3 ha (7 acres) de pruniers qui donnent en moyenne 30 000 kilos par an. Le chardonnay donne en moyenne environ 20 000 kg par an et le malbec environ 30 000 kg par an."
+      ]
+    },
+    "beautiful-house-on-real-estate-property-in-mendoza-argentina": {
+      "title": "Belle maison avec piscine sur un demi-acre en zone touristique",
+      "kicker": "Actuellement exploitée en location touristique !",
+      "paragraphs": [
+        "Cette belle maison sur un demi-acre (2 000 m²) à Pueblo Benegas, près de San Rafael, est actuellement exploitée en location touristique et reçoit d'excellentes évaluations.",
+        "Il y a deux chambres et une salle de bains, avec beaucoup de lumière et de grandes fenêtres qui offrent des vues spectaculaires. Une superbe piscine se trouve juste à côté du patio, équipé d'un barbecue maçonné pour de beaux asados.",
+        "Le mobilier est inclus, jusqu'aux assiettes et à la vaisselle : vous disposez donc vraiment d'une jolie maison où vous pouvez vous installer dès aujourd'hui !",
+        "La maison se trouve dans un endroit sûr et privé. Elle est à environ un demi-mile d'une route principale. Pueblo Benegas se situe à environ un mile du domaine golfique et viticole Algodon, un ensemble de plusieurs millions de dollars, et plusieurs très bons restaurants se trouvent à proximité. Le centre même de San Rafael est à 20 minutes, avec de bons commerces bien plus près."
+      ]
+    },
+    "english-style-home-on-12-acres-for-sale-mendoza": {
+      "title": "Maison de style anglais avec piscine et jardin paysager sur 5 ha (12 acres)",
+      "kicker": "Potentiel agricole en zone touristique",
+      "paragraphs": [
+        "Cette maison se trouve à Rama Caída, à environ 15 minutes du centre de la ville de San Rafael.",
+        "Elle est située sur une route asphaltée avec tous les réseaux et comprend 12 acres de bonne terre, propre à la vigne, aux légumes annuels et au verger, ou utilisable comme pâture pour chevaux, etc.",
+        "La maison fait 2 150 sq ft (200 m²) et comprend une cuisine, une buanderie, une salle à manger avec poêle à bois, un salon, 3 chambres, une salle de bains principale et un logement de service. Il y a l'eau de ville, des droits d'irrigation pour la finca, l'électricité et le gaz naturel raccordé.",
+        "La pelouse et le jardin autour de la maison couvrent plus de trois quarts d'acre, avec des arbres de plus de 80 ans. Le garage pour l'outillage fait environ 650 sq ft (60 m²)."
+      ]
+    },
+    "afalfa-farm-horse-cattle-ranch-for-sale-mendoza-argentina": {
+      "title": "Belle finca de 63 ha (155 acres) en luzerne pour chevaux, bovins et cultures : US$600 000 (négociable)",
+      "kicker": "Maison du propriétaire avec vignoble et verger",
+      "paragraphs": [
+        "Il s'agit d'une finca de 155 acres (63 ha) située à environ 30 minutes de San Rafael, à Las Malvinas, un secteur connu pour les cultures en rangs, la luzerne et l'élevage bovin.",
+        "La propriété comprend une maison d'ouvrier et une maison de propriétaire d'environ 900 sq ft (84 m²) avec 2 chambres et une salle de bains, ainsi qu'un patio et un barbecue extérieur en briques.",
+        "Il y a un petit verger avec des arbres variés, dont des noyers, des amandiers, des abricotiers, des pêchers, etc. Ils ont un petit vignoble. Le sol est apprécié pour les fourrages comme la luzerne, ainsi que pour les pommes de terre, l'ail, les oignons et les cultures de ce type.",
+        "Presque toute la propriété est plantée en luzerne, à l'exception des abords des maisons, et il y a deux retenues d'eau creusées (actuellement à sec et non utilisées, les besoins en eau actuels étant plus que couverts)."
+      ]
+    },
+    "ranch-land-for-sale-in-argentina-with-mineral-springs": {
+      "title": "Oasis de sources minérales dans le désert, campo de 890 ha (2 200 acres) en microclimat : US$2 millions, négociable",
+      "kicker": "Exploitation possible d'eau minérale en bouteille",
+      "paragraphs": [
+        "Campo Los Patos couvre 904 ha (2 232 acres) à Punta del Agua, une oasis verte dans le désert située à environ 1 640 pieds d'altitude, avec des sources minérales jaillissantes.",
+        "Les vendeurs indiquent avoir fait réaliser une analyse chimique de l'eau des sources minérales : la qualité et les caractéristiques conviennent très bien à la mise en bouteille.",
+        "Le terrain est accessible par des chemins de terre entre les collines, juste à l'écart de la Ruta 190, et il n'est pas aménagé.",
+        "Il se situe près du Cerro Nevado, qui culmine à 12 500 pieds et protège le secteur des vents et des tempêtes. De ce fait, il n'y a qu'environ deux semaines par an sans soleil à Punta del Agua, et le climat y est plus agréable que dans les zones voisines."
+      ]
+    },
+    "1000-plus-acres-for-sale-in-argentina-campo": {
+      "title": "Campo de 10 000 ha (25 000 acres) sur route asphaltée avec 5 éoliennes et électricité",
+      "kicker": "Eau minérale acheminée par conduite !",
+      "paragraphs": [
+        "Cette propriété couvre environ 10 000 ha (25 000 acres) à l'angle nord-est de la Ruta 143 et de la Ruta 90. Le prix est de US$160 par hectare.",
+        "Elle dispose de cinq éoliennes avec pompes pour l'eau, ainsi que du courant standard et du triphasé en bord de route, qui est une voie asphaltée.",
+        "La propriété est entièrement clôturée et compte deux maisons d'ouvriers à réparer.",
+        "L'angle de la propriété donne également accès à de l'eau minérale acheminée par conduite depuis Punta del Agua."
+      ]
+    },
+    "ranch-land-for-sale-in-argentina-for-agriculture": {
+      "title": "Campo de 345 ha (850 acres) pour bovins, agriculture ou aménagement",
+      "kicker": "Situé sur l'asphalte !",
+      "paragraphs": [
+        "Cette propriété couvre environ 345 ha (850 acres) sur la Ruta 146, à seulement 15 à 20 minutes de la ville.",
+        "Le terrain dispose de droits d'eau pour 120 acres (48,9 ha) et conviendrait à l'agriculture, à l'élevage bovin et à l'aménagement foncier."
+      ]
+    },
+    "property-for-sale-in-mendoza-argentina-with-pool-home-and-olive-farm": {
+      "title": "Belle maison sur 27 ha (66 acres) avec revenus touristiques et oliveraie",
+      "kicker": "Superbe vue sur la Sierra Pintada !",
+      "paragraphs": [
+        "Cette charmante demeure entièrement meublée, sur 66 acres, a été exploitée à la fois comme résidence privée et comme propriété touristique à Cuadro Benegas, une zone de vacances appréciée. La maison fait 5 500 sq ft (510 m²) avec 5 chambres (avec salle de bains privative…"
+      ]
+    },
+    "gorgeous-vineyard-sale-alvear-mendoza-argentina": {
+      "title": "Belle finca de 40 ha (100 acres) avec 2 maisons et vignoble à General Alvear : US$400 000, négociable",
+      "kicker": "Évalué US$200 000 au-dessus du prix demandé !",
+      "paragraphs": [
+        "Cette belle finca de 40 ha (100 acres) avec deux maisons compte 30 ha (75 acres) de raisins de qualité, juste à l'extérieur de General Alvear.",
+        "Les raisins sont à 75 % de la syrah et à 25 % du malbec. Les vignes sont irriguées au goutte-à-goutte et couvertes de filets anti-grêle.",
+        "La finca dispose d'un puits d'irrigation et d'une belle retenue d'eau d'une capacité de 10 millions de litres (2,6 millions de gallons).",
+        "General Alvear est une ville d'environ 30 000 habitants située à 90 km (55 miles) au sud-est de San Rafael."
+      ]
+    },
+    "72": {
+      "title": "400 acres (162 ha) avec maison et grand potentiel agricole",
+      "kicker": "Beaucoup de potentiel !",
+      "paragraphs": [
+        "Cette finca comprend une maison à rénover et des terres en friche prêtes à être cultivées ou utilisées pour des chevaux, des bovins ou d'autre bétail. Elle convient à la vigne, à un verger, aux oliviers, aux cultures en rangs ou à la luzerne. Autour de la maison sont plantés des pêchers, des poiriers, des pruniers, des amandiers et des figuiers.",
+        "Il y a également de nombreux arbres à l'avant de la propriété, une autre petite maison pour un ouvrier, et des canaux le long du terrain pour l'irrigation.",
+        "Les photos de la maison datent d'avant la vente précédente. Le bâtiment n'a plus cet aspect aujourd'hui. Il demande à présent une bonne rénovation, mais pourrait probablement être ramené dans cet état."
+      ]
+    },
+    "lush-working-farm-in-production-for-sale-san-rafael-mendoza-argentina": {
+      "title": "Belle finca en activité de 36,5 ha (90 acres) produisant maïs, tomates et luzerne, avec corral à bovins",
+      "kicker": "Beaucoup d'eau !",
+      "paragraphs": [
+        "Il s'agit d'une finca de 90 acres (36,5 ha) située à environ 35 minutes de San Rafael, à Las Malvinas, un secteur connu pour les cultures en rangs et la luzerne, et qui présente actuellement le plus fort développement de l'élevage bovin du département.",
+        "Il y a une maison d'employé bien entretenue, un hangar, un couloir de contention, des abreuvoirs et une rampe de chargement pour le bétail. S'y ajoutent des parcs pour séparer les zones d'élevage et de culture, avec clôtures électriques. La clôture périmétrique est en bon état. Il y a des corrals et des poulaillers. Une retenue d'eau pour l'irrigation existe mais n'est pas utilisée actuellement, l'eau du canal étant suffisante.",
+        "La finca est raccordée à l'eau potable et à l'électricité."
+      ]
+    },
+    "level-farmland-with-great-view-for-sale-in-mendoza-argentina": {
+      "title": "22 ha (54 acres) de terres agricoles nivelées de premier choix avec belle vue",
+      "kicker": "Bonne eau ! Potentiel de terrain à bâtir",
+      "paragraphs": [
+        "Cette finca de 22 ha (54 acres) est très bien desservie, à seulement 8 miles du centre-ville, et offre de très belles vues sur les collines colorées de la Sierra Pintada.",
+        "L'emplacement et la vue en font une finca parfaite pour construire une maison ou des cabañas touristiques. Elle se trouve sur une route asphaltée, dans un secteur où l'on construit des maisons de week-end et des cabañas.",
+        "Le sol est une terre agricole de premier choix, à Rama Caída, un secteur bien adapté à de nombreuses cultures, au verger, à la vigne ou aux fruits secs.",
+        "Le terrain était auparavant cultivé en origan et en herbes aromatiques, mais il est en friche depuis environ 5 ans.",
+        "Il appartient à une société, qui pourrait être facilement transférée à un nouvel acquéreur, ou le terrain peut être vendu sans elle."
+      ]
+    },
+    "campocoroneles": {
+      "title": "50 acres (20 ha) de terre vierge avec vue sur les précordillères",
+      "kicker": "Altitude de 2 785 pieds",
+      "paragraphs": [
+        "Cette propriété se compose de 50 acres clôturés de campo non aménagé, dans le secteur de Los Coroneles à Cuadro Benegas.",
+        "Le terrain est peuplé de plantes et d'arbres indigènes, dont des peupliers, des figuiers et d'autres espèces. Il dispose de droits d'eau inscrits au titre pour 12,5 acres (5 ha) et est desservi par des canaux internes.",
+        "La propriété se situe à 21,7 km (13 miles) du centre de San Rafael. 14,4 km se font sur asphalte et les 7,3 km restants sur des chemins de terre en bon état."
+      ]
+    },
+    "valle-de-uco-boutique-winery-and-vineyard-for-sale-argentina": {
+      "title": "Bodega de boutique dont le vin est classé parmi les meilleurs du monde ! : US$1,5 million",
+      "kicker": "Vues spectaculaires sur les Andes !",
+      "paragraphs": [
+        "Cette bodega de boutique moderne, avec son propre vignoble, exporte vers l'Europe et a été distinguée par un critique de vin respecté comme produisant certains des meilleurs vins du monde, dans la première zone de production de raisin de Mendoza."
+      ]
+    },
+    "luxury-boutique-hotel-olive-factory-restaurant-farm-for-sale-mendoza-argentina": {
+      "title": "Hôtel de boutique de luxe, société d'huile d'olive, oliveraies et restaurant",
+      "paragraphs": [
+        "Cette propriété de rapport remarquablement diversifiée comprend un hôtel de boutique de luxe, des oliveraies, une unité artisanale de production d'huile d'olive et un petit restaurant avec places à l'intérieur et à l'extérieur, actuellement loué. Elle se trouve sur 32 acres dans une zone touristique appréciée, sur la route de ski vers Las Leñas, à l'extérieur de San Rafael, Mendoza, nichée en face des Algodon Golf and Wine Estates, un ensemble de plusieurs millions de dollars.",
+        "L'hôtel affiche une note de 9,8 étoiles auprès des visiteurs et couvre plus de 6 000 sq ft, avec six chambres finement aménagées.",
+        "Au-dessus des espaces de vie de l'hôtel se trouve un grand patio en toiture qui surplombe les oliveraies et offre une belle vue sur les collines colorées de la Sierra Pintada. Depuis la piscine, la vue sur les oliveraies et la Sierra Pintada est également belle."
+      ]
+    },
+    "nice-pool-home-on-30-acres-for-sale-in-mendoza-argentina": {
+      "title": "Belle maison avec piscine et parc boisé sur 12 ha (30 acres)",
+      "kicker": "Puits d'irrigation, 25 acres à planter !",
+      "paragraphs": [
+        "Cette finca de 12 ha (30 acres) se trouve à environ 20 minutes du centre de San Rafael, à un mile d'une route asphaltée.",
+        "La maison dispose d'une piscine, et un parc entoure le bâtiment, avec un bois d'environ 200 grands eucalyptus.",
+        "Au moins 25 acres sont propres à la plantation. Il y a des années, le terrain était en vignes et appartenait à une famille de vignerons connue, qui récoltait le raisin pour sa bodega.",
+        "Beaucoup de tranquillité, peu de voisins, et un endroit agréable à vivre tel quel – ou à mettre en culture, par exemple en légumes annuels, en vigne, en verger ou en oliviers.",
+        "Il y a quelques grands abricotiers adultes et quelques autres arbres fruitiers pour la consommation personnelle."
+      ]
+    },
+    "cheap-cabernet-vineyard-farm-for-sale-in-san-rafael-mendoza-argentina": {
+      "title": "Finca de 10 ha (25 acres) avec cabernet de qualité et raisin de table",
+      "paragraphs": [
+        "Cette finca de 25 acres (10 ha) à Las Paredes compte 8,5 acres de cabernet sauvignon sous filets, plus 3,4 acres de raisin de table sans filets. Située dans la zone viticole 1, réputée pour les grands vins, la propriété se trouve à moins de deux miles de l'endroit où la bodega Bianchi possède sa spectaculaire cave et ses vignobles, un ensemble de plusieurs millions de dollars.",
+        "Le vignoble est proposé à un prix inférieur au seul coût de plantation d'un tel vignoble – et il faudrait ensuite cinq années de soins et de frais avant la première année de récolte correcte.",
+        "Le prix de US$68 000 comprend l'essentiel des frais de clôture : c'est donc à peu près le total estimé que l'acquéreur devra payer."
+      ]
+    }
+  }
+}
