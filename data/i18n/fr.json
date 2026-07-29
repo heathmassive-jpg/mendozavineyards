@@ -1,0 +1,298 @@
+{
+  "_note": "French (formal 'vous') for buyers from France, Belgium, Switzerland and Quebec. Areas are shown in hectares, never acres. Numbers use the French convention (1 234,5 with a no-break space) and prices read '200 000 US$' — amount before currency. No-break spaces before ':' are written as explicit \\u00a0 escapes so a colon never wraps to the next line. Argentine terms are kept where they are the actual thing being sold (finca, bodega, quincho) and glossed on first use; otherwise plain French farming vocabulary (luzerne, irrigation, droits d'eau, puits). Byron's voice is first-person, plainspoken and practical — a farmer talking, not an estate agent. Reviewed-by: PENDING — a native French speaker should read this before launch.",
+
+  "html": {
+    "skip": "Aller au contenu principal",
+    "menu": "Menu"
+  },
+
+  "chrome": {
+    "tagline": "Byron Lutz · Immobilier en Argentine depuis 2002",
+    "whatsapp": "Mobile US et WhatsApp : 1-561-480-2940",
+    "brandSub": "Fincas · Vignobles · Campo · Mendoza",
+    "language": "Langue",
+    "primaryNav": "Navigation principale"
+  },
+
+  "nav": {
+    "all": "Tous les biens",
+    "vineyards": "Vignobles et bodegas",
+    "farms": "Fermes et fincas",
+    "campo": "Campo et terres",
+    "homes": "Maisons",
+    "sold": "Vendus",
+    "buying": "Comment se passe l'achat",
+    "talk": "Écrire à Byron"
+  },
+
+  "footer": {
+    "heading": "Contact : Byron Lutz",
+    "whatsappLine": "Mobile US et WhatsApp :",
+    "email": "E-mail :",
+    "note": "(Appelez-nous en Argentine en composant le numéro des États-Unis.)",
+    "colProperties": "Biens",
+    "colLearn": "À savoir",
+    "vineyards": "Vignobles et bodegas",
+    "farms": "Fermes et fincas",
+    "campo": "Campo et terres",
+    "homes": "Maisons",
+    "recentlySold": "Vendus récemment",
+    "howBuying": "Comment se passe l'achat",
+    "water": "Les droits d'eau, expliqués",
+    "regions": "Les zones de Mendoza",
+    "bitcoin": "Acheter en bitcoin",
+    "about": "À propos de Byron",
+    "legal": "© 2026 Byron Lutz. Prix en dollars américains et susceptibles d'évoluer : confirmez le prix, la superficie et les droits d'eau avant de vous décider."
+  },
+
+  "hero": {
+    "eyebrow": "San Rafael · Valle de Uco · Mendoza",
+    "h1": "Vignobles, fermes et terres en Argentine – achetés avec quelqu'un qui vit ici.",
+    "lead": "Je suis Byron Lutz. Depuis 2002, je parcours ces fincas, je connais leurs propriétaires et j'accompagne des acheteurs des États-Unis, du Canada et d'Europe jusqu'à la signature chez le notaire. Chaque bien présenté ici, je l'ai vu de mes propres yeux.",
+    "browse": "Voir les {n} biens",
+    "whatsapp": "Écrire à Byron sur WhatsApp",
+    "alt": "Rangées de vignes s'étendant vers la cordillère des Andes enneigée, sur une finca de Mendoza"
+  },
+
+  "news": {
+    "label": "Actualités",
+    "tag": "Ventes de terres en bitcoin :",
+    "body": "de plus en plus de propriétaires argentins acceptent le bitcoin pour l'achat de terres et de maisons.",
+    "link": "Voir les biens qui acceptent ₿ →"
+  },
+
+  "search": {
+    "heading": "Rechercher un bien",
+    "type": "Type de bien",
+    "typeAll": "Tous les types",
+    "typeVineyard": "Vignobles et bodegas",
+    "typeFarm": "Fermes et fincas",
+    "typeCampo": "Campo et terres",
+    "typeHome": "Maisons",
+    "region": "Zone",
+    "regionAll": "Tout Mendoza",
+    "price": "Prix (USD)",
+    "any": "Indifférent",
+    "price1": "Moins de 200 000 US$",
+    "price2": "200 000 – 500 000 US$",
+    "price3": "500 000 – 1 000 000 US$",
+    "price4": "Plus de 1 000 000 US$",
+    "size": "Superficie",
+    "sizeAny": "Toute superficie",
+    "size1": "Moins de 20 ha",
+    "size2": "20 – 100 ha",
+    "size3": "100 – 400 ha",
+    "size4": "Plus de 400 ha",
+    "water": "Droits d'eau",
+    "waterIrrigated": "Irrigué / droits enregistrés",
+    "waterWell": "Puits ou éolienne",
+    "sort": "Trier par",
+    "sortPpaAsc": "Prix par hectare ↑",
+    "sortPpaDesc": "Prix par hectare ↓",
+    "sortPriceAsc": "Prix ↑",
+    "sortPriceDesc": "Prix ↓",
+    "sortSizeDesc": "Superficie ↓",
+    "submit": "Rechercher",
+    "popular": "Recherches fréquentes :",
+    "quick": "Filtres rapides :",
+    "chipCheap": "Moins de 200 000 US$",
+    "chipIncome": "Avec revenus",
+    "chipHome": "Avec maison principale",
+    "chipWater": "Bons droits d'eau",
+    "chipBitcoin": "Accepte ₿",
+    "chipVideo": "Avec vidéo",
+    "chipBig": "Plus de 400 ha",
+    "clear": "Réinitialiser les filtres",
+    "noJs": "Le filtrage nécessite JavaScript, les commandes sont donc masquées. Tous les biens apparaissent malgré tout ci-dessous, triés par prix par hectare.",
+    "empty": "Aucun bien ne correspond à ces filtres. Élargissez la fourchette de prix ou de superficie, ou",
+    "emptyLink": "réinitialisez les filtres",
+    "emptyTail": "pour voir les {n} biens.",
+    "showingAll": "Affichage des {n} {noun}",
+    "showing": "Affichage de {shown} sur {total} {noun}",
+    "nounForSale": "biens à vendre",
+    "nounSold": "biens vendus"
+  },
+
+  "featured": {
+    "heading": "Nouveautés du mois",
+    "sub": "Les trois que je vous montrerais en premier.",
+    "viewAll": "Voir les {n} →"
+  },
+
+  "inventory": {
+    "heading": "Tout le portefeuille, en chiffres",
+    "sub": "Superficie, eau et revenus des {n} biens sur un seul écran. Triez par prix par hectare et comparez comme un exploitant, pas comme un touriste.",
+    "sort": "Trier",
+    "caption": "Biens à vendre, triés par prix par hectare. Faites glisser latéralement pour voir les colonnes eau et revenus.",
+    "colProperty": "Bien",
+    "colSize": "Superficie",
+    "colWater": "Eau",
+    "colIncome": "Revenus",
+    "colPrice": "Prix",
+    "showing": "8 sur {n} · triés par prix par hectare",
+    "seeAll": "Voir les {n} biens",
+    "rawLand": "Terre non exploitée",
+    "_tableNote": "Water and income cells from the home page's inventory table. Areas are restated in hectares to match the rest of the French site.",
+    "windmills5": "5 éoliennes",
+    "irrig865": "350 ha irrigués",
+    "rights120": "49 ha avec droits",
+    "deeded": "Avec droits",
+    "lotsOfWater": "Beaucoup d'eau",
+    "irrigated": "Irrigué",
+    "wellsPond": "2 puits, retenue",
+    "dripWell": "Goutte-à-goutte + puits",
+    "cattle": "Bovins",
+    "rowCrops": "Cultures en rangs",
+    "olivesPlums": "Oliviers et pruniers",
+    "bottlesYear": "600 mille bout./an",
+    "exporting": "Exporte",
+    "alfalfa": "Luzerne"
+  },
+
+  "regions": {
+    "heading": "Où se trouvent les terres",
+    "sub": "Mendoza est une grande province. Byron travaille sur trois zones, et elles ne sont pas interchangeables : le sol, l'eau et le prix par hectare changent dans chacune.",
+    "forSale": "{n} à vendre",
+    "sanRafael": "San Rafael",
+    "sanRafaelNote": "La zone où vit Byron, et la plus variée : fermes, campo, vignobles et maisons, à partir de 69 900 US$.",
+    "valleDeUco": "Valle de Uco",
+    "valleDeUcoNote": "Zone d'altitude pour les grands vins : Gualtallary, Vista Flores, Tunuyán. Quatre sur cinq sont des vignobles.",
+    "generalAlvear": "General Alvear",
+    "generalAlvearNote": "Campo ouvert à l'est de San Rafael. Là où l'hectare devient bon marché : 10 100 ha se vendent ici autour de 158 US$ l'hectare.",
+    "altSanRafael": "Chevaux au pâturage en campo ouvert près de San Rafael, avec les sierras à l'horizon",
+    "altValleDeUco": "Rangées de vignes dans le Valle de Uco avec les Andes en arrière-plan",
+    "altGeneralAlvear": "Une éolienne remontant l'eau vers une citerne en campo ouvert de General Alvear"
+  },
+
+  "band": {
+    "caption": "Cela reste une terre de travail, pas un complexe hôtelier avec des vignes à côté.",
+    "alt": "Un cavalier au trot le long d'une rangée de vignes à Mendoza"
+  },
+
+  "buying": {
+    "eyebrow": "Acheter ici en tant qu'étranger",
+    "heading": "Un étranger peut être propriétaire de terres en Argentine. Voici comment cela se passe réellement.",
+    "body": "Les étrangers achètent des biens ruraux en leur propre nom, sans partenaire local. Les actes sont signés devant notaire, le titre est vérifié, et les droits d'eau se transmettent avec la terre. J'accompagne mes clients à chaque étape : j'ai fait la démarche moi-même pour ma propre finca.",
+    "statYears": "ans à Mendoza",
+    "statListings": "biens à vendre",
+    "statSold": "biens vendus",
+    "guide": "Lire le guide de l'acheteur",
+    "about": "À propos de Byron",
+    "photoPlaceholder": "Photo à venir —<br>Byron sur une finca, San Rafael",
+    "photoPlaceholderLine1": "Photo à venir —",
+    "photoPlaceholderLine2": "Byron sur une finca, San Rafael"
+  },
+
+  "home": {
+    "title": "Vignobles, fincas et terres à vendre à Mendoza, Argentine | Byron Lutz",
+    "description": "Vignobles, fincas, campo et terres rurales à vendre à Mendoza, Argentine. {n} biens actuellement proposés à San Rafael et dans le Valle de Uco, parcourus et vérifiés en personne par Byron Lutz depuis 2002.",
+    "ogTitle": "Vignobles, fincas et terres à vendre à Mendoza, Argentine",
+    "ogDescription": "Vignobles, fincas, campo et terres à Mendoza. {n} biens proposés, parcourus en personne depuis 2002.",
+    "altRanch": "Pâturage ouvert et cognassiers sur un campo de 100 ha à Colonia Colomer, avec les Andes à l'horizon",
+    "altVineyard": "Vignoble de grands vins palissé à Gualtallary, Valle de Uco, avec le piémont des Andes derrière",
+    "altOlive": "Rangées d'oliviers et de pruniers adultes sur une finca de 12 ha près de San Rafael",
+    "videoPlay": "Lire la vidéo : l'histoire d'un acheteur qui vit son rêve à San Rafael",
+    "videoTitle": "Témoignage — Vivre son rêve à San Rafael"
+  },
+
+  "quotes": {
+    "heading": "Ce que disent les acheteurs",
+    "sub": "Un acheteur qui a franchi le pas, dans ses propres mots.",
+    "videoLabel": "Vivre son rêve à San Rafael",
+    "caption": "Américain, installé en Argentine en 2003. Il a construit sa maison et planté du malbec sur sa finca près de San Rafael.",
+    "source": "Ses propres mots, extraits de la vidéo ci-dessus · tournée en 2013"
+  },
+
+  "list": {
+    "title": "Biens à vendre à Mendoza, Argentine | Byron Lutz",
+    "description": "Les {n} biens actuellement à vendre : vignobles, fermes, campo et maisons à Mendoza, Argentine. Triés par prix par hectare.",
+    "heading": "Tous les biens en un seul endroit",
+    "sub": "{n} biens à vendre à Mendoza : vignobles, fermes en production, campo et maisons. Triés par prix par hectare, la terre la moins chère d'abord.",
+    "forSale": "À vendre",
+    "sold": "Vendus",
+    "soldTeaserHeading": "Déjà vendus",
+    "soldTeaserSub": "{n} biens ont été vendus par l'intermédiaire de Byron. L'archive conserve ce qu'ils étaient et le prix payé, utile pour savoir ce que votre argent achète ici.",
+    "soldTeaserLink": "Voir les {n} biens vendus →",
+    "backHeading": "Toujours à la recherche ?",
+    "backSub": "{n} biens sont actuellement sur le marché.",
+    "backLink": "Voir ce qui est à vendre →"
+  },
+
+  "soldPage": {
+    "title": "Biens vendus récemment à Mendoza, Argentine | Byron Lutz",
+    "description": "Archive de {n} biens de Mendoza vendus par l'intermédiaire de Byron Lutz : ce qu'ils étaient et le prix payé.",
+    "heading": "Vendus récemment",
+    "sub": "{n} biens vendus par l'intermédiaire de Byron. {range} Aucun n'est disponible : ils sont conservés comme témoignage de ce qui se vend à Mendoza et à quel prix. Si l'un d'eux ressemble à ce que vous cherchez, demandez-nous : des terres comparables arrivent régulièrement.",
+    "range": "Ils allaient de {lo} à {hi}.",
+    "withdrawn": "Retirés",
+    "withdrawnSub": "Retirés du marché, non vendus. Demandez à Byron s'ils pourraient redevenir disponibles."
+  },
+
+  "card": {
+    "priceOnRequest": "Prix sur demande",
+    "perAcre": "{n} US$ par hectare",
+    "badgeSold": "Vendu",
+    "badgeReduced": "Prix réduit",
+    "badgeJustReduced": "Prix vient d'être réduit",
+    "badgeBitcoin": "Accepte ₿",
+    "badgeVideo": "Vidéo",
+    "acres": "{n} ha"
+  },
+
+  "detail": {
+    "home": "Accueil",
+    "properties": "Biens",
+    "forSale": "À vendre",
+    "sold": "Vendus",
+    "soldNotice": "Ce bien est déjà vendu.",
+    "soldNoticeBody": "Il reste ici comme témoignage de ce qui s'est vendu et à quel prix. Demandez à Byron quelque chose de comparable.",
+    "withdrawnNotice": "Retiré de la vente.",
+    "withdrawnNoticeBody": "Demandez à Byron s'il pourrait revenir sur le marché.",
+    "specSize": "Superficie",
+    "specLocation": "Emplacement",
+    "specType": "Type",
+    "specWater": "Eau",
+    "specIncome": "Revenus",
+    "specBuildings": "Bâtiments",
+    "specPayment": "Paiement",
+    "typeVineyard": "Vignoble / bodega",
+    "typeFarm": "Ferme / finca",
+    "typeCampo": "Campo / terres",
+    "typeHome": "Maison",
+    "waterIrrigated": "Irrigué / droits enregistrés",
+    "waterWell": "Puits ou éolienne",
+    "incomeProducing": "En production",
+    "hasHouse": "Avec maison",
+    "acceptsBitcoin": "Le vendeur accepte le bitcoin",
+    "perAcre": "{n} US$ par hectare",
+    "ctaHeading": "Interrogez Byron sur ce bien",
+    "ctaBody": "Il l'a parcouru. Demandez-lui tout : droits d'eau, accès, ce que cultivent les voisins.",
+    "ctaWhatsapp": "Demander sur WhatsApp",
+    "ctaEmail": "Écrire à Byron",
+    "whatsappText": "Bonjour Byron, j'aimerais en savoir plus sur :",
+    "emailSubject": "Demande :",
+    "photos": "Photos",
+    "morePhotos": "Les autres photos",
+    "photosSub": "{n} photos supplémentaires de ce bien. Touchez-en une pour l'agrandir.",
+    "photosSubOne": "Une photo supplémentaire de ce bien. Touchez-la pour l'agrandir.",
+    "video": "Vidéo",
+    "videos": "Vidéos",
+    "videoSub": "La lecture se fait ici même. Rien n'est envoyé à YouTube avant que vous lanciez la vidéo.",
+    "videoFilmedBy": "Filmé par",
+    "videoOpen": "Voir sur YouTube",
+    "videoPlay": "Lire la vidéo :",
+    "videoFileNote": "La vidéo ne peut pas être lue depuis un fichier local.",
+    "otherProperties": "Autres biens",
+    "seeAll": "Voir tout →",
+    "photoOf": "{title} — photo {i} sur {n}",
+    "descriptionPending": "La description complète de ce bien est encore en anglais. Nous les traduisons une par une. En attendant, demandez à Byron sur WhatsApp ou par e-mail — il vous racontera tout en français."
+  },
+
+  "gallery": {
+    "close": "Fermer",
+    "prev": "← Précédent",
+    "next": "Suivant →",
+    "of": "{i} sur {n}",
+    "dialogLabel": "Photos du bien"
+  }
+}

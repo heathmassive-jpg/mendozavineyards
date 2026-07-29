@@ -9,6 +9,10 @@
 #  Replace this file with the real robots.txt from the source
 #  folder (ByronWebsite\robots.txt), which allows crawling.
 #  Shipping THIS file to production would deindex the whole site.
+#
+#  NOTE: running tools/build_pages.py regenerates the SOURCE
+#  robots.txt as the production (Allow) version, and robocopy
+#  then overwrites this file. Re-apply this after every rebuild.
 # ============================================================
 
 User-agent: *
