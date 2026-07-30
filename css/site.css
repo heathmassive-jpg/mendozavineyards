@@ -297,7 +297,10 @@ a:hover { text-decoration-thickness: 2px; }
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: clamp(20rem, 14rem + 26vw, 27rem);
+  /* Floor only — the copy runs taller than this at every width, so it exists to
+     stop the band collapsing, not to set its height. Lowered from
+     clamp(20rem, 14rem + 26vw, 27rem). */
+  min-height: clamp(13rem, 9.5rem + 15vw, 18rem);
   background: var(--c-dark);
   overflow: hidden;
 }
@@ -321,9 +324,17 @@ a:hover { text-decoration-thickness: 2px; }
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: var(--s-4);
+  /* Both fluid rather than fixed: a phone needs the height back more than a
+     desktop does, so each tightens further at the small end (8px gap / 16px pad
+     on a 360px screen, 12px / 24px at 1280px). Tighter than the global
+     --pad-block every other band uses — the hero is the one section where
+     breathing room costs above-the-fold listings.
+
+     42rem is load-bearing: tools/tests/test_hero_contrast.py hardcodes its text
+     boxes as fractions of this column. Widening it means updating that test. */
+  gap: clamp(0.5rem, 0.35rem + 0.6vw, 0.75rem);
   max-width: 42rem;
-  padding-block: var(--pad-block);
+  padding-block: clamp(1rem, 0.8rem + 0.9vw, 1.5rem);
 }
 .hero__eyebrow { color: var(--c-tan-on-photo); letter-spacing: 0.2em; }
 .hero h1 {
@@ -335,6 +346,10 @@ a:hover { text-decoration-thickness: 2px; }
   font-size: var(--t-lead);
   color: var(--c-on-dark-soft);
   max-width: 34rem;
+  /* Tighter than the --lh-body 1.6 used for body copy. This paragraph runs five
+     lines on a 360px screen — the tallest single block in the hero — and it's
+     three lines of large text, not a long read, so 1.45 still sits comfortably. */
+  line-height: 1.45;
 }
 .hero__actions { display: flex; flex-wrap: wrap; gap: var(--s-3); padding-top: var(--s-1); }
 
@@ -431,6 +446,10 @@ a:hover { text-decoration-thickness: 2px; }
 
 /* ============================================================ section head */
 .section { padding-block: var(--pad-block); }
+/* Home page only (.search exists nowhere else): the search panel's bottom padding
+   and this section's top padding stacked two full pad-blocks of empty ground
+   directly above "New this month". One is enough. */
+.search + .section { padding-top: var(--s-5); }
 .section__head {
   display: flex;
   flex-wrap: wrap;

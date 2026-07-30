@@ -64,7 +64,11 @@
   --f-narrow:  'Archivo Narrow', 'Archivo', -apple-system, sans-serif;
 
   /* Fluid scale, 360px → 1280px viewport */
-  --t-hero:    clamp(2rem, 1.28rem + 3.2vw, 3.25rem);
+  /* Trimmed from clamp(2rem, 1.28rem + 3.2vw, 3.25rem). At the old size the hero
+     headline ran three deep lines and pushed "New this month" below the fold on a
+     laptop. 26px on a phone / 36px on a desktop keeps it the largest thing on the
+     page while costing the listings far less height. Only .hero h1 uses this. */
+  --t-hero:    clamp(1.625rem, 1.1rem + 2.05vw, 2.25rem);
   --t-h2:      clamp(1.375rem, 1.1rem + 1.2vw, 1.75rem);
   --t-h3:      clamp(1rem, 0.94rem + 0.28vw, 1.125rem);
   --t-lead:    clamp(0.975rem, 0.93rem + 0.2vw, 1.03rem);
