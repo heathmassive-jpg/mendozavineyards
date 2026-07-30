@@ -114,12 +114,26 @@
   },
 
   "featured": {
+    "cardRanch250": "Campo de 100 ha (250 acres) pour bovins ou culture, avec maison du propriétaire",
+    "cardRanch250Meta": "100 ha · verger de coings · corral à bovins",
+    "cardUcoVineyard": "Vignoble premium pour grands vins avec installation de vinification",
+    "cardUcoVineyardMeta": "46 ha (113 acres) · export · goutte-à-goutte",
+    "cardOlivePlum": "Finca bien entretenue de 12 ha (29 acres) d'oliviers et pruniers, avec maison d'ouvrier",
+    "cardOlivePlumMeta": "12 ha · en production · matériel inclus",
     "heading": "Nouveautés du mois",
     "sub": "Les trois que je vous montrerais en premier.",
     "viewAll": "Voir les {n} →"
   },
 
   "inventory": {
+    "rowCampo25k": "Campo de 10 000 ha (25 000 acres) sur route asphaltée, 5 éoliennes",
+    "rowRanch4690": "Campo de 1 900 ha (4 690 acres) pour luzerne, bovins et plus",
+    "rowRanch850": "Campo de 345 ha (850 acres) pour bovins, agriculture ou aménagement",
+    "rowRanch250": "Campo de 100 ha (250 acres), verger de coings et maison du propriétaire",
+    "rowWorking90": "Finca en activité de 36,5 ha (90 acres) — maïs, tomates, luzerne",
+    "rowOlivePlum29": "Finca de 12 ha (29 acres) d'oliviers et pruniers, avec hangar",
+    "rowWineCo69": "Société vinicole, 28 ha (69 acres) de malbec et cabernet",
+    "rowFineWineUco": "Vignoble de grands vins avec bodega, Valle de Uco",
     "heading": "Tout le portefeuille, en chiffres",
     "sub": "Superficie, eau et revenus des {n} biens sur un seul écran. Triez par prix par hectare et comparez comme un exploitant, pas comme un touriste.",
     "sort": "Trier",

@@ -114,12 +114,26 @@
   },
 
   "featured": {
+    "cardRanch250": "Campo von 100 ha (250 acres) für Rinder oder Landwirtschaft, mit Eigentümerhaus",
+    "cardRanch250Meta": "100 ha · Quittenanlage · Rindercorral",
+    "cardUcoVineyard": "Premium-Weinberg für Spitzenweine mit Weinbereitungsanlage",
+    "cardUcoVineyardMeta": "46 ha (113 acres) · Export · Tropfbewässerung",
+    "cardOlivePlum": "Gut gepflegte Finca von 12 ha (29 acres) mit Oliven und Pflaumen, mit Mitarbeiterhaus",
+    "cardOlivePlumMeta": "12 ha · in Produktion · Geräte inklusive",
     "heading": "Neu in diesem Monat",
     "sub": "Die drei, die ich Ihnen zuerst zeigen würde.",
     "viewAll": "Alle {n} ansehen →"
   },
 
   "inventory": {
+    "rowCampo25k": "Campo von 10.000 ha (25.000 acres) an asphaltierter Straße, 5 Windpumpen",
+    "rowRanch4690": "Campo von 1.900 ha (4.690 acres) für Luzerne, Rinder und mehr",
+    "rowRanch850": "Campo von 345 ha (850 acres) für Rinder, Landwirtschaft oder Entwicklung",
+    "rowRanch250": "Campo von 100 ha (250 acres), Quittenanlage und Eigentümerhaus",
+    "rowWorking90": "Finca in Produktion, 36,5 ha (90 acres) — Mais, Tomaten, Luzerne",
+    "rowOlivePlum29": "Finca von 12 ha (29 acres) mit Oliven und Pflaumen, mit Scheune",
+    "rowWineCo69": "Weinunternehmen, 28 ha (69 acres) Malbec und Cabernet",
+    "rowFineWineUco": "Weinberg für Spitzenweine mit Bodega, Valle de Uco",
     "heading": "Das ganze Angebot in Zahlen",
     "sub": "Fläche, Wasser und Erträge aller {n} Objekte auf einem Bildschirm. Sortieren Sie nach Preis pro Hektar und vergleichen Sie wie ein Landwirt, nicht wie ein Tourist.",
     "sort": "Sortieren",

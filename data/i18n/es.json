@@ -114,12 +114,26 @@
   },
 
   "featured": {
+    "cardRanch250": "Campo de 100 ha (250 acres) para ganadería o agricultura, con casa principal",
+    "cardRanch250Meta": "100 ha · monte de membrillos · corral",
+    "cardUcoVineyard": "Viñedo premium de vinos finos con instalaciones de elaboración",
+    "cardUcoVineyardMeta": "46 ha (113 acres) · exporta · riego por goteo",
+    "cardOlivePlum": "Finca de 12 ha (29 acres) de olivos y ciruelos, con casa de casero",
+    "cardOlivePlumMeta": "12 ha · en producción · equipamiento incluido",
     "heading": "Nuevas este mes",
     "sub": "Las tres que le mostraría primero.",
     "viewAll": "Ver las {n} →"
   },
 
   "inventory": {
+    "rowCampo25k": "Campo de 10.000 ha (25.000 acres) sobre asfalto, 5 molinos",
+    "rowRanch4690": "Campo de 1.900 ha (4.690 acres) para alfalfa, ganado y más",
+    "rowRanch850": "Campo de 345 ha (850 acres) para ganadería, agricultura o desarrollo",
+    "rowRanch250": "Campo de 100 ha (250 acres), monte de membrillos y casa principal",
+    "rowWorking90": "Finca en producción de 36,5 ha (90 acres) — maíz, tomate, alfalfa",
+    "rowOlivePlum29": "Finca de 12 ha (29 acres) de olivos y ciruelos, con galpón",
+    "rowWineCo69": "Empresa vitivinícola, 28 ha (69 acres) de malbec y cabernet",
+    "rowFineWineUco": "Viñedo de vinos finos con bodega, Valle de Uco",
     "heading": "Todo el inventario, en números",
     "sub": "Superficie, agua y renta de las {n} propiedades en una sola pantalla. Ordene por precio por hectárea y compare como un productor, no como un turista.",
     "sort": "Ordenar",
