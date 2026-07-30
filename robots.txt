@@ -10,9 +10,23 @@
 #  folder (ByronWebsite\robots.txt), which allows crawling.
 #  Shipping THIS file to production would deindex the whole site.
 #
-#  NOTE: robocopy overwrites this file with the SOURCE robots.txt
-#  (which is the production Allow version) on every sync, whether
-#  or not a build ran. Always re-check this file before committing.
+#  THIS FILE IS GUARDED. Two things protect it, because a hand-typed
+#  robocopy kept overwriting it with the SOURCE robots.txt (the
+#  production "Allow" version) and that change is invisible in a
+#  normal diff review:
+#
+#    1. git skip-worktree is set on this path in this clone, so local
+#       changes to it are never staged or committed. Check with:
+#         git ls-files -v robots.txt      ("S" prefix = guarded)
+#       Re-apply after a fresh clone with:
+#         git update-index --skip-worktree robots.txt
+#
+#    2. Sync with tools\sync-to-upload.cmd in the source folder, which
+#       excludes this file (and .git) from the copy. Don't run a bare
+#       robocopy by hand.
+#
+#  To genuinely change this file, unset the guard first:
+#    git update-index --no-skip-worktree robots.txt
 # ============================================================
 
 User-agent: *
