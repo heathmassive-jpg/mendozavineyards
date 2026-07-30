@@ -10,9 +10,9 @@
 #  folder (ByronWebsite\robots.txt), which allows crawling.
 #  Shipping THIS file to production would deindex the whole site.
 #
-#  NOTE: running tools/build_pages.py regenerates the SOURCE
-#  robots.txt as the production (Allow) version, and robocopy
-#  then overwrites this file. Re-apply this after every rebuild.
+#  NOTE: robocopy overwrites this file with the SOURCE robots.txt
+#  (which is the production Allow version) on every sync, whether
+#  or not a build ran. Always re-check this file before committing.
 # ============================================================
 
 User-agent: *
